@@ -18,7 +18,7 @@
         <div data-link="LeMeilleurHouse" class="siteButton up">The LeMeilleur House</div>
         <div data-link="LindenHouse" class="siteButton up">The Linden House</div>
         <div data-link="FrancoisValleHouse"class="siteButton up">The Francois Valle House</div>
-        <div class="siteButton soon">The Jean-Baptiste Valle House</div>
+        <div data-link="JBValleHouse"class="siteButton up">The Jean-Baptiste Valle House</div>
         <div class="siteButton soon">The Bank</div>
         <div class="siteButton soon">Bolduc Family History</div>
         <div class="siteButton soon">Hands on History Room</div>
