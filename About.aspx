@@ -28,9 +28,9 @@
                 <h2>Hours</h2>
                 <h3>Open Daily:</h3>
                 <p>
-                    Monday-Thursday, 10am - 4pm<br />
-                    Friday 10am until 7pm (or dusk if it is earlier)
-                '(Every 4th Friday until 9pm)
+                   Tuesday-Thursday, 10am - 4pm through Memorial Day<br />
+                   Monday-Thursday, 10am - 4pm after Memorial Day<br />
+                    Friday 10am until 7pm (or dusk if it is earlier) - (Every 4th Friday until 9pm)
                     <br />
                     Saturday 10am - 5pm Sunday, noon-4pm
                 </p>
