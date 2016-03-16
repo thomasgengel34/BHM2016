@@ -4,13 +4,71 @@
     <meta content="Bolduc House Museum, National Historic Landmark, Ste. Genevieve, Stegen, Ste.Gen, 
 French Colonial History, Missouri French, Missouri French History, 18th Century Missouri, colonial site, Missouri tourist attraction, Mississippi River town, spectacular gardens, attraction"
         name="keywords" />
-    <meta content="The Bolduc House Museum and National Historic Landmark in Ste. Genevieve, Missouri, 18th Century French colonial historic site, tourist attraction, and outdoor event venue with spectacular gardens
-"
-        name="description" /> 
-    <figure>
-        <img src="Images/Default/bolducBack_2000.png" alt="Bolduc House looking south across the gardens" />
-        <figcaption>Looking south across the gardens to the back of the Bolduc House </figcaption>
-    </figure> 
+    <meta content="The Bolduc House Museum and National Historic Landmark in Ste. Genevieve, Missouri, 18th Century French colonial historic site, tourist attraction, and outdoor event venue with spectacular gardens"    name="description" />
+    <div id="defaultPageCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#defaultPageCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#defaultPageCarousel" data-slide-to="1"></li>
+            <li data-target="#defaultPageCarousel" data-slide-to="2"></li>
+            <li data-target="#defaultPageCarousel" data-slide-to="3"></li>
+            <li data-target="#defaultPageCarousel" data-slide-to="4"></li>
+            <li data-target="#defaultPageCarousel" data-slide-to="5"></li>
+            <li data-target="#defaultPageCarousel" data-slide-to="6"></li>
+            <li data-target="#defaultPageCarousel" data-slide-to="7"></li> 
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="Images/Default/Carousel/bolducBack_2000.png" />
+            <figcaption>Looking south across the gardens to the back of the Bolduc House </figcaption>
+            </div> 
+
+            <div class="item">
+                <img src="Images/Default/Carousel/LaGuignole.jpg" />
+               <figcaption>La Guignole (Traditional New Year's Eve Celebration)</figcaption>   
+            </div> 
+
+            <div class="item">
+                <img src="Images/Default/Carousel/BolducHouseAt7am.jpg" /> <figcaption>Early on a Misty Morning </figcaption>
+            </div>
+
+        
+  <div class="item">
+      <img src="Images/Default/Carousel/Jour%20de%20Fete%20006%20medium.jpg" />
+                <figcaption>Jour de Fete</figcaption>
+            </div>
+          
+            <div class="item">
+                <img src="Images/Default/Carousel/smiling%20soldier%20(1).JPG" />
+                <figcaption>Do NOT argue with our Re-enactors!</figcaption>
+            </div>  
+            <div class="item">
+              <img src="Images/Default/Carousel/Spinning.JPG" />
+                <figcaption>Learn about the occupations and crafts of bygone days</figcaption>
+            </div>
+             <div class="item">
+                 <img src="Images/Default/Carousel/Ste.%20Genevieve-20120130-00137.jpg" />
+                 <figcaption>Children's activities and attractions are a big part of us</figcaption>
+             </div>
+             <div class="item">  
+                 <img src="Images/Default/Carousel/Web%20PR%20for%20African%20Exhibit.jpg" />
+                 <figcaption>We frequentlyhost and provide for short-term exhibits - watch our Facebook page</figcaption>
+             </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#defaultPageCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#defaultPageCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
     <article>
         <h1>The Bolduc House Museum </h1>
         <p>
@@ -31,13 +89,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                                     Book Page</a>
         </p>
         <h3><a runat="server" href="~/Upload/Default/Bolduc Brochure 2015A.pdf">General Information</a></h3>
-    </article>
-    <figure>
-        <img  alt="Springtime in the Garden at the Bolduc House"
-            src="Images/Default/May2014_740.jpg" />
-        <figcaption>Springtime in the Garden at the Bolduc House - May, 2014</figcaption>
-    </figure>
-    <article>
+
         <div class="row">
             <div class="col-md-6">
                 &quot;Bonjour! I am Zuts, the Squirrel and Mascot of the House Bolduc! I am building 

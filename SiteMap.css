@@ -1,0 +1,52 @@
+﻿.admin {
+    background-color:  gold;
+    color: black;
+    border: 1px double black;
+} 
+
+.bldg {
+    background-color: #036;
+    color: white; 
+    border-radius:10px;
+}
+.kids {
+    font-family:'Comic Sans MS';
+    color: green; 
+}
+
+
+
+.fbSiteMap {
+    display: flex;
+    border: 1px solid black;
+    -ms-flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.siteButton {
+    height:135px;
+    width: 135px;
+    margin: 25px;
+    padding: 10px; 
+    box-shadow: 3px 3px 3px #aaa;
+}
+
+.siteButton>img{
+    margin:auto;
+    box-shadow:none;
+    height:70px; 
+}
+
+.up {
+   /*this class is used for javascript only - for presentation use a category like activity, admin, bldg, craft, kids*/
+}
+
+.soon {
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.future {
+    border: 1px dashed black;
+}

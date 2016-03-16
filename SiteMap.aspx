@@ -4,27 +4,30 @@
     <link href="Content/SiteMap.css" rel="stylesheet" />
     <div class="margin50">
         <h1>Gateway to the Museum</h1>
-        <p>Each square is a page on our site. Dark blue squares are up and running. Grey squares, with solid borders, and marked with one asterisk(*) are going to be pulled in soon from the old site. Plain squares with dashed borders and two asterisks (**) are for the future. </p>
+        <p>Each square is a page on our site. </p>
         <p>If a page is deployed, you can click on its square and go to that page.</p>
-        <p>Watch as pages are added.</p>
+        <p>Watch as pages are added. Grey squares, with solid borders, and marked with one asterisk(*) are going to be pulled in soon from the old site. Plain squares with dashed borders and two asterisks (**) are for the future. </p>
     </div>
     <article class="margin50 fbSiteMap">
-        <div data-link="default" class="siteButton up">Home</div>
-        <div data-link="about" class="siteButton up">About</div>
-        <div data-link="contact" class="siteButton up">Contact</div>
-        <div data-link="shop" class="siteButton up">Shop</div>
-        <div data-link="siteMap" class="siteButton up" title="You are Here">Site Map</div>
-        <div data-link="BolducHouse" class="siteButton up">The Bolduc House</div>
-        <div data-link="LeMeilleurHouse" class="siteButton up">The LeMeilleur House</div>
-        <div data-link="LindenHouse" class="siteButton up">The Linden House</div>
-        <div data-link="FrancoisValleHouse"class="siteButton up">The Francois Valle House</div>
-        <div data-link="JBValleHouse"class="siteButton up">The Jean-Baptiste Valle House</div>
-        <div class="siteButton soon">The Bank</div>
+        <div data-link="default" class="siteButton up admin">Home</div>
+        <div data-link="about" class="siteButton up admin">About</div>
+        <div data-link="contact" class="siteButton up admin">Contact</div>
+        <div data-link="shop" class="siteButton up admin">Shop</div>
+        <div data-link="siteMap" class="siteButton up admin" title="You are Here">Site Map</div>
+        <div data-link="LindenHouse" class="siteButton up bldg">The Linden House<img src="Images/SiteMap/Linden%20House100.jpg" title="On the east side of S. Main. Start Here" /></div>
+        <div data-link="BolducHouse" class="siteButton up bldg">The Bolduc House
+            <img src="Images/SiteMap/Bolduc_100.jpg" alt="The Bolduc House looking Northwest" title="On the west side of S. Main, across from the Linden House"/></div>
+        <div data-link="LeMeilleurHouse" class="siteButton up bldg">The LeMeilleur House
+            <img src="Images/SiteMap/LeMeilleurHouse2_100.jpg" alt="front of the LeMeilleur House" title="On the west side of S. Main, just north of the Bolduc House" /></div>
+        <div data-link="JBValleHouse" class="siteButton up bldg">The J.B.Valle House<img src="Images/SiteMap/Jean%20Baptiste%20Valle%20House%20I_100.jpg" title="The Jean-Baptiste Valle House is on the Northwest corner of Market and South Main"/></div>
+        <div data-link="FrancoisValleHouse"class="siteButton up bldg">The Francois Valle House<img src="Images/SiteMap/FrancoisValleHouse_100.jpg" title="This house is on S. Gabouri. It is not yet ready for tours"/></div> 
+        <div data-link="BankBuilding" class="siteButton up bldg">The Bank Building<br /><br /><img src="Images/SiteMap/bank%205_100.JPG"  title="This is on the south side of Market street and you might pass it when you come visit. It is not open yet."/></div>
         <div class="siteButton soon">Bolduc Family History</div>
-        <div class="siteButton soon">Hands on History Room</div>
-        <div class="siteButton soon">Kids</div>
-        <div class="siteButton soon">Field Trips</div> 
-        <div class="siteButton soon">Zuts Birthday Club</div>
+        <div class="siteButton future">Slavery in Ste.Genevieve</div>  
+         <div class="siteButton soon kids">Kids</div>
+        <div class="siteButton soon kids">Hands on History Room</div> 
+        <div class="siteButton soon kids">Field Trips</div> 
+        <div class="siteButton soon kids">Zuts Birthday Club</div>
         <div class="siteButton soon">Arrangements</div>
         <div class="siteButton soon">Weddings</div>
         <div class="siteButton soon">Ste. Genevieve</div>

@@ -5,6 +5,7 @@
         <hgroup>
             <h1>About the Museum</h1>
             <h5>Map - Hours - Admission Cost</h5>
+            <p><em>Bonjour.</em> This museum tells part of the story of New France, the <em>other</em> Colonial America. Away from Philadelphia and New York, away from the Anglophones, life was happening. Here, in Ste.Genevieve, French and American Indian and African, slave and free cultures mixed and mingled in a way perhaps unique to the world.  Come back in time to hear their stories, see where they lived, walk where they walked and ponder part of what made us what we are today. It is a story worth hearing, and we are here to tell it. </p> 
             <h2>Location</h2>
         </hgroup>
         <ul>
