@@ -54,7 +54,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
              </div>
              <div class="item">  
                  <img src="Images/Default/Carousel/Web%20PR%20for%20African%20Exhibit.jpg" />
-                 <figcaption>We frequentlyhost and provide for short-term exhibits - watch our Facebook page</figcaption>
+                 <figcaption>We frequently host and provide for short-term exhibits - watch our Facebook page</figcaption>
              </div>
         </div>
 
