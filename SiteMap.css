@@ -16,7 +16,7 @@
 
 
 
-.fbSiteMap {
+.flexBoxSiteMap {
     display: flex;
     border: 1px solid black;
     -ms-flex-flow: row wrap;

@@ -21,39 +21,39 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="Images/Default/Carousel/bolducBack_2000.png" />
-            <figcaption>Looking south across the gardens to the back of the Bolduc House </figcaption>
+                <img src="Images/Default/Carousel/bolducBack_2000.png" alt="Looking south across the gardens to the back of the Bolduc House" />
+            <figcaption> </figcaption>
             </div> 
 
             <div class="item">
-                <img src="Images/Default/Carousel/LaGuignole.jpg" />
-               <figcaption>La Guignole (Traditional New Year's Eve Celebration)</figcaption>   
+                <img src="Images/Default/Carousel/LaGuignole.jpg" alt="La Guignole (Traditional New Year's Eve Celebration)" />
+               <figcaption></figcaption>   
             </div> 
 
             <div class="item">
-                <img src="Images/Default/Carousel/BolducHouseAt7am.jpg" /> <figcaption>Early on a Misty Morning </figcaption>
+                <img src="Images/Default/Carousel/BolducHouseAt7am.jpg" alt="Early on a Misty Morning"/> <figcaption>Early on a Misty Morning</figcaption>
             </div>
 
         
   <div class="item">
-      <img src="Images/Default/Carousel/Jour%20de%20Fete%20006%20medium.jpg" />
+      <img src="Images/Default/Carousel/Jour%20de%20Fete%20006%20medium.jpg" alt="Jour de Fete" />
                 <figcaption>Jour de Fete</figcaption>
             </div>
           
             <div class="item">
-                <img src="Images/Default/Carousel/smiling%20soldier%20(1).JPG" />
+                <img src="Images/Default/Carousel/smiling%20soldier%20(1).JPG" alt="one of our re-enactors" />
                 <figcaption>Do NOT argue with our Re-enactors!</figcaption>
             </div>  
             <div class="item">
-              <img src="Images/Default/Carousel/Spinning.JPG" />
+              <img src="Images/Default/Carousel/Spinning.JPG" alt="smiling woman by spinning wheel" />
                 <figcaption>Learn about the occupations and crafts of bygone days</figcaption>
             </div>
              <div class="item">
-                 <img src="Images/Default/Carousel/Ste.%20Genevieve-20120130-00137.jpg" />
+                 <img src="Images/Default/Carousel/Ste.%20Genevieve-20120130-00137.jpg" alt="Patti explains something to some children"/>
                  <figcaption>Children's activities and attractions are a big part of us</figcaption>
              </div>
              <div class="item">  
-                 <img src="Images/Default/Carousel/Web%20PR%20for%20African%20Exhibit.jpg" />
+                 <img src="Images/Default/Carousel/Web%20PR%20for%20African%20Exhibit.jpg" alt="poster for the African exhibit" />
                  <figcaption>We frequently host and provide for short-term exhibits - watch our Facebook page</figcaption>
              </div>
         </div>

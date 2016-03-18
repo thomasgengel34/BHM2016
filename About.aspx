@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="About.aspx.cs" Inherits="About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <meta name="description" content="Page contains information about the location, hours and admission costs for the Bolduc House Museum in Ste.Genevieve, Missouri">
     <div class="margin10">
         <hgroup>
             <h1>About the Museum</h1>
