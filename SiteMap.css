@@ -16,12 +16,19 @@
 
 
 
-.flexBoxSiteMap {
-    display: flex;
+#flexBoxSiteMap {  
+    display:-webkit-flex;
+    display:-ms-flexbox; 
+    display:flex; 
     border: 1px solid black;
-    -ms-flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+    border-radius:25px ;
+    -ms-flex-direction:row;
+    -webkit-flex-direction:row; 
+    flex-direction: row;
+    -ms-flex-flow:wrap;
+    -webkit-flex-flow:wrap; 
+    flex-flow:wrap; 
+    
 }
 
 .siteButton {
@@ -49,4 +56,9 @@
 
 .future {
     border: 1px dashed black;
+}
+.history {
+    background-color: lightgoldenrodyellow;
+    border:double 1px gold;
+    
 }

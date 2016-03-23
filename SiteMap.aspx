@@ -8,9 +8,8 @@
         <p>Each square is a page on our site. </p>
         <p>If a page is deployed, you can click on its square and go to that page.</p>
         <p>Watch as pages are added. Grey squares, with solid borders, and marked with one asterisk(*) are going to be pulled in soon from the old site. Plain squares with dashed borders and two asterisks (**) are for the future. </p>
-    </div>
-    <div class="margin50 flexBoxSiteMap"> 
-    <article>
+    
+    <div id="flexBoxSiteMap">  
         <div data-link="default" class="siteButton up admin">Home</div>
         <div data-link="about" class="siteButton up admin">About</div>
         <div data-link="contact" class="siteButton up admin">Contact</div>
@@ -25,8 +24,7 @@
         <div data-link="FrancoisValleHouse"class="siteButton up bldg">The Francois Valle House<img src="Images/SiteMap/FrancoisValleHouse_100.jpg" title="This house is on S. Gabouri. It is not yet ready for tours" alt="the front of the Francois Valle House"/></div> 
         <div data-link="BankBuilding" class="siteButton up bldg">The Bank Building<br /><br /><img src="Images/SiteMap/bank%205_100.JPG"  title="This is on the south side of Market street and you might pass it when you come visit. It is not open yet."
             alt="the Bank Building"/></div>
-        <div class="siteButton soon">Bolduc Family History</div>
-        <div class="siteButton future">Slavery in Ste.Genevieve</div>  
+        <div data-link="BolducFamilyHistory" class="siteButton history up">Bolduc Family History<img src="Images/SiteMap/TheBattle_100.jpg" alt="Picture of the Battle of Quebec" title="Picture of the Battle of Quebec" /></div> 
          <div class="siteButton soon kids">Kids</div>
         <div class="siteButton soon kids">Hands on History Room</div> 
         <div class="siteButton soon kids">Field Trips</div> 
@@ -49,6 +47,7 @@
         <div class="siteButton soon">1967 LaGuignole</div>
         <div class="siteButton soon">2010 LaGuignole</div>
         <div class="siteButton soon">2011 LaGuignole</div>
+         <div class="siteButton future">Slavery in Ste.Genevieve</div>  
         <div class="siteButton future">2012 LaGuignole</div>
         <div class="siteButton future">2013 LaGuignole</div>
         <div class="siteButton future">2014 LaGuignole</div> 
@@ -57,13 +56,13 @@
         <div class="siteButton future">Ceramics</div>
         <div class="siteButton future">Quilts</div>
         <div class="siteButton future">Colonial Recipes</div>
-        <div class="siteButton future">??</div>
-    </article>
+        <div class="siteButton future">??</div> 
         </div>
-    <p class="margin50">
+    <p>
         Is there a page you would like to see that is not here? Please email 
         <a href="mailto:Zuts@bolduchouse.org">Zuts the Squirrel</a> with your suggestion and he will get right on it. Maybe. Or someone else will do it for him. Probably.  
     </p>
+        </div>
     <script src="Scripts/Pages/SiteMap.js"></script>
 </asp:Content>
 
