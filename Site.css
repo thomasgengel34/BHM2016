@@ -1,0 +1,145 @@
+﻿html {
+    width:100%;
+    padding:10px 0 0 0;
+}
+form#ct101 {
+width:100%;
+    padding:10px 0 0 0;
+}
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+   width: 100%; 
+ 
+    padding: 50px 0 20px 0; 
+    margin:0;
+ font-family: Arial, Helvetica, sans-serif;
+    /*min-width: 1000px;*/
+}  
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    /* this is default but does not consider full width pictures
+        padding-left: 15px;
+    padding-right: 15px;*/
+    padding:0;
+    margin:0;
+    width:100%;
+}
+.container {
+    padding:0;
+    margin:0;
+     width:100%;
+       max-width:100%;
+}
+#MainContent{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}
+ 
+
+form {
+    height: inherit;
+    padding: 0 ;
+    margin: 0 ;
+}
+figure {
+    padding:0;
+    margin:0;
+}
+img {
+    box-shadow: 3px 3px 3px #aaa;
+     text-align: center; 
+      width: 100%; 
+      padding: 0;
+      margin: 0  0 10px 0;
+}
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    background-color: #036;
+    text-align: center;
+    margin-top: 0 ;
+    padding: 2px ;
+    font-size: small;
+    margin-bottom: 0 ;
+}
+#navbar {
+    background-color:#036;
+    color:white;
+}
+a.navbar-brand{
+    padding-left:50px;
+}
+
+.navbar-inverse {
+    background-color:#036;
+    color:white;
+}
+article {
+    border: 1px solid;
+    border-color: #036;
+    border-radius: 25px;
+    padding: 24px;
+}
+figcaption {
+    font-size: small;
+    font-weight: bolder;
+    font-style: italic;
+    color: #036;
+}
+.margin10 {
+    margin:10px;
+}
+.margin50 {
+    margin:50px;
+}
+/*******************************************************/
+/* Default                      none presently, thanks for asking!           */
+/*******************************************************/ 
+
+/*******************************************************/
+/* About                                                                                   */
+/*******************************************************/
+ #AboutMap{ 
+    width:100%;
+ overflow: hidden;
+ padding:10px;
+ }
+
+ /*******************************************************/
+/* BolducFamilyHistory (first use)                                                 */
+/*******************************************************/
+.closeup {
+    overflow: scroll;
+    height: 600px;
+    margin-top: 10px;
+}
+.w600 {
+    width:600px;
+}
