@@ -140,6 +140,10 @@ figcaption {
     height: 600px;
     margin-top: 10px;
 }
+.w100 {
+    width:100px;
+}
+
 .w600 {
     width:600px;
 }
