@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta content="Bolduc House Museum, field trips,arrangements, email, e-mail"
           name="keywords" />
-    <meta name="description" content="Email the Bolduc House Museum" /> 
+    <meta name="description" content="Email the Bolduc House Museum" />
     <script src="Scripts/jquery-1.10.2.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
@@ -14,155 +14,96 @@
     <link href="Content/Site.css" rel="stylesheet" />
     <link href="Content/Email.css" rel="stylesheet" />
 </head>
-<body><header>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="">The Bolduc House Museum</a>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="">The Bolduc House Museum</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="Default.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Explore.html">Explore</a></li>
+                        <li><a href="http://shop.bolduchouse.org">Shop</a></li>
+                        <li><a href="Email.html">Email Us</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="Default.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="Explore.html">Explore</a></li>
-                    <li><a href="http://shop.bolduchouse.org">Shop</a></li>
-                    <li><a href="Email.html">Email Us</a></li>
-                </ul>
+        </nav>
+    </header>
+    <div class="margin10">
+        <h1>Email Us</h1>
+        <p>These little email forms are really for your convenience for emailing from the site to help prompt you for necessary information. If you want to write a long letter, or attach something, please use your regular email provider. Your email address will appear in your email to us. </p>
+        <p><i>Please feel free to use these forms.</i></p>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Simple Note</a></li>
+            <li><a data-toggle="tab" href="#menu1">Tell Me About..</a></li>
+            <li><a data-toggle="tab" href="#menu2">Sign Me Up For...</a></li>
+            <li><a data-toggle="tab" href="#menu3">I Want To..</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <article>
+                    <h2>Dear Buldoc House Museum...</h2>
+                    <p>This email will go to the Operating Manager, Monsieur Robbie Pratte. </p>
+                    <p>Zuts would appreciate it if you would say NICE things about bilingual squirrels. </p>
+                    <form id="emailForm" action="MAILTO:thomasgengel34@yahoo.com?Subject=Email%20From%20Website&body=Error_notify_webmaster" method="post" enctype="text/plain" class="EmailForm">
+                      
+                        <p>From: (optional)</p>
+                        <input type="text" ID="tbSimpleName"
+                               placeholder="Zuts"
+                               MaxLength="20" TextMode="SingleLine"
+                               TabIndex="1" 
+                               data-toggle="tooltip"
+                               title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
+                               name="simpleName" /><br/>
+                     
+                        <p>If you wish, please call me at (optional)</p>
+                        <input type="tel" ID="tbSimplePhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' /><br />
+                        <p>Dear Monsieur Pratte,</p>
+                        <div>
+                            <textarea ID="tbSimpleComments" Rows="3" Columns="400" maxlength="200" ClientIDMode="Inherit" TextMode="MultiLine" style="width:100%;" required="required"
+                                      placeholder="This is limited to 200 characters - if you want to go beyond that, or add an attachment, please use your regular email provider.  That would probably be easier on you. :)" 
+                                          data-toggle="tooltip"
+                               title="Please enter SOMETHING!! - Zuts"></textarea>
+                            <p ID="lblSimpleResponse"></p>
+                            <div>
+                                <button ID="btnSimpleSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
+
+                                <button ID="btnSimpleClear" Text="Clear" class="btn btn-primary">Clear</button>
+                            </div>
+                        </div> 
+                    </form>
+                </article>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <article>
+                    <h2>Tell Me About...</h2>
+                    <p><em>This tab is under construction!</em></p>
+                </article>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <article>
+                    <h2>Sign Me Up For...</h2>
+                    <p><em>This tab is under construction!</em></p>
+                </article>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <article>
+                    <h2>I Want to...</h2>
+                    <p><em>This tab is under construction!</em></p>
+                </article>
             </div>
         </div>
-    </nav>
-</header>
-    <div class="margin50">
-        <h1>Email Us</h1>
-        <p><i>Feel free to use this form.</i></p>
-        <form id="emailForm" action="MAILTO:thomasgengel34@yahoo.com?Subject=Email%20From%20Website&body=Error_notify_webmaster" method="post" enctype="text/plain"  > 
-          
-            <div id="EmailForm" class="row">
-                <div class="col-md-4">
-                    <h3>About Me:</h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>My first name (required)</p>
-                            <input type="text" ID="tbFirstName"
-                                    placeholder="first name"
-                                    MaxLength="20" TextMode="SingleLine" 
-                                   TabIndex="1" required="required"
-                                   data-toggle="tooltip"
-                                   title="Please enter SOMETHING!!"
-                                   name="firstName"
-                                   />
-                            <p>Parent/Guardian first name*</p>
-                            <input ID="tbParentFirstName"
-                                   placeholder="parent first name"
-                                   MaxLength="20" TextMode="SingleLine"
-                                   TabIndex="3"
-                                   name="ParentFirstName"/>
-                            <p>Your Email (required)</p>
-                            <p>
-                                <input type="email" ID="tbEmail"
-                                       placeholder="zuts@bolduchouse.org"  
-                                       TabIndex="5" required="required"
-                                       name="email" />
-                            </p>
-
-                        </div>
-                        <div class="col-md-6">
-                            <p>My last name</p>
-                            <input type="text" ID="tbLastName"
-                                    placeholder="last name" MaxLength="20"
-                                    TextMode="SingleLine"
-                                    TabIndex="2"
-                                    name="LastName" />
-
-                            <p>Parent/Guardian Last Name*</p>
-                            <input ID="tbParentLastName" type="text"
-                                    placeholder="parent last name" MaxLength="20"
-                                    TextMode="SingleLine"
-                                    TabIndex="4"
-                                   name="ParentLastName" />
-                            <p>Parent/Guardian's Email</p>
-                            <p>
-                                <input type="email" ID="tbParentEmail"
-                                        TextMode="Email" 
-                                       placeholder="zuts@bolduchouse.org"
-                                        TabIndex="6"
-                                       name="ParentEmail" />
-                            </p>
-                        </div>
-                    </div>
-
-                    <p>Telephone Number</p>
-                    <input type="tel" ID="tbPhone"   placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone"  title='Phone Number (Format:  (999)999-9999)' />
-
-                    <input type="checkbox" ID="ckIsMobile" />
-                    Mobile Phone
-                    <p>
-                        <input type="checkbox" ID="ckIsAdult" />This was filled out by an adult.
-                    </p>
-                    <p class="ifAdult">*If you are an adult, don't worry about the Parent/Guardian info.  First name and email are all that are required here. If appropriate, please add grade and age information in the "Additional Information" box. Zuts would appreciate it if you would say nice things about bilingual squirrels. </p>
-                </div>
-                <div class="col-md-4">
-                    <h3>I am interested in:</h3>
-                    <p>
-                        <input type="checkbox" ID="ckComService" />
-                        Community Service
-                    </p>
-                    <p>
-                        <input type="checkbox" ID="ckScoutService" />
-                        Doing a Scout Service Project
-                    </p>
-                    <p>
-                        <input type="checkbox" ID="ckEagleScoutService" />
-                        Doing an Eagle Service Project
-                    </p>
-                    <p>
-                        <input type="checkbox" ID="ckNewsletter" />
-                        The free children's monthly newsletter
-                    </p>
-                    <p>
-                        <input type="checkbox" ID="ckArtContests" />
-                        Art Contests
-                    </p>
-                    <p>
-                        <input type="checkbox" ID="ckClassInfo" />
-                        Finding out more about our classes and programs
-                    </p>
-                    <p>
-                        <input type="checkbox" ID="ckRegistering" />
-                        Registering for our classes and programs
-                    </p>
-                    <p>
-                        <input type="checkbox" id="ckSquirrel" checked="checked">
-                        Feeding Zuts
-                    </p>
-                    <p class="zufeed" style="display: none;">Mais non! You wish M. Zuts to STARVE??</p>
-                    <p class="zufeed">Merci, mon ami!</p>
-
-                    <p id="pCats">
-                        <input type="checkbox" id="ckCats" />
-                        Cats
-                    </p>
-                </div>
-                <h3>Additional Information, Comments, Questions and Suggestions:</h3>
-                <div>
-                    <textarea ID="tbComments" Rows="25" Columns="400" maxlength="100" ClientIDMode="Inherit" TextMode="MultiLine" style="width:30%;"
-                              placeholder="Whew! That's a BIG title!! This is limited to 100 characters - if you want to go beyond that, or add an attachment, please use your regular email provider."></textarea>
-                    <p ID="lblResponse"></p>
-                    <div  >
-                        <button ID="btnSubmit"  type="submit" name="submit" class="btn btn-primary">Send</button>
-                 
-                        <button ID="btnClear" Text="Clear" class="btn btn-primary">Clear</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
+    </div> 
     <footer>
         <div id="AddressBar">125 South Main Street, Sainte Genevieve, MO USA 63670      Office 573-883-3105</div>
         <p>
@@ -171,9 +112,9 @@
         </p>
         <p>&copy; 2016 - The Bolduc House Museum. All rights reserved.</p>
         <p>Site design by <a href="http://www.prairiefirewind.com" target="_blank"><span class="pfw">PFW</span></a></p>
-    </footer>  
-    <script src="Scripts/jquery-1.10.2.js"></script> 
-    <script src="Scripts/Pages/Email.js"></script>  
-   
+    </footer>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/Pages/Email.js"></script>
+
 </body>
 </html>
