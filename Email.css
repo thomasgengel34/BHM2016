@@ -1,0 +1,36 @@
+﻿body {
+
+}
+.EmailForm{
+    border:1px solid #036;
+    box-shadow:inset 5px 0 5px 0;
+    background-color:rgba(252, 252, 126,0.2); 
+    /*font-family:'Comic Sans MS(10px)', Arial;*/
+    padding:10px;
+    color:#036;
+}
+ 
+    .zufeed:first-child {
+font-family:'Comic Sans MS(10px)'; 
+        color: red;
+        display: none;
+    }
+    .zufeed:last-child {
+font-family:'Comic Sans MS(10px)'; 
+        color: green;
+    }
+
+/*p::first-letter {
+    color: #036;
+    font-size: x-large;
+    font-family: "Times New Roman";
+    float: left;
+}*/
+
+p.ifAdult {
+    max-width:400px; 
+    width:67%; 
+    margin:10px;  
+}
+ 
+ 
