@@ -15,11 +15,12 @@ window.onload = function () {
     });
 
     $('#btnSimpleSubmit').on("click", bhme.sendSimpleEmail);
-
+    $('#btnSimpleClear').on("click", bhme.clearSimpleEmail);
+       
 }
 
 bhme.sendSimpleEmail = function () {
-    var subject = 'Simple%20Email%20from%20the%20Website';
+    var subject = 'Simple%20Email%20from%20www.bolduchouse.org';
     var name = "No name supplied.";
     if ($('#tbSimpleName').val().length>1) {
        name = encodeURIComponent($('#tbSimpleName').val());
@@ -31,21 +32,20 @@ bhme.sendSimpleEmail = function () {
     }  
     body +=  "  Telephone: " + phone; 
 
-    var tbSimpleComments = $('#tbSimpleComments').val();  
+    var tbSimpleComments = encodeURIComponent($('#tbSimpleComments').val());  
 
-          body +=  "  Comments: " + tbSimpleComments;
-           
-        body += "   You may see some odd characters in some of the above.  For example, a last name with a space in it:  von Zuts  will appear as von Zuts . This is a security feature.  Due to some new security features in email providers, it is now difficult to impossible to format emails in code.  The webmaster regrets this.  ";
- 
+          body +=  "  Comments: " + tbSimpleComments; 
 
-    var uri = 'mailto:thomasgengel34@yahoo.com';
+          var uri = 'mailto:Robbie.pratte@bolduchouse.org';
     uri += '?subject=' + (subject);
     uri += '&body=' + body; 
     $('#lblResponse').text('Thank you.  Your email has been sent!');
     $('#emailForm').attr("action", uri) 
 }
 
-bhme.ClearFields = function () {
-    // TODO: write this puppy and hook it up to the Clear button
+bhme.clearSimpleEmail = function () {
+    $('#tbSimpleName').val("");
+    $('#tbSimplePhone').val("");
+    $('#tbSimpleComments').val("");
 }
 

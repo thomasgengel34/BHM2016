@@ -55,7 +55,7 @@
                     <h2>Dear Buldoc House Museum...</h2>
                     <p>This email will go to the Operating Manager, Monsieur Robbie Pratte. </p>
                     <p>Zuts would appreciate it if you would say NICE things about bilingual squirrels. </p>
-                    <form id="emailForm" action="MAILTO:thomasgengel34@yahoo.com?Subject=Email%20From%20Website&body=Error_notify_webmaster" method="post" enctype="text/plain" class="EmailForm">
+                    <form id="emailForm"  method="post" enctype="text/plain" class="EmailForm">
                       
                         <p>From: (optional)</p>
                         <input type="text" ID="tbSimpleName"
@@ -70,8 +70,8 @@
                         <input type="tel" ID="tbSimplePhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' /><br />
                         <p>Dear Monsieur Pratte,</p>
                         <div>
-                            <textarea ID="tbSimpleComments" Rows="3" Columns="400" maxlength="200" ClientIDMode="Inherit" TextMode="MultiLine" style="width:100%;" required="required"
-                                      placeholder="This is limited to 200 characters - if you want to go beyond that, or add an attachment, please use your regular email provider.  That would probably be easier on you. :)" 
+                            <textarea ID="tbSimpleComments" Rows="3" Columns="400" maxlength="300" ClientIDMode="Inherit" TextMode="MultiLine" style="width:100%;" required="required"
+                                      placeholder="This is limited to 300 characters - if you want to go beyond that, or add an attachment, please use your regular email provider.  That would probably be easier on you. :)" 
                                           data-toggle="tooltip"
                                title="Please enter SOMETHING!! - Zuts"></textarea>
                             <p ID="lblSimpleResponse"></p>
@@ -88,7 +88,65 @@
                 <article>
                     <h2>Tell Me About...</h2>
                     <p><em>This tab is under construction!</em></p>
-                </article>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form id="emailForm" method="post" enctype="text/plain" class="EmailForm">
+                                <p>From: (optional)</p>
+                                <input type="text" ID="tbTellMeAboutName"
+                                       placeholder="Zuts"
+                                       MaxLength="20" TextMode="SingleLine"
+                                       TabIndex="1"
+                                       data-toggle="tooltip"
+                                       title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
+                                       name="simpleName" /><br />
+
+                                <p>If you wish, please call me at (optional)</p>
+                                <input type="tel" ID="tbTellMeAboutPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' /><br />
+                                <p>I am interested but not ready to sign up.  Please tell me about</p>
+                                <dl>
+                                    <dt>
+                                        <input type="checkbox" ID="ckComService" />
+                                        Community Service
+                                    </dt>
+                                    <dt>
+                                        <input type="checkbox" ID="ckScoutService" />
+                                        Doing a Scout Service Project
+                                    </dt>
+                                    <dt>
+                                        <input type="checkbox" ID="ckNewsletter" />
+                                        The free children's monthly newsletter
+                                    </dt>
+                                    <dt>
+                                        <input type="checkbox" ID="ckArtContests" />
+                                        Art Contests
+                                    </dt>
+                                    <dt>
+                                        <input type="checkbox" ID="ckClassInfo" />
+                                        Finding out more about our classes and programs
+                                    </dt>
+                                    <dt>
+                                        <input type="checkbox" id="ckSquirrel" checked="checked">
+                                        Feeding Zuts
+                                    </dt>
+                                    <dt id="pCats">
+                                        <input type="checkbox" id="ckCats" />
+                                        Cats
+                                    </dt>
+                                </dl>
+                                <p class="zufeed" style="display: none;">Mais non! You wish M. Zuts to STARVE??</p>
+                                <p class="zufeed">Merci, mon ami!</p>
+                                title="Please enter SOMETHING!! - Zuts"></textarea>
+                                <p ID="lblTellMeResponse"></p>
+                                <div>
+                                    <button ID="btnTellMeSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
+
+                                    <button ID="btnTellMeClear" Text="Clear" class="btn btn-primary">Clear</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+</article>
             </div>
             <div id="menu2" class="tab-pane fade">
                 <article>
