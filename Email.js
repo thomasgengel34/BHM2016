@@ -14,8 +14,8 @@ window.onload = function () {
         $("#pCats").toggle("explode");
     });
 
-    $('#btnSimpleSubmit').on("click", bhme.sendSimpleEmail);
-    $('#btnSimpleClear').on("click", bhme.clearSimpleEmail);
+    $('#btnSimpleSubmit').on("click", bhme.sendSimpleEmail); 
+    $('#btnTellMeSubmit').on("click", bhme.sendTellMeEmail); 
        
 }
 
@@ -42,10 +42,64 @@ bhme.sendSimpleEmail = function () {
     $('#lblResponse').text('Thank you.  Your email has been sent!');
     $('#emailForm').attr("action", uri) 
 }
+ 
 
-bhme.clearSimpleEmail = function () {
-    $('#tbSimpleName').val("");
-    $('#tbSimplePhone').val("");
-    $('#tbSimpleComments').val("");
+bhme.sendTellMeEmail = function () {
+    var subject = 'Inquiry%20Email%20from%20www.bolduchouse.org';
+    var name = "No name supplied.";
+    if ($('#tbTellMeName').val().length > 1) {
+        name = encodeURIComponent($('#tbTellMeName').val());
+    }
+    var body = "Name:  " + name;
+    var phone = "not filled out";
+    if ($('#tbTellMePhone').val().length > 1) {
+        phone = $('#tbTellMePhone').val();
+    }
+    body += "  Telephone: " + phone;
+
+    body += "  I am interested but not ready to sign up.  Please tell me about:  ";
+
+    var ckComService = "";
+    if ($('#ckComService').is(':checked')) {
+        ckComService = "Community service.";
+    }
+    body += "  " + ckComService;
+
+    var ckScoutService = "";
+    if ($('#ckScoutService').is(':checked')) {
+        ckScoutService = "Scout service.";
+    } 
+    body += "  " + ckScoutService;
+
+    var ckEagleScoutService= "";
+    if ($('#ckEagleScoutService').is(':checked')) {
+        ckEagleScoutService = "Eagle Scout service.";
+    } 
+    body += "  " + ckEagleScoutService;
+
+    var ckNewsletter= "";
+    if ($('#ckNewsletter').is(':checked')) {
+        ckNewsletter = "The free children's monthly newsletter.";
+    } 
+    body += "  " + ckNewsletter;
+
+    var ckArtContests= "";
+    if ($('#ckArtContests').is(':checked')) {
+        ckArtContests = "Art Contests.";
+    } 
+    body += "  " + ckArtContests;
+
+    var ckClassInfo= "";
+    if ($('#ckClassInfo').is(':checked')) {
+        ckClassInfo = "Finding out more about our classes and programs.";
+    } 
+    body += "  " + ckClassInfo;
+
+    var uri = 'mailto:info@bolduchouse.org';
+
+    uri += '?subject=' + (subject);
+    uri += '&body=' + body;
+   
+    $('#emailTellMeForm').attr("action", uri)
 }
-
+  

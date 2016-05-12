@@ -41,13 +41,17 @@
     </header>
     <div class="margin10">
         <h1>Email Us</h1>
-        <p>These little email forms are really for your convenience for emailing from the site to help prompt you for necessary information. If you want to write a long letter, or attach something, please use your regular email provider. Your email address will appear in your email to us. </p>
+        <p>These little email forms are really for your convenience for emailing from the site to help prompt you for necessary information. If you want to write a long letter, or attach something, please use your regular email provider after starting here. Your email address will appear in your email to us.  You must have an email provider set up.  This cuts down on spam and malicious emails.  We hope you understand. </p>
         <p><i>Please feel free to use these forms, perhaps just as a starter for a longer email.</i></p>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home">Simple Note</a></li>
             <li><a data-toggle="tab" href="#menu1">Tell Me About..</a></li>
             <li><a data-toggle="tab" href="#menu2">Sign Me Up For...</a></li>
-            <li><a data-toggle="tab" href="#menu3">I Want To..</a></li>
+            <li><a data-toggle="tab" href="#menu3">I Want To Volunteer...</a></li>
+            <li><a data-toggle="tab" href="#menu4">I Want to Donate Something...</a></li>
+            <li><a data-toggle="tab" href="#menu5">I Want To Donate a Cat</a></li>
+            <li><a data-toggle="tab" href="#menu6">I'm Thinking about Getting Married Here</a></li>
+            <li><a data-toggle="tab" href="#menu7">I'm Thinking about Bringing a Group</a></li>
         </ul>
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
@@ -78,7 +82,7 @@
                             <div>
                                 <button ID="btnSimpleSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
 
-                                <button ID="btnSimpleClear" Text="Clear" class="btn btn-primary">Clear</button>
+                                <button ID="btnSimpleClear" Text="Clear" type="reset" class="btn btn-primary">Clear</button>
                             </div>
                         </div> 
                     </form>
@@ -87,12 +91,13 @@
             <div id="menu1" class="tab-pane fade">
                 <article>
                     <h2>Tell Me About...</h2>
-                    <p><em>This tab is under construction!</em></p>
-                    <!--<div class="row">
+                    <p>This email will go to info@bolduchouse.org. </p>
+                    <p>Zuts has already checked the box indicating you are interested in feeding squirrels, as if there is any question. </p>
+                    <div class="row">
                         <div class="col-md-6">
-                            <form id="emailForm" method="post" enctype="text/plain" class="EmailForm">
+                            <form id="emailTellMeForm" method="post" enctype="text/plain" class="EmailForm">
                                 <p>From: (optional)</p>
-                                <input type="text" ID="tbTellMeAboutName"
+                                <input type="text" ID="tbTellMeName"
                                        placeholder="Zuts"
                                        MaxLength="20" TextMode="SingleLine"
                                        TabIndex="1"
@@ -101,7 +106,7 @@
                                        name="simpleName" /><br />
 
                                 <p>If you wish, please call me at (optional)</p>
-                                <input type="tel" ID="tbTellMeAboutPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' /><br />
+                                <input type="tel" ID="tbTellMePhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' /><br />
                                 <p>I am interested but not ready to sign up.  Please tell me about</p>
                                 <dl>
                                     <dt>
@@ -111,6 +116,10 @@
                                     <dt>
                                         <input type="checkbox" ID="ckScoutService" />
                                         Doing a Scout Service Project
+                                    </dt>
+                                    <dt>
+                                        <input type="checkbox" ID="ckEagleService" />
+                                        Doing an Eagle Service Project
                                     </dt>
                                     <dt>
                                         <input type="checkbox" ID="ckNewsletter" />
@@ -135,18 +144,20 @@
                                 </dl>
                                 <p class="zufeed" style="display: none;">Mais non! You wish M. Zuts to STARVE??</p>
                                 <p class="zufeed">Merci, mon ami!</p>
-                                title="Please enter SOMETHING!! - Zuts"></textarea>
-                                <p ID="lblTellMeResponse"></p>
                                 <div>
                                     <button ID="btnTellMeSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
-
-                                    <button ID="btnTellMeClear" Text="Clear" class="btn btn-primary">Clear</button>
+                                    <button ID="btnTellMeClear" Text="Clear" type="reset" class="btn btn-primary">Clear</button>
                                 </div>
-                            </form>
+                            </form> 
                         </div>
-                        <div class="col-md-6"></div>
-                    </div>-->
-</article>
+                        <div class="col-md-6">
+                            <figure>
+                                <img src="Images/Email/LaVieEnRoseCompetition_600.jpg" width="600" height="430" alt="First Annual La Vie En Rose Rose Competition"  />
+                                <figcaption>First Annual "La Vie En Rose" Rose Competition</figcaption>
+                            </figure> 
+                        </div>
+                    </div>
+                </article>
             </div>
             <div id="menu2" class="tab-pane fade">
                 <article>
@@ -156,7 +167,35 @@
             </div>
             <div id="menu3" class="tab-pane fade">
                 <article>
-                    <h2>I Want to...</h2>
+                    <h2>I Want to Volunteer...</h2>
+                    <p><em>This tab is under construction!</em></p>
+                    <p>Are you interested in volunteering at the Bolduc House Museum? We have a wide array of activities and departments that we are always looking for volunteers for from caring for our gardens, to help in the Archives, or helping with Historical Activities. </p>
+
+                </article>
+            </div>
+            <div id="menu4" class="tab-pane fade">
+                <article>
+                    <h2>I Want to Donate Something...</h2>
+                    <p><em>This tab is under construction!</em></p>
+                </article>
+            </div>
+            <div id="menu5" class="tab-pane fade">
+                <article>
+                    <h2>I Want to Donate A Cat...</h2>
+                    <p><em>This tab is under construction!</em></p>
+                    <p>WHAATT?? I understand WHY you want to give away such an animal. Sacre Bleu! But why us?? Feel free to take a cat. Take them ALL!! - Zuts</p>
+                    <p>Who? Who put this on my website? WHO! I will investigate PRONTO!!</p>
+                </article>
+            </div>
+            <div id="menu6" class="tab-pane fade">
+                <article>
+                    <h2>I'm Thinking about Getting Married Here</h2>
+                    <p><em>This tab is under construction!</em></p>
+                </article>
+            </div>
+            <div id="menu7" class="tab-pane fade">
+                <article>
+                    <h2>I'm Thinking about Bringing a Group</h2>
                     <p><em>This tab is under construction!</em></p>
                 </article>
             </div>
