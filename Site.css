@@ -147,3 +147,22 @@ figcaption {
 .w600 {
     width:600px;
 }
+
+.w1300 {
+    width:1300px;
+}
+.w4752{
+    width:4752px;
+    overflow:scroll;
+}
+
+/*.listStyleWithPecan {
+    list-style-image: url("../images/pecan_20.png");
+    list-style-position: outside;
+}*/
+
+    .listStyleWithPecan li {
+        list-style-image: url("../images/pecan_20.png");
+        list-style-position: outside; 
+    }
+   

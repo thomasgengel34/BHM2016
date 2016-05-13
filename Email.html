@@ -4,9 +4,9 @@
     <title>Email The Bolduc House Museum</title>
     <link rel="shortcut icon" href="favicon.ico" type="favicon/ico" />
     <meta charset="utf-8" />
-    <meta content="Bolduc House Museum, field trips,arrangements, email, e-mail"
+    <meta content="Bolduc House Museum, field trips, arrangements, email, e-mail, information"
           name="keywords" />
-    <meta name="description" content="Email the Bolduc House Museum" />
+    <meta name="description" content="Conveniences to email the Bolduc House Museum in Ste. Genevieve Missouri" />
     <script src="Scripts/jquery-1.10.2.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
@@ -64,7 +64,7 @@
                         <p>From: (optional)</p>
                         <input type="text" ID="tbSimpleName"
                                placeholder="Zuts"
-                               MaxLength="20" TextMode="SingleLine"
+                               MaxLength="20"  
                                TabIndex="1" 
                                data-toggle="tooltip"
                                title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
@@ -74,15 +74,14 @@
                         <input type="tel" ID="tbSimplePhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' /><br />
                         <p>Dear Monsieur Pratte,</p>
                         <div>
-                            <textarea ID="tbSimpleComments" Rows="3" Columns="400" maxlength="300" ClientIDMode="Inherit" TextMode="MultiLine" style="width:100%;" required="required"
+                            <textarea ID="tbSimpleComments" Rows="3"   maxlength="300"   style="width:100%;" required="required"
                                       placeholder="This is limited to 300 characters - if you want to go beyond that, or add an attachment, please use your regular email provider.  That would probably be easier on you. :)" 
                                           data-toggle="tooltip"
-                               title="Please enter SOMETHING!! - Zuts"></textarea>
-                            <p ID="lblSimpleResponse"></p>
+                               title="Please enter SOMETHING!! - Zuts"></textarea> 
                             <div>
                                 <button ID="btnSimpleSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
 
-                                <button ID="btnSimpleClear" Text="Clear" type="reset" class="btn btn-primary">Clear</button>
+                                <button ID="btnSimpleClear"  type="reset" class="btn btn-primary">Clear</button>
                             </div>
                         </div> 
                     </form>
@@ -95,58 +94,63 @@
                     <p>Zuts has already checked the box indicating you are interested in feeding squirrels, as if there is any question. </p>
                     <div class="row">
                         <div class="col-md-6">
-                            <form id="emailTellMeForm" method="post" enctype="text/plain" class="EmailForm">
-                                <p>From: (optional)</p>
-                                <input type="text" ID="tbTellMeName"
-                                       placeholder="Zuts"
-                                       MaxLength="20" TextMode="SingleLine"
-                                       TabIndex="1"
-                                       data-toggle="tooltip"
-                                       title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
-                                       name="simpleName" /><br />
-
-                                <p>If you wish, please call me at (optional)</p>
-                                <input type="tel" ID="tbTellMePhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' /><br />
-                                <p>I am interested but not ready to sign up.  Please tell me about</p>
-                                <dl>
-                                    <dt>
+                            <form id="emailTellMeForm" method="post" enctype="text/plain" class="EmailForm"> 
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>From: (optional)</p>
+                                        <input type="text" ID="tbTellMeName"
+                                               placeholder="Zuts"
+                                               MaxLength="20"
+                                               TabIndex="1"
+                                               data-toggle="tooltip"
+                                               title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
+                                               name="simpleName" /><br />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p>If you wish, please call me at (optional)</p>
+                                        <input type="tel" ID="tbTellMePhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' />  
+                                    </div>
+                                </div> 
+                                <h4>I am interested but not ready to sign up.  Please tell me about</h4>
+                                <ul class="listStyleWithPecan">
+                                    <li>
                                         <input type="checkbox" ID="ckComService" />
                                         Community Service
-                                    </dt>
-                                    <dt>
+                                    </li>
+                                    <li>
                                         <input type="checkbox" ID="ckScoutService" />
                                         Doing a Scout Service Project
-                                    </dt>
-                                    <dt>
+                                    </li>
+                                    <li>
                                         <input type="checkbox" ID="ckEagleService" />
                                         Doing an Eagle Service Project
-                                    </dt>
-                                    <dt>
+                                    </li>
+                                    <li>
                                         <input type="checkbox" ID="ckNewsletter" />
                                         The free children's monthly newsletter
-                                    </dt>
-                                    <dt>
+                                    </li>
+                                    <li>
                                         <input type="checkbox" ID="ckArtContests" />
                                         Art Contests
-                                    </dt>
-                                    <dt>
+                                    </li>
+                                    <li>
                                         <input type="checkbox" ID="ckClassInfo" />
                                         Finding out more about our classes and programs
-                                    </dt>
-                                    <dt>
+                                    </li>
+                                    <li>
                                         <input type="checkbox" id="ckSquirrel" checked="checked">
                                         Feeding Zuts
-                                    </dt>
-                                    <dt id="pCats">
+                                    </li>
+                                    <li id="pCats">
                                         <input type="checkbox" id="ckCats" />
                                         Cats
-                                    </dt>
-                                </dl>
+                                    </li>
+                                </ul>
                                 <p class="zufeed" style="display: none;">Mais non! You wish M. Zuts to STARVE??</p>
                                 <p class="zufeed">Merci, mon ami!</p>
                                 <div>
                                     <button ID="btnTellMeSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
-                                    <button ID="btnTellMeClear" Text="Clear" type="reset" class="btn btn-primary">Clear</button>
+                                    <button ID="btnTellMeClear"  type="reset" class="btn btn-primary">Clear</button>
                                 </div>
                             </form> 
                         </div>
