@@ -51,7 +51,8 @@
             <li><a data-toggle="tab" href="#menu4">I Want to Donate Something...</a></li>
             <li><a data-toggle="tab" href="#menu5">I Want To Donate a Cat</a></li>
             <li><a data-toggle="tab" href="#menu6">I'm Thinking about Getting Married Here</a></li>
-            <li><a data-toggle="tab" href="#menu7">I'm Thinking about Bringing a Group</a></li>
+            <li><a data-toggle="tab" href="#menu7">I'm Thinking about Bringing a Group</a></li> 
+            <li><a data-toggle="tab" href="#menu8">I Want to Sign my Child Up</a></li>
         </ul>
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
@@ -104,7 +105,7 @@
                                                TabIndex="1"
                                                data-toggle="tooltip"
                                                title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
-                                               name="simpleName" /><br />
+                                               name="simpleName" /> 
                                     </div>
                                     <div class="col-md-6">
                                         <p>If you wish, please call me at (optional)</p>
@@ -167,6 +168,49 @@
                 <article>
                     <h2>Sign Me Up For...</h2>
                     <p><em>This tab is under construction!</em></p>
+                    <form id="registrationForm" class="EmailForm" method="post">
+                        <h3>Who</h3>
+                        <label>Name</label>
+                        <input type="text" ID="tbRegisterName"
+                               placeholder="Zuts"
+                               MaxLength="20"
+                               TabIndex="1"
+                               data-toggle="tooltip"
+                               title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
+                               name="RegisterName" />
+                        <label>If you wish, please call me at (optional)</label>
+                        <input type="tel" ID="tbRegisterPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' />
+                        <h3>What</h3>
+                        <label>Event Name</label><br />
+                        <input type="text" id="tbEventName" placeholder="Ceramics Class" /> <br />
+                        <input type="checkbox" id="ckTour" /><label>Tour, not an event</label><br />
+                        <label>Event Coordinator (optional)</label><br />
+                        <input type="text" id="tbEventCoordinator" placeholder="Zuts" maxlength="25" />
+                        <h3>When</h3>  
+                        <input type="datetime" placeholder="08/19/2016 12:00 PM" /> 
+                        <h3>Where</h3>
+                        <p>Typically everyone gathers at the Linden House and then goes wherever. All tours start there. All classes meet there.  Please check something besides the Linden House if you KNOW you are supposed to meet elsewhere. That way, if you are wondering where your group is, we can find you!</p>
+                        <div class="radio">
+                            <input type="radio" name="where" value="Linden">Linden House<br>
+                            <input type="radio" name="where" value="J.B.Valle">J.B. Valle House<br>
+                            <input type="radio" name="where" value="LeMeilleur">LeMeilleur House  
+                        </div>
+                        <p>Those are the ONLY places you should ever start, unless someone on our staff has told you otherwise.</p>
+                        <h3>How</h3>
+                        <p>There is a map on the <a src="www.bolduchouse.org/About">About</a> page, as well as links to maps you can find on the internet for directions.</p>
+                        <p>Ste. Genevieve has MANY restaurants, hotels, bread-and-breakfasts, etc., if you are coming from out of town.</p>
+                        <p>Wear comfortable shoes. Think happy thoughts.  Bring a smile, just in case you need it. </p>
+                        <h3>Why</h3>
+                        <p>These are reflective questions for you.  Giving us your answers might help us make your visit more satisifying. Why are you coming? What do you want to know? What do you want to do? See? What, specifically, would tell you that your visit was successful (for the goal oriented) or enjoyable (for the sanguine)?  Don't feel like you need to give us answers. </p>
+                        <h3>I am bringing</h3>
+                        <p>You might think about bringing a camera,  project supplies, tools, a sketch pad.  That might make a difference. For example, if you want to set up an easel and paint, we would like to know about it so we can coordinate our efforts.  Members of tour groups might want to stop and give you, um, helpful suggestions. Or a wedding might start happening around you!  And we'd like to know who is about the place. </p>
+                        <h3>Dress for the weather</h3>
+                        <p>We have seasons. <em>Oh, do we have seasons! We are on the Mississippi River and we have a Midwestern climate.  Expect hot humidity in summer and snow and ice in winter.</em>And some of our buildings are neither heated or air-conditioned. So you might want to check!</p>
+                        <div>
+                            <button ID="btnRegisterSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
+                            <button  type="reset" class="btn btn-primary">Clear</button>
+                        </div>
+                    </form>
                 </article>
             </div>
             <div id="menu3" class="tab-pane fade">
@@ -200,6 +244,12 @@
             <div id="menu7" class="tab-pane fade">
                 <article>
                     <h2>I'm Thinking about Bringing a Group</h2>
+                    <p><em>This tab is under construction!</em></p>
+                </article>
+            </div>
+            <div id="menu8" class="tab-pane fade">
+                <article>
+                    <h2>I Want to Sign my Child Up</h2>
                     <p><em>This tab is under construction!</em></p>
                 </article>
             </div>
