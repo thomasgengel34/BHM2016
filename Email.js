@@ -16,7 +16,8 @@ window.onload = function () {
 
     $('#btnSimpleSubmit').on("click", bhme.sendSimpleEmail); 
     $('#btnTellMeSubmit').on("click", bhme.sendTellMeEmail); 
-       
+    $('#btnRegisterSubmit').on("click", bhme.sendRegisterEmail);
+    // TO DO: tour checkbox should toggle event name and coordinator
 }
 
 bhme.sendSimpleEmail = function () {
@@ -101,5 +102,48 @@ bhme.sendTellMeEmail = function () {
     uri += '&body=' + body;
    
     $('#emailTellMeForm').attr("action", uri)
+}
+
+bhme.sendRegisterEmail = function () {
+    var subject = 'Registration%20Email%20from%20www.bolduchouse.org';
+    var name = "No name supplied.";
+    if ($('#tbRegisterName').val().length > 1) {
+        name = encodeURIComponent($('#tbRegisterName').val());
+    }
+    var body = "Name:  " + name;
+    var phone = "not filled out";
+    if ($('#tbRegisterPhone').val().length > 1) {
+        phone = $('#tbRegisterPhone').val();
+    }
+    body += "  Telephone: " + phone;
+
+if ($('#ckTour').is(':checked')) {
+   body += "  Tour"
+    }
+else {
+    var eventName = "";
+    if ($('#tbEventName').val().length > 1) {
+        eventName = encodeURIComponent($('#tbEventName').val());
+      body += "  Event : " + eventName;
+    }
+    if ($('#tbEventCoordinator').val().length > 1) {
+       
+        body += "  Event Coordinator : " + encodeURIComponent($('#tbEventCoordinator').val());
+    }
+}
+
+var date = "   Date and time:  " + encodeURIComponent($('#tbDateTime').val());
+
+body += date;
+
+var where = "  Where:  " + $('[name="rbWhere"]:checked').val();
+body += where;
+
+//var uri = 'mailto:Robbie.pratte@bolduchouse.org';
+var uri = 'mailto:thomasgengel34@yahoo.com';
+uri += '?subject=' + (subject);
+uri += '&body=' + body;
+ 
+$('#registrationForm').attr("action", uri)
 }
   

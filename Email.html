@@ -62,18 +62,21 @@
                     <p>Zuts would appreciate it if you would say NICE things about bilingual squirrels. </p>
                     <form id="emailForm"  method="post" enctype="text/plain" class="EmailForm">
                       
-                        <p>From: (optional)</p>
-                        <input type="text" ID="tbSimpleName"
-                               placeholder="Zuts"
-                               MaxLength="20"  
-                               TabIndex="1" 
-                               data-toggle="tooltip"
-                               title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
-                               name="simpleName" /><br/>
-                     
-                        <p>If you wish, please call me at (optional)</p>
-                        <input type="tel" ID="tbSimplePhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' /><br />
-                        <p>Dear Monsieur Pratte,</p>
+                        <label>From: (optional)</label>
+                        <p>
+                            <input type="text" ID="tbSimpleName"
+                                   placeholder="Zuts"
+                                   MaxLength="20"
+                                   TabIndex="1"
+                                   data-toggle="tooltip"
+                                   title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
+                                   name="simpleName" /> 
+                        </p>
+                        <label>If you wish, please call me at (optional)</label>
+                        <p>
+                            <input type="tel" ID="tbSimplePhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' />
+                        </p>
+                        <label>Dear Monsieur Pratte,</label>
                         <div>
                             <textarea ID="tbSimpleComments" Rows="3"   maxlength="300"   style="width:100%;" required="required"
                                       placeholder="This is limited to 300 characters - if you want to go beyond that, or add an attachment, please use your regular email provider.  That would probably be easier on you. :)" 
@@ -98,18 +101,22 @@
                             <form id="emailTellMeForm" method="post" enctype="text/plain" class="EmailForm"> 
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <p>From: (optional)</p>
-                                        <input type="text" ID="tbTellMeName"
-                                               placeholder="Zuts"
-                                               MaxLength="20"
-                                               TabIndex="1"
-                                               data-toggle="tooltip"
-                                               title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
-                                               name="simpleName" /> 
+                                        <label>From: (optional)</label>
+                                        <p>
+                                            <input type="text" ID="tbTellMeName"
+                                                   placeholder="Zuts"
+                                                   MaxLength="20"
+                                                   TabIndex="1"
+                                                   data-toggle="tooltip"
+                                                   title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
+                                                   name="simpleName" />
+                                        </p> 
                                     </div>
                                     <div class="col-md-6">
-                                        <p>If you wish, please call me at (optional)</p>
-                                        <input type="tel" ID="tbTellMePhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' />  
+                                        <label>If you wish, please call me at (optional)</label>
+                                        <p>
+                                            <input type="tel" ID="tbTellMePhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' />
+                                        </p>
                                     </div>
                                 </div> 
                                 <h4>I am interested but not ready to sign up.  Please tell me about</h4>
@@ -166,49 +173,75 @@
             </div>
             <div id="menu2" class="tab-pane fade">
                 <article>
-                    <h2>Sign Me Up For...</h2>
+                    <h2>Registration for an Adult: Sign Me Up For...</h2>
                     <p><em>This tab is under construction!</em></p>
-                    <form id="registrationForm" class="EmailForm" method="post">
-                        <h3>Who</h3>
-                        <label>Name</label>
-                        <input type="text" ID="tbRegisterName"
-                               placeholder="Zuts"
-                               MaxLength="20"
-                               TabIndex="1"
-                               data-toggle="tooltip"
-                               title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
-                               name="RegisterName" />
-                        <label>If you wish, please call me at (optional)</label>
-                        <input type="tel" ID="tbRegisterPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' />
-                        <h3>What</h3>
-                        <label>Event Name</label><br />
-                        <input type="text" id="tbEventName" placeholder="Ceramics Class" /> <br />
-                        <input type="checkbox" id="ckTour" /><label>Tour, not an event</label><br />
-                        <label>Event Coordinator (optional)</label><br />
-                        <input type="text" id="tbEventCoordinator" placeholder="Zuts" maxlength="25" />
-                        <h3>When</h3>  
-                        <input type="datetime" placeholder="08/19/2016 12:00 PM" /> 
+                    <form id="registrationForm" class="EmailForm" method="post" enctype="text/plain">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h3>Who</h3>
+                                <label>Your Name</label>
+                                <p>
+                                    <input type="text" ID="tbRegisterName"
+                                           placeholder="Zuts"
+                                           MaxLength="25"
+                                           TabIndex="1"
+                                           data-toggle="tooltip"
+                                           title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
+                                           name="RegisterName"
+                                           required="required" />
+                                </p>
+                                <label>Phone (optional)</label>
+                                <p>
+                                    <input type="tel" ID="tbRegisterPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' />
+                                </p>
+                                <h3>What</h3>
+                                <p>
+                                    <input type="checkbox" id="ckTour" /><label>Tour, not an event</label><br />
+                                </p>
+                                <label>Event Name</label>
+                                <p>
+                                    <input type="text" id="tbEventName" placeholder="Ceramics Class" />
+                                </p>
+
+                                <label>Event Coordinator (optional)</label>
+                                <p>
+                                    <input type="text" id="tbEventCoordinator" placeholder="Zuts" maxlength="25" />
+                                </p>
+                                <h3>When</h3>
+                                <p>
+                                    <input  type="datetime" id="tbDateTime" placeholder="8/19/2016 12:00 PM" required="required" />
+                                </p>
+                            </div>
+                            <div class="col-md-10" style="margin:auto;">
+                                <figure>
+                                    <img src="Images/Email/WeddingReception.jpg" width="480" height="540" alt="Wedding Reception Behind the J.B.Valle House" />
+                                    <figcaption>Wedding Reception Behind the J.B.Valle House, first weekend of May, 2016</figcaption>
+                                </figure>
+                            </div>
+                        </div>
                         <h3>Where</h3>
-                        <p>Typically everyone gathers at the Linden House and then goes wherever. All tours start there. All classes meet there.  Please check something besides the Linden House if you KNOW you are supposed to meet elsewhere. That way, if you are wondering where your group is, we can find you!</p>
+                        <p>Typically everyone gathers at the Linden House and then goes wherever. All tours start there. All classes meet there.  Please check something besides the Linden House ONLY if you KNOW you are supposed to meet elsewhere. That way, if you are wondering where your group is, we can find you!</p>
                         <div class="radio">
-                            <input type="radio" name="where" value="Linden">Linden House<br>
-                            <input type="radio" name="where" value="J.B.Valle">J.B. Valle House<br>
-                            <input type="radio" name="where" value="LeMeilleur">LeMeilleur House  
+                            <input type="radio" name="rbWhere" value="Linden" checked="checked">Linden House<br>
+                            <input type="radio" name="rbWhere" value="J.B.Valle">J.B. Valle House<br>
+                            <input type="radio" name="rbWhere" value="LeMeilleur">LeMeilleur House
                         </div>
                         <p>Those are the ONLY places you should ever start, unless someone on our staff has told you otherwise.</p>
+
+
                         <h3>How</h3>
-                        <p>There is a map on the <a src="www.bolduchouse.org/About">About</a> page, as well as links to maps you can find on the internet for directions.</p>
+                        <p>There is a map on the <a href="http://www.bolduchouse.org/About.html" target="_blank">About</a> page, as well as links to maps you can find on the internet for directions.</p>
                         <p>Ste. Genevieve has MANY restaurants, hotels, bread-and-breakfasts, etc., if you are coming from out of town.</p>
                         <p>Wear comfortable shoes. Think happy thoughts.  Bring a smile, just in case you need it. </p>
                         <h3>Why</h3>
                         <p>These are reflective questions for you.  Giving us your answers might help us make your visit more satisifying. Why are you coming? What do you want to know? What do you want to do? See? What, specifically, would tell you that your visit was successful (for the goal oriented) or enjoyable (for the sanguine)?  Don't feel like you need to give us answers. </p>
-                        <h3>I am bringing</h3>
+                        <h3>I am bringing...</h3>
                         <p>You might think about bringing a camera,  project supplies, tools, a sketch pad.  That might make a difference. For example, if you want to set up an easel and paint, we would like to know about it so we can coordinate our efforts.  Members of tour groups might want to stop and give you, um, helpful suggestions. Or a wedding might start happening around you!  And we'd like to know who is about the place. </p>
                         <h3>Dress for the weather</h3>
                         <p>We have seasons. <em>Oh, do we have seasons! We are on the Mississippi River and we have a Midwestern climate.  Expect hot humidity in summer and snow and ice in winter.</em>And some of our buildings are neither heated or air-conditioned. So you might want to check!</p>
                         <div>
                             <button ID="btnRegisterSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
-                            <button  type="reset" class="btn btn-primary">Clear</button>
+                            <button type="reset" class="btn btn-primary">Clear</button>
                         </div>
                     </form>
                 </article>
