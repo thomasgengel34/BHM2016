@@ -18,6 +18,7 @@ window.onload = function () {
     $('#btnTellMeSubmit').on("click", bhme.sendTellMeEmail); 
     $('#btnRegisterSubmit').on("click", bhme.sendRegisterEmail);
     // TO DO: tour checkbox should toggle event name and coordinator
+    $('#ckTour').click(function () { $('#toggleTour').toggle(); });
 }
 
 bhme.sendSimpleEmail = function () {
@@ -103,6 +104,7 @@ bhme.sendTellMeEmail = function () {
    
     $('#emailTellMeForm').attr("action", uri)
 }
+ 
 
 bhme.sendRegisterEmail = function () {
     var subject = 'Registration%20Email%20from%20www.bolduchouse.org';
@@ -139,8 +141,7 @@ body += date;
 var where = "  Where:  " + $('[name="rbWhere"]:checked').val();
 body += where;
 
-//var uri = 'mailto:Robbie.pratte@bolduchouse.org';
-var uri = 'mailto:thomasgengel34@yahoo.com';
+var uri = 'mailto:participate@bolduchouse.org'; 
 uri += '?subject=' + (subject);
 uri += '&body=' + body;
  
