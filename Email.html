@@ -42,7 +42,7 @@
     <div class="margin10">
         <h1>Email Us</h1>
         <p>These little email forms are really for your convenience for emailing from the site to help prompt you for necessary information. If you want to write a long letter, or attach something, please use your regular email provider after starting here. Your email address will appear in your email to us.  You must have an email provider set up.  This cuts down on spam and malicious emails.  We hope you understand. </p>
-        <p><i>Please feel free to use these forms, perhaps just as a starter for a longer email.</i></p>
+        <p><i>Please feel free to use these forms, perhaps just as a starter for a longer email.</i></p> 
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home">Simple Note</a></li>
             <li><a data-toggle="tab" href="#menu1">Tell Me About..</a></li>
@@ -59,7 +59,7 @@
                 <article>
                     <h2>Dear Buldoc House Museum...</h2>
                     <p><em>This email will go to the Operating Manager, Monsieur <a href="mailto:Robbie.pratte@bolduchouse.org">Robbie Pratte. </a></em></p>
-                   
+
                     <p>Zuts would appreciate it if you would say NICE things about bilingual squirrels. </p>
                     <form id="emailForm" method="post" enctype="text/plain" class="EmailForm">
 
@@ -86,7 +86,7 @@
                             <div>
                                 <button ID="btnSimpleSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
 
-                                <button ID="btnSimpleClear" type="reset" class="btn btn-primary">Clear</button>
+                                <button  type="reset" class="btn btn-primary">Clear</button>
                             </div>
                         </div>
                     </form>
@@ -95,7 +95,7 @@
             <div id="menu1" class="tab-pane fade">
                 <article>
                     <h2>Tell Me About...</h2>
-                    <p><em>This email will go to <a href="mailto:info@bolduchouse.org">info@bolduchouse.org</a></em></p> 
+                    <p><em>This email will go to <a href="mailto:info@bolduchouse.org">info@bolduchouse.org</a></em></p>
                     <p>Zuts has already checked the box indicating you are interested in feeding squirrels, as if there is any question. </p>
                     <div class="row">
                         <div class="col-md-6">
@@ -159,7 +159,7 @@
                                 <p class="zufeed">Merci, mon ami!</p>
                                 <div>
                                     <button ID="btnTellMeSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
-                                    <button ID="btnTellMeClear" type="reset" class="btn btn-primary">Clear</button>
+                                    <button  type="reset" class="btn btn-primary">Clear</button>
                                 </div>
                             </form>
                         </div>
@@ -252,21 +252,125 @@
             <div id="menu3" class="tab-pane fade">
                 <article>
                     <h2>I Want to Volunteer...</h2>
-                    <p><em>This tab is under construction!</em></p>
-                    <p>Are you interested in volunteering at the Bolduc House Museum? We have a wide array of activities and departments that we are always looking for volunteers for from caring for our gardens, to help in the Archives, or helping with Historical Activities. </p>
+                    <p><em>This email will go to <a href="mailto:participate@bolduchouse.org">participate@bolduchouse.org</a></em></p>
+                    <h4>Are you interested in volunteering at the Bolduc House Museum? </h4>
+                    <p>We have a wide array of activities and departments that we are always looking for volunteers for from caring for our gardens, to help in the Archives, or helping with Historical Activities. </p>
+                    <form id="volunteerForm" class="EmailForm" method="post" enctype="text/plain">
+                        <h4>Please tell us what you are interested in helping with. For example (This is NOT a complete list): </h4>
+                        <div class="row listStyleWithPecan">
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Gardening</li>
+                                    <li>Landscaping</li>
+                                    <li>Handyman</li>
+                                    <li>Furniture Refinishing</li>
+                                    <li>Library / Archives</li>
+                                    <li>Costume Making</li>
+                                    <li>Tailoring / fur-making</li>
+                                    <li>Carpentry</li>
+                                    <li>Moving furniture and other heavy stuff</li>
+                                    <li>Flatwork</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul> 
+                                    <li>Tuckpointing and masonry</li>
+                                    <li>Exterior Painting</li>
+                                    <li>Interior Painting</li>
+                                    <li>Translating French to English</li>
+                                    <li>Warp Drive technology </li>
+                                    <li>Weaving</li>
+                                    <li>Candlemaking</li>
+                                    <li>Glass-blowing</li>
+                                    <li>Blacksmithing / coppersmithing / metalworking</li>
+                                    <li>Seasonal decorating</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Historical research</li>
+                                    <li>Preservation of artifacts</li>
+                                    <li>Cataloging</li>
+                                    <li>Office help</li>
+                                    <li>Period music</li>
+                                    <li>Story telling</li>
+                                    <li>Teaching period dance</li>
+                                    <li>Leading and teaching old-time games</li>
+                                    <li>Leading Tours</li>
+                                    <li>Historical acting / portrayal </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <label>Your Name (required)</label>
+                        <p>
+                            <input type="text" ID="tbVolunteerName"
+                                   placeholder="Zuts"
+                                   MaxLength="25"
+                                   TabIndex="1"
+                                   data-toggle="tooltip"
+                                   title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
+                                   name="VolunteerName"
+                                   required="required" />
+                        </p>
+                        <label>Phone (optional)</label>
+                        <p>
+                            <input type="tel" ID="tbVolunteerPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' />
+                        </p>
+                        <div>
+                            <button ID="btnVolunteerSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
+                            <button type="reset" class="btn btn-primary">Clear</button>
+                        </div>
 
+                    </form>
+                    <h4>In your email to us...</h4>
+                    <p>Please tell us if you have no experience, you are a beginner, a professional or an expert at what you are interested in. </p>
+                    <p>What kind of a commitment in hours are you willing to make over the next six months?</p>
+                    <p>How far from the Museum do you live?  The Museum cannot furnish transportation.  Can you furnish your own?</p>
+                    <p>What does the Museum means to you?</p>
+                    <p>Some skills need a lot of equipment, for example blacksmithing, that we do not have. If you are volunteering yours, please let us know.</p>
+                    <p>Are you conversationally fluent in French? English? No? Well, how about Jawa? Klingon maybe? Elvish? Some of our visitors are from very far away. Far, far away. We never know who will come and it is good to be prepared. </p> 
                 </article>
             </div>
             <div id="menu4" class="tab-pane fade">
                 <article>
-                    <h2>I Want to Donate Something...</h2>
-                    <p><em>This tab is under construction!</em></p>
+                    <h2>I Want to Donate Something...</h2> 
+                    <p><em>This email will go to the Operating Manager, Monsieur <a href="mailto:Robbie.pratte@bolduchouse.org">Robbie Pratte. </a></em></p>
+
+                    <p>Monetary donations can be given directly through <a href="http://shop.bolduchouse.org">the Shop</a>.</p>
+                    <p>Please attach a full description of the item.  Pictures of the item might help.  Please tell us how you are going to bring it to the Museum. We cannot accept many items, including those outside of the period of the Museum's history.  There are items that we would love to have but dare not even dream that we would ever find them.  We appreciate your interest.</p>
+                    <p>Zuts would appreciate it if you would donate things to benefit literary squirrels. </p>
+                    <form id="emailDonateForm" method="post" enctype="text/plain" class="EmailForm">
+
+                        <label>From: (optional)</label>
+                        <p>
+                            <input type="text" ID="tbGiverName"
+                                   placeholder="Zuts"
+                                   MaxLength="20"
+                                   TabIndex="1" 
+                                   name="giverName" />
+                        </p>
+                        <label>If you wish, please call me at (optional)</label>
+                        <p>
+                            <input type="tel" ID="tbGiverPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' />
+                        </p>
+                        <label>Dear Monsieur Pratte,</label>
+                        <div>
+                            <textarea ID="tbGiverComments" Rows="3" maxlength="300" style="width:100%;" required="required"
+                                      placeholder="This is limited to 300 characters - if you want to go beyond that, or add an attachment, please use your regular email provider.  That would probably be easier on you. :)"
+                                      data-toggle="tooltip"
+                                      title="Please enter SOMETHING!! - Zuts"></textarea>
+                            <div>
+                                <button ID="btnGiverSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
+
+                                <button   type="reset" class="btn btn-primary">Clear</button>
+                            </div>
+                        </div>
+                    </form>
                 </article>
             </div>
             <div id="menu5" class="tab-pane fade">
                 <article>
-                    <h2>I Want to Donate A Cat...</h2>
-                    <p><em>This tab is under construction!</em></p>
+                    <h2>I Want to Donate A Cat...</h2> 
                     <p>WHAATT?? I understand WHY you want to give away such an animal. Sacre Bleu! But why us?? Feel free to take a cat. Take them ALL!! - Zuts</p>
                     <p>Who? Who put this on my website? WHO! I will investigate PRONTO!!</p>
                 </article>

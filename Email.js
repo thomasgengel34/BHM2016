@@ -14,37 +14,40 @@ window.onload = function () {
         $("#pCats").toggle("explode");
     });
 
-    $('#btnSimpleSubmit').on("click", bhme.sendSimpleEmail); 
-    $('#btnTellMeSubmit').on("click", bhme.sendTellMeEmail); 
+    $('#btnSimpleSubmit').on("click", bhme.sendSimpleEmail);
+    $('#btnTellMeSubmit').on("click", bhme.sendTellMeEmail);
     $('#btnRegisterSubmit').on("click", bhme.sendRegisterEmail);
-    // TO DO: tour checkbox should toggle event name and coordinator
+    $('#btnVolunteerSubmit').on("click", bhme.sendVolunteerEmail);
+    $('#btnGiverSubmit').on("click", bhme.sendDonationEmail);
+
+
     $('#ckTour').click(function () { $('#toggleTour').toggle(); });
 }
 
 bhme.sendSimpleEmail = function () {
     var subject = 'Simple%20Email%20from%20www.bolduchouse.org';
     var name = "No name supplied.";
-    if ($('#tbSimpleName').val().length>1) {
-       name = encodeURIComponent($('#tbSimpleName').val());
-    } 
-    var body = "Name:  " + name;   
-    var phone ="not filled out";
-    if ($('#tbSimplePhone').val().length>1){
-        phone= $('#tbSimplePhone').val();
-    }  
-    body +=  "  Telephone: " + phone; 
+    if ($('#tbSimpleName').val().length > 1) {
+        name = encodeURIComponent($('#tbSimpleName').val());
+    }
+    var body = "Name:  " + name;
+    var phone = "not filled out";
+    if ($('#tbSimplePhone').val().length > 1) {
+        phone = $('#tbSimplePhone').val();
+    }
+    body += "  Telephone: " + phone;
 
-    var tbSimpleComments = encodeURIComponent($('#tbSimpleComments').val());  
+    var tbSimpleComments = encodeURIComponent($('#tbSimpleComments').val());
 
-          body +=  "  Comments: " + tbSimpleComments; 
+    body += "  Comments: " + tbSimpleComments;
 
-          var uri = 'mailto:Robbie.pratte@bolduchouse.org';
+    var uri = 'mailto:Robbie.pratte@bolduchouse.org';
     uri += '?subject=' + (subject);
-    uri += '&body=' + body; 
+    uri += '&body=' + body;
     $('#lblResponse').text('Thank you.  Your email has been sent!');
-    $('#emailForm').attr("action", uri) 
+    $('#emailForm').attr("action", uri)
 }
- 
+
 
 bhme.sendTellMeEmail = function () {
     var subject = 'Inquiry%20Email%20from%20www.bolduchouse.org';
@@ -70,41 +73,41 @@ bhme.sendTellMeEmail = function () {
     var ckScoutService = "";
     if ($('#ckScoutService').is(':checked')) {
         ckScoutService = "Scout service.";
-    } 
+    }
     body += "  " + ckScoutService;
 
-    var ckEagleScoutService= "";
+    var ckEagleScoutService = "";
     if ($('#ckEagleScoutService').is(':checked')) {
         ckEagleScoutService = "Eagle Scout service.";
-    } 
+    }
     body += "  " + ckEagleScoutService;
 
-    var ckNewsletter= "";
+    var ckNewsletter = "";
     if ($('#ckNewsletter').is(':checked')) {
         ckNewsletter = "The free children's monthly newsletter.";
-    } 
+    }
     body += "  " + ckNewsletter;
 
-    var ckArtContests= "";
+    var ckArtContests = "";
     if ($('#ckArtContests').is(':checked')) {
         ckArtContests = "Art Contests.";
-    } 
+    }
     body += "  " + ckArtContests;
 
-    var ckClassInfo= "";
+    var ckClassInfo = "";
     if ($('#ckClassInfo').is(':checked')) {
         ckClassInfo = "Finding out more about our classes and programs.";
-    } 
+    }
     body += "  " + ckClassInfo;
 
     var uri = 'mailto:info@bolduchouse.org';
 
     uri += '?subject=' + (subject);
     uri += '&body=' + body;
-   
+
     $('#emailTellMeForm').attr("action", uri)
 }
- 
+
 
 bhme.sendRegisterEmail = function () {
     var subject = 'Registration%20Email%20from%20www.bolduchouse.org';
@@ -119,32 +122,77 @@ bhme.sendRegisterEmail = function () {
     }
     body += "  Telephone: " + phone;
 
-if ($('#ckTour').is(':checked')) {
-   body += "  Tour"
+    if ($('#ckTour').is(':checked')) {
+        body += "  Tour"
     }
-else {
-    var eventName = "";
-    if ($('#tbEventName').val().length > 1) {
-        eventName = encodeURIComponent($('#tbEventName').val());
-      body += "  Event : " + eventName;
+    else {
+        var eventName = "";
+        if ($('#tbEventName').val().length > 1) {
+            eventName = encodeURIComponent($('#tbEventName').val());
+            body += "  Event : " + eventName;
+        }
+        if ($('#tbEventCoordinator').val().length > 1) {
+
+            body += "  Event Coordinator : " + encodeURIComponent($('#tbEventCoordinator').val());
+        }
     }
-    if ($('#tbEventCoordinator').val().length > 1) {
-       
-        body += "  Event Coordinator : " + encodeURIComponent($('#tbEventCoordinator').val());
-    }
+
+    var date = "   Date and time:  " + encodeURIComponent($('#tbDateTime').val());
+
+    body += date;
+
+    var where = "  Where:  " + $('[name="rbWhere"]:checked').val();
+    body += where;
+
+    var uri = 'mailto:participate@bolduchouse.org';
+    uri += '?subject=' + (subject);
+    uri += '&body=' + body;
+
+    $('#registrationForm').attr("action", uri)
 }
 
-var date = "   Date and time:  " + encodeURIComponent($('#tbDateTime').val());
+bhme.sendVolunteerEmail = function () {
 
-body += date;
+    var subject = 'Volunteer%20Email%20from%20www.bolduchouse.org';
+    var name = "No name supplied.";
+    if ($('#tbVolunteerName').val().length > 1) {
+        name = encodeURIComponent($('#tbVolunteerName').val());
+    }
+    var body = "Name:  " + name;
+    var phone = "not filled out";
+    if ($('#tbVolunteerPhone').val().length > 1) {
+        phone = $('#tbVolunteerPhone').val();
+    }
+    body += "  Telephone: " + phone;
 
-var where = "  Where:  " + $('[name="rbWhere"]:checked').val();
-body += where;
 
-var uri = 'mailto:participate@bolduchouse.org'; 
-uri += '?subject=' + (subject);
-uri += '&body=' + body;
- 
-$('#registrationForm').attr("action", uri)
+    var uri = 'mailto:participate@bolduchouse.org';
+    uri += '?subject=' + (subject);
+    uri += '&body=' + body;
+
+    $('#volunteerForm').attr("action", uri);
 }
-  
+
+bhme.sendDonationEmail = function () {
+    var subject = 'Donation%20Email%20from%20www.bolduchouse.org';
+    var name = "No name supplied.";
+    if ($('#tbGiverName').val().length > 1) {
+        name = encodeURIComponent($('#tbVolunteerName').val());
+    }
+    var body = "Name:  " + name;
+    var phone = "not filled out";
+    if ($('#tbGiverPhone').val().length > 1) {
+        phone = $('#tbGiverPhone').val();
+    }
+    body += "  Telephone: " + phone;
+
+    var tbGiverComments = encodeURIComponent($('#tbGiverComments').val());
+
+    body += "  Comments: " + tbGiverComments;
+
+    var uri = 'mailto:Robbie.pratte@bolduchouse.org';
+    uri += '?subject=' + (subject);
+    uri += '&body=' + body;
+
+    $('#emailDonateForm').attr("action", uri);
+}
