@@ -1,0 +1,13 @@
+﻿body {
+}
+ 
+ 
+    .zufeed:first-child {
+font-family:'Comic Sans MS (25px)'; 
+        color: red;
+        display: none;
+    }
+    .zufeed:last-child {
+font-family:'Comic Sans MS (25px)'; 
+        color: green;
+    } 
