@@ -13,6 +13,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/BolducHouse.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/Email.css" rel="stylesheet" />
     <link href="Content/Kids.css" rel="stylesheet" />
 </head>
 <body>
@@ -139,7 +140,11 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                     <div class="row">
                         <div class="col-md-2">
                             <p>
-                                <img alt="Zut's Paw Print" src="images/Kids/Pawprint.jpg" />
+                                <figure>
+                                    <img alt="Zut's Paw Print" src="images/Kids/Pawprint.jpg" />
+                                    <figcaption>The paw print of M. Zuts!</figcaption>
+                                </figure>
+                                
                             </p>
                         </div>
                         <div class="col-md-8">
@@ -186,99 +191,117 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                     <p>Get free admission and a birthday sticker when you come to the Museum during your birthday week.</p>
                     <p>
                         Hold your birthday party here, too!!
-                    </p>
-                    <p style="margin-left: 10px;">
-                        <figure>
+                    </p> 
+                        <figure class="Centered600">
                             <img alt="Zuts Birthday Club stuffed animals having a party on a table"
                                  src="images/Kids/ZutsBirthdayClub/BirthdaySquirrel_600.jpg" width="600" height="600" /> 
                     <figcaption> Members of Zuts' Birthday Club Having a Good Old Time! </figcaption>
                     </figure>
+                        </p>
                     <p>Visit us on the web and in Ste. Genevieve often to find out what’s happening for kids your age. </p>
                 </article>
                 <article>
                     <h2>Sign Up for a Party Here!</h2>
                     <form id="registrationForm" class="EmailForm" method="post" enctype="text/plain">
                         <div class="row">
-                            <div class="col-md-2">
-                                <h3>Who</h3>
+                            <div class="col-md-6">
+                                <h3>About You</h3>
                                 <label>Your Name</label>
                                 <p>
-                                    <input type="text" ID="tbRegisterName"
-                                           placeholder="Zuts"
+                                    <input type="text" ID="tbParentName"
+                                           placeholder="Tit Monsieur"
                                            MaxLength="25"
                                            TabIndex="1"
                                            data-toggle="tooltip"
                                            title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
-                                           name="RegisterName"
+                                           name="RegisterParentName"
+                                           required="required" />
+                                </p>
+                                <label>Child's Name</label>
+                                <p>
+                                    <input type="text" ID="tbChildName"
+                                           placeholder="Zuts"
+                                           MaxLength="25"
+                                           TabIndex="2"
+                                           data-toggle="tooltip"
+                                           title="Mon ami, I would like to know your name!! - Zuts"
+                                           name="RegisterChildName"
                                            required="required" />
                                 </p>
                                 <label>Phone (optional)</label>
                                 <p>
-                                    <input type="tel" ID="tbRegisterPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' />
+                                    <input type="tel" ID="tbRegisterPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' TabIndex="3" />
                                 </p>
+                                <h3>Birthday</h3> 
+                                <input type="date" id="tbBirthday" placeholder="April 1, 2004" name="Birthday"  TabIndex="4"/>
+                                <h3>Boy or Girl?</h3>
+                                <h3>Favorite Animal</h3>
+                                <h3>Favorite Color</h3>
+                                <h3>Favorite Song</h3>
                             </div>
-                                </div>
-                                </form>
-
-                                <!-- <asp:RequiredFieldValidator ID="rfvName" runat="server"
-                                                    ControlToValidate="tbName" Display="Dynamic" ErrorMessage="a name is required"
-                                                    Font-Names="Comic Sans MS" ForeColor="Red"></asp:RequiredFieldValidator>
-                        <br />
-                        <asp:TextBox ID="tbName" runat="server" Width="200px">your name</asp:TextBox>
-
-                        <br />
-                        <br />
-                        <br />
-                        <asp:TextBox ID="tbEmail" runat="server" Width="200px">your email address</asp:TextBox>
-                        <asp:RegularExpressionValidator ID="revEmail" runat="server"
-                                                        ControlToValidate="tbEmail" Display="Dynamic"
-                                                        ErrorMessage="Please enter a valid email" Font-Names="Comic Sans MS"
-                                                        ForeColor="Red"
-                                                        ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-                        <asp:RequiredFieldValidator ID="rfvEmail" runat="server"
-                                                    ControlToValidate="tbEmail" Display="Dynamic"
-                                                    ErrorMessage="An email address is required" Font-Names="Comic Sans MS"
-                                                    ForeColor="Red"></asp:RequiredFieldValidator>
-                        <br />
-                        <br />
-                        <br />
-                        <asp:RequiredFieldValidator ID="rfvComments" runat="server"
-                                                    ControlToValidate="tbComment" Display="Dynamic"
-                                                    ErrorMessage="Please enter SOMETHING!!" ForeColor="Red"></asp:RequiredFieldValidator>
-                        <asp:TextBox ID="tbComment" runat="server" MaxLength="500" Rows="3"
-                                     TextMode="MultiLine" Width="100%">
-
-                            Child’s Name _________________
-                            Mailing Address:
-                            _____________________________
-                            City _________________________
-                            State__________ Zip __________
-                            Birthday Month ______ Day_____
-                            Zuts will mail you a birthday card within two weeks of your birthday. He loves to hear from the kids in his birthday club too so find and like his Face Book page.
-                            Zuts celebrates his birthday every year with a Garden Party during the week of Ground Hog Day.
-                        </asp:TextBox>
-                        <asp:Label ID="lblConfirm" runat="server" Visible="False"></asp:Label>
-                        <br />
-                        <br />
-                        <br />
-
-                        <asp:ImageButton ID="btnReSet" runat="server" OnClick="btnReSet_Click"
-                                         ImageUrl="~/images/ImageButtons/Oops.jpg" AlternateText="Clear Message" />
-
-                        <asp:ImageButton ID="btnSend" runat="server"
-                                         ImageUrl="~/images/ImageButtons/Send.jpg"
-                                         OnClick="btnSend_Click" />
-                        <br />
-                        <br />
--->
-
-
+                            <div class="col-md-6">
+                                <h3>Mailing Address:</h3>
+                                <address>
+                                    <label>Street</label>
+                                    <p>
+                                        <input type="text" ID="tbStreet"
+                                               placeholder="125 South Main Street"
+                                               MaxLength="40"
+                                              TabIndex="5"
+                                               name="Street Address" />
+                                    </p>
+                                    <label>City</label>
+                                    <p>
+                                        <input type="text" ID="tbCity"
+                                               placeholder="Sainte Genevieve"
+                                               MaxLength="40"
+                                               TabIndex="6"
+                                               name="City" />
+                                    </p>
+                                    <label>State</label>
+                                    <p>
+                                        <input type="text" ID="tbState"
+                                               placeholder="Missouri"
+                                               MaxLength="40"
+                                               TabIndex="7"
+                                               name="State" />
+                                    </p>
+                                    <label>Country</label>
+                                    <p>Note: at this time we can only send cards to the US and Canada. If you live in another country, we can send you an e-card!</p>
+                                    <p>
+                                        <input type="text" ID="tbCountry"
+                                               placeholder="USA"
+                                               MaxLength="40"
+                                               TabIndex="8"
+                                               name="Country" />
+                                    </p>
+                                    <label>Zip/Postal Code</label>
+                                    <p>
+                                        <input type="text" ID="tbPostalCode"
+                                               placeholder="63670"
+                                               MaxLength="20"
+                                               TabIndex="9"
+                                               name="Postal Code" />
+                                    </p>
+                                </address> 
+                            </div>
+                        </div>
+                        <div>
+                            <button ID="btnZutsBdClubSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
+                            <button type="reset" class="btn btn-primary">Clear</button>
+                        </div>
+                    </form>
+                     
+                       
+                    <p>Zuts will mail you a birthday card within two weeks of your birthday. He loves to hear from the kids in his birthday club too so find and like his Face Book page.</p> 
+                          <p>Zuts celebrates his birthday every year with a Garden Party during the week of Ground Hog Day.</p>   
                     </article>
                                 <article>
-                                    <h2>Happy Birthday to ME!</h2>
-                                    <p style="margin-left: 10px;">
-                                        <img alt="Zuts crowned" src="Images/Kids/ZutsBirthdayClub/Birthday_ZutsCrowned_600.jpg" width="600" height="800" />
-                                    </p>
+                                    <h2>Happy Birthday to ME!</h2> 
+                                        <figure class="Centered600">
+                                            <img alt="Zuts crowned" src="Images/Kids/ZutsBirthdayClub/Birthday_ZutsCrowned_600.jpg" width="600" height="800" />
+                                            <figcaption>I am SOMEBODY!!</figcaption>
+                                        </figure> 
                                 </article>
 
 
