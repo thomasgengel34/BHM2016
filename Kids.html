@@ -7,7 +7,7 @@
     <meta content="Bolduc House Museum, National Historic Landmark, Ste. Genevieve, Stegen, Ste.Gen,
 French Colonial History, Missouri French, Missouri French History, 18th Century Missouri, colonial site, Missouri tourist attraction, Mississippi River town, spectacular gardens, attraction,Museum mascot, Zuts, the literate bilingual French & English speaking squirrel, Missouri history for homeschoolers, families, field trips"
           name="keywords" />
-    <meta content="Home of the Bolduc House Museum mascot, Zuts, the literate bilingual French & English speaking squirrel; page discusses Missouri history for homeschoolers, families, and field trips " name="description" /> 
+    <meta content="Home of the Bolduc House Museum mascot, Zuts, the literate bilingual French & English speaking squirrel; page discusses Missouri history for homeschoolers, families, and field trips " name="description" />
     <script src="Scripts/jquery-1.10.2.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
@@ -46,7 +46,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
             <li class="active"><a data-toggle="tab" href="#home">Children's Activities</a></li>
             <li><a data-toggle="tab" href="#menu1">Regarding Our Heroic Squirrel Mascot, Zuts</a></li>
             <li><a data-toggle="tab" href="#menu2">Zuts' Birthday Club</a></li>
-            <li><a data-toggle="tab" href="#menu3">Don't have the foggiest idea why this tab is here</a></li>
+            <li><a data-toggle="tab" href="#menu3">I Don't have the foggiest idea why this tab is here</a></li>
             <li><a data-toggle="tab" href="#menu4">Communicate</a></li>
         </ul>
         <div class="tab-content">
@@ -144,7 +144,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                                     <img alt="Zut's Paw Print" src="images/Kids/Pawprint.jpg" />
                                     <figcaption>The paw print of M. Zuts!</figcaption>
                                 </figure>
-                                
+
                             </p>
                         </div>
                         <div class="col-md-8">
@@ -178,7 +178,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
             <div id="menu2" class="tab-pane fade">
                 <meta name="keywords" content="Bolduc House Museum,  Ste. Genevieve, Stegen, Ste.Gen, birthday, birthday club, squirrel birthday club,
  Museum mascot, Zuts, the literate bilingual French & English speaking squirrel, Missouri history for homeschoolers, families, field trips" />
-                <meta name="description" content="Official Site of The Birthday Club of the Bolduc House Museum mascot, Zuts, the literate bilingual French & English speaking squirrel"/>
+                <meta name="description" content="Official Site of The Birthday Club of the Bolduc House Museum mascot, Zuts, the literate bilingual French & English speaking squirrel" />
                 <h1>Official Site of Zuts&#39; Birthday Club</h1>
                 <article>
                     <h2>About the Club</h2>
@@ -191,13 +191,12 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                     <p>Get free admission and a birthday sticker when you come to the Museum during your birthday week.</p>
                     <p>
                         Hold your birthday party here, too!!
-                    </p> 
-                        <figure class="Centered600">
-                            <img alt="Zuts Birthday Club stuffed animals having a party on a table"
-                                 src="images/Kids/ZutsBirthdayClub/BirthdaySquirrel_600.jpg" width="600" height="600" /> 
-                    <figcaption> Members of Zuts' Birthday Club Having a Good Old Time! </figcaption>
-                    </figure>
-                        </p>
+                    </p>
+                    <figure class="Centered600">
+                        <img alt="Zuts Birthday Club stuffed animals having a party on a table"
+                             src="images/Kids/ZutsBirthdayClub/BirthdaySquirrel_600.jpg" width="600" height="600" />
+                        <figcaption> Members of Zuts' Birthday Club Having a Good Old Time! </figcaption>
+                    </figure> 
                     <p>Visit us on the web and in Ste. Genevieve often to find out what’s happening for kids your age. </p>
                 </article>
                 <article>
@@ -232,12 +231,17 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                                 <p>
                                     <input type="tel" ID="tbRegisterPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' TabIndex="3" />
                                 </p>
-                                <h3>Birthday</h3> 
-                                <input type="date" id="tbBirthday" placeholder="April 1, 2004" name="Birthday"  TabIndex="4"/>
+                                <h3>Birthday</h3>
+                                <input type="date" id="tbBirthday" placeholder="April 1, 2004" name="Birthday" TabIndex="4" />
                                 <h3>Boy or Girl?</h3>
+                                <input type="radio" id="rbBoy" name="boyOrGirl" TabIndex="4" />Boy
+                                <input type="radio" id="rbGirl" name="boyOrGirl" TabIndex="5" />Girl
                                 <h3>Favorite Animal</h3>
+                                <input type="text" id="tbFavAnimal" placeholder="Squirrel" name="favAnimal" TabIndex="6" />
                                 <h3>Favorite Color</h3>
+                                <input type="color" id="tbColor" placeholder="Green" name="favColor" tabindex="7" />
                                 <h3>Favorite Song</h3>
+                                <input type="text" id="tbFavSong" placeholder="The Squirrel Song" name="favSong" TabIndex="8" />
                             </div>
                             <div class="col-md-6">
                                 <h3>Mailing Address:</h3>
@@ -247,7 +251,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                                         <input type="text" ID="tbStreet"
                                                placeholder="125 South Main Street"
                                                MaxLength="40"
-                                              TabIndex="5"
+                                               TabIndex="9"
                                                name="Street Address" />
                                     </p>
                                     <label>City</label>
@@ -255,7 +259,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                                         <input type="text" ID="tbCity"
                                                placeholder="Sainte Genevieve"
                                                MaxLength="40"
-                                               TabIndex="6"
+                                               TabIndex="10"
                                                name="City" />
                                     </p>
                                     <label>State</label>
@@ -263,7 +267,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                                         <input type="text" ID="tbState"
                                                placeholder="Missouri"
                                                MaxLength="40"
-                                               TabIndex="7"
+                                               TabIndex="11"
                                                name="State" />
                                     </p>
                                     <label>Country</label>
@@ -272,7 +276,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                                         <input type="text" ID="tbCountry"
                                                placeholder="USA"
                                                MaxLength="40"
-                                               TabIndex="8"
+                                               TabIndex="12"
                                                name="Country" />
                                     </p>
                                     <label>Zip/Postal Code</label>
@@ -280,68 +284,163 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                                         <input type="text" ID="tbPostalCode"
                                                placeholder="63670"
                                                MaxLength="20"
-                                               TabIndex="9"
+                                               TabIndex="13"
                                                name="Postal Code" />
                                     </p>
-                                </address> 
+                                </address>
+                            </div>
+                            <div>
+                                <button ID="btnZutsBdClubSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
+                                <button type="reset" class="btn btn-primary">Clear</button>
                             </div>
                         </div>
-                        <div>
-                            <button ID="btnZutsBdClubSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
-                            <button type="reset" class="btn btn-primary">Clear</button>
-                        </div>
+
                     </form>
-                     
-                       
-                    <p>Zuts will mail you a birthday card within two weeks of your birthday. He loves to hear from the kids in his birthday club too so find and like his Face Book page.</p> 
-                          <p>Zuts celebrates his birthday every year with a Garden Party during the week of Ground Hog Day.</p>   
-                    </article>
-                                <article>
-                                    <h2>Happy Birthday to ME!</h2> 
-                                        <figure class="Centered600">
-                                            <img alt="Zuts crowned" src="Images/Kids/ZutsBirthdayClub/Birthday_ZutsCrowned_600.jpg" width="600" height="800" />
-                                            <figcaption>I am SOMEBODY!!</figcaption>
-                                        </figure> 
-                                </article>
 
 
-                            </div>
-                            <div id="menu3" class="tab-pane fade">
-                                I don't have the foggiest idea why this is here
-                            </div>
-                            <div id="menu4" class="tab-pane fade">
-                                <h2>Communicate</h2>
-                                <article>
-                                    <h3>Handy email links</h3>
-                                    <ul class="listStyleWithPecan">
-                                        <li>
-                                            Are you 14 years old or older and want to do some community service? We’re always
-                                            looking for volunteers.
-                                        </li>
-                                        <li>Are you a Boy Scout who needs to do an Eagle Scout project? Call us to find out more at 573-883-3105.</li>
-                                        <li><a href="mailto:Zuts@bolduchouse.org?Subject=Email%20Newsletter" target="_top">Don’t forget to tell us that you want to receive the free email newsletter <em>Aujourd’hui Chez Louis</em>. </a></li>
-                                        <li><a href="mailto:Zuts@bolduchouse.org?Subject=Art%20Contest" target="_top">Would you like to enter an art contest? </a></li>
-                                        <li><a href="mailto:Zuts@bolduchouse.org?Subject=Classes%20and%Programs" target="_top">Would you like to register for our kids' classes and programs? </a></li>
-                                        <li>You can either use the handy email links above or check out the convenient forms on the <a href="http://www.bolduchouse.org/Email.html">Email page</a> . Please give us your name and your grade level and interest. </li>
-                                    </ul>
-                                    <p>
-                                        Visit us on the web and in Ste. Genevieve often to find out what’s happening for
-                                        kids your age.
-                                    </p>
-                                </article>
-                            </div>
-                            <script src="Scripts/Pages/Kids.js"></script>
-                            <footer>
-                                <div id="AddressBar">125 South Main Street, Sainte Genevieve, MO USA 63670      Office 573-883-3105</div>
-                                <p>
-                                    Owned and operated since 1949 by The National Society of the Colonial Dames of America
-                                    in the State of Missouri,  a 501(c)(3) tax-exempt organization, EIN # 43605814
-                                </p>
-                                <p>&copy; <span class="timeSpan">2016</span> - The Bolduc House Museum. All rights reserved.</p>
-                                <p>Site design by <a href="http://www.prairiefirewind.com" target="_blank"><span class="pfw">PFW</span></a></p>
-                            </footer>
-                            <script src="Scripts/jquery-1.10.2.js"></script>
-                            <script src="Scripts/Pages/Email.js"></script>
+                    <p>Zuts will mail you a birthday card within two weeks of your birthday. He loves to hear from the kids in his birthday club too so find and like his Face Book page.</p>
+                    <p>Zuts celebrates his birthday every year with a Garden Party during the week of Ground Hog Day.</p>
+                </article>
+                <article>
+                    <h2>Happy Birthday to ME!</h2>
+                    <figure class="Centered600">
+                        <img alt="Zuts crowned" src="Images/Kids/ZutsBirthdayClub/Birthday_ZutsCrowned_600.jpg" width="600" height="800" />
+                        <figcaption>I am SOMEBODY!!</figcaption>
+                    </figure>
+                </article>
 
+
+            </div>
+            <div id="menu3" class="tab-pane fade">
+               <h3>I don't have the foggiest idea why this is here</h3> 
+                <p>Murray the Mole is confused!  Can you help Murray out by telling him what is correct? Click on your answer. (We will tell you how you did at the end)</p>
+                <h4>1. Where am I?</h4> 
+                <ul>
+                    <li>I am at the Washington Monument</li>
+                    <li>I am at the Mole Disco</li>
+                    <li>I am at the Bolduc House Museum</li>
+                    <li>I am at your house</li>
+                </ul>
+                <h4>2. Louis Bolduc was:</h4>
+                <ul>
+                    <li>A butcher, baker and candlestick-maker</li>
+                    <li>A superhero in Marvel comics</li>
+                    <li>A merchant in New France</li>
+                    <li>Known for carrying soup on his head</li>
+                </ul> 
+                    <h4>3. The time period for the Bolduc house is:</h4>
+                <ul>
+                    <li>last Saturday</li>
+                    <li>When Columbus discovered America (1492)</li>
+                    <li>World War Two (1939-1945)</li>
+                    <li>French Colonial America (1790-1820)</li>
+                </ul> 
+                    <h4>4. There is no refrigerator in the kitchen because:</h4>
+                <ul>
+                    <li>The cats stole it.</li>
+                    <li>Refrigerators had not been invented yet</li>
+                    <li>It is there It is just hiding behind the waffle iron. It is shy.</li>
+                    <li>It is on vacation in Chicago.</li>
+                </ul>
+                <h4>5. The bread oven is where:</h4>
+                <ul>
+                    <li>Bread is baked.</li>
+                    <li>Ships dock when they visit the museum.</li>
+                    <li>People carry soup on their heads.</li>
+                    <li>Squirrels watch movies.</li>
+                </ul>
+                <h4>6. The mascot of the museum is:</h4>
+                <ul>
+                    <li>Pierre le Chat</li>
+                    <li>Zuts the squirrel</li>
+                    <li>murray the mole</li>
+                    <li>Napoleon the Eagle</li>
+                </ul> 
+                <h4>7. The museum is closest to</h4>
+                <ul>
+                    <li>The Rhine River</li>
+                    <li>The Amazon River</li>
+                    <li>The Potomac River</li>
+                    <li>The Mississippi River</li>
+                </ul>
+                <h4>8. The museum is owned by:</h4>
+               <ul>
+                   <li>The Colonial Dames of America</li>
+                   <li>The New Bourbon Militia</li>
+                   <li>The Cats of Sainte Genevieve County</li>
+                   <li>The Adelaide, Australia United Wombat Confederation</li>
+               </ul>
+                <h4>9. Many of the books in the library are in</h4>
+                    <ul>
+                        <li>Etruscan</li>
+                        <li>Klingon</li>
+                        <li>French</li>
+                        <li>Penguin</li>
+                    </ul>
+                <h4>10. We have many of this kind of plant in our gardens..</h4>
+               <ul>
+                   <li>Cactus</li>
+                   <li>Rose</li>
+                   <li>Sunflower</li>
+                   <li>Palm tree</li>
+               </ul>
+                <h4>11. Squirrels at the Museum like to eat mostly</h4>
+                <ul>
+                    <li>Pizza</li>
+                    <li>Pecans</li>
+                    <li>Pickles</li>
+                    <li>Popsicles</li>
+                </ul>
+                <h4>11. You get around the Museum by</h4>
+                <ul>
+                    <li>Airplane</li>
+                    <li>Train</li>
+                    <li>Ship</li>
+                    <li>Foot</li>
+                </ul>
+                <h4>12. We keep our books in</h4>
+                <ul>
+                    <li>The Rozier Library</li>
+                    <li>A swimming pool</li>
+                    <li>The Lewis and Clark Garden</li>
+                    <li>The Banjo Museum of Ste. Genevieve</li>
+                </ul>
+</div>
+            <div id="menu4" class="tab-pane fade">
+                <h2>Communicate</h2>
+                <article>
+                    <h3>Handy email links</h3>
+                    <ul class="listStyleWithPecan">
+                        <li>
+                            Are you 14 years old or older and want to do some community service? We’re always
+                            looking for volunteers.
+                        </li>
+                        <li>Are you a Boy Scout who needs to do an Eagle Scout project? Call us to find out more at 573-883-3105.</li>
+                        <li><a href="mailto:Zuts@bolduchouse.org?Subject=Email%20Newsletter" target="_top">Don’t forget to tell us that you want to receive the free email newsletter <em>Aujourd’hui Chez Louis</em>. </a></li>
+                        <li><a href="mailto:Zuts@bolduchouse.org?Subject=Art%20Contest" target="_top">Would you like to enter an art contest? </a></li>
+                        <li><a href="mailto:Zuts@bolduchouse.org?Subject=Classes%20and%Programs" target="_top">Would you like to register for our kids' classes and programs? </a></li>
+                        <li>You can either use the handy email links above or check out the convenient forms on the <a href="http://www.bolduchouse.org/Email.html">Email page</a> . Please give us your name and your grade level and interest. </li>
+                    </ul>
+                    <p>
+                        Visit us on the web and in Ste. Genevieve often to find out what’s happening for
+                        kids your age.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="AddressBar">125 South Main Street, Sainte Genevieve, MO USA 63670      Office 573-883-3105</div>
+        <p>
+            Owned and operated since 1949 by The National Society of the Colonial Dames of America
+            in the State of Missouri,  a 501(c)(3) tax-exempt organization, EIN # 43605814
+        </p>
+        <p>&copy; <span class="timeSpan">2016</span> - The Bolduc House Museum. All rights reserved.</p>
+        <p>Site design by <a href="http://www.prairiefirewind.com" target="_blank"><span class="pfw">PFW</span></a></p>
+    </footer>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/Pages/Kids.js"></script>
+    <script src="Scripts/Pages/Email.js"></script>
 </body>
 </html>
