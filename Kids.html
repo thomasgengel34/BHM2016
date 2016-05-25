@@ -52,7 +52,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
                 <h1>Children's Activities</h1>
-                <p>
+                <p class="margin50">
                     Do you want to know what it was like to live in Missouri during the eighteenth century?
                     Thanks to seven year old Henry Brackenridge you can. He was sent to Ste. Genevieve
                     in 1793 by his father in Philadelphia to learn French. He stayed for three years
@@ -132,6 +132,7 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                     </li>
                     <li><a href="Upload/Kids/3 2013 day camps brochures.pdf">2013 Day Camps Brochure</a></li>
                 </ul>
+                <p>O-KAY!! I will get around to updating these SOMEDAY!!! Thank you for the cards and emails and letters telling me it is no longer 2013. Next time send pecans. -Zuts</p>
 
             </div>
             <div id="menu1" class="tab-pane fade">
@@ -201,11 +202,11 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                 </article>
                 <article>
                     <h2>Sign Up for a Party Here!</h2>
-                    <form id="registrationForm" class="EmailForm" method="post" enctype="text/plain">
+                    <form id="zbdpartyForm" class="EmailForm" method="post" enctype="text/plain">
                         <div class="row">
                             <div class="col-md-6">
                                 <h3>About You</h3>
-                                <label>Your Name</label>
+                                <label>Parent's Name</label>
                                 <p>
                                     <input type="text" ID="tbParentName"
                                            placeholder="Tit Monsieur"
@@ -229,19 +230,19 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                                 </p>
                                 <label>Phone (optional)</label>
                                 <p>
-                                    <input type="tel" ID="tbRegisterPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' TabIndex="3" />
+                                    <input type="tel" ID="tbPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' TabIndex="3" />
                                 </p>
                                 <h3>Birthday</h3>
-                                <input type="date" id="tbBirthday" placeholder="April 1, 2004" name="Birthday" TabIndex="4" />
+                                <input type="date" id="tbBirthday" placeholder="April 1, 2004" name="Birthday" TabIndex="4" required="required"/>
                                 <h3>Boy or Girl?</h3>
                                 <input type="radio" id="rbBoy" name="boyOrGirl" TabIndex="4" />Boy
-                                <input type="radio" id="rbGirl" name="boyOrGirl" TabIndex="5" />Girl
+                                <input type="radio" id="rbGirl" name="boyOrGirl" TabIndex="5" />Girl 
                                 <h3>Favorite Animal</h3>
-                                <input type="text" id="tbFavAnimal" placeholder="Squirrel" name="favAnimal" TabIndex="6" />
+                                <input type="text" id="tbFavAnimal" placeholder="Squirrel" name="favAnimal" TabIndex="6"  maxlength="15"/>
                                 <h3>Favorite Color</h3>
-                                <input type="color" id="tbColor" placeholder="Green" name="favColor" tabindex="7" />
+                                <input type="color" id="tbColor" placeholder="Green" name="favColor" tabindex="7" maxlength="15"/>
                                 <h3>Favorite Song</h3>
-                                <input type="text" id="tbFavSong" placeholder="The Squirrel Song" name="favSong" TabIndex="8" />
+                                <input type="text" id="tbFavSong" placeholder="The Squirrel Song" name="favSong" TabIndex="8" maxlength="15" />
                             </div>
                             <div class="col-md-6">
                                 <h3>Mailing Address:</h3>
@@ -290,11 +291,11 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
                                 </address>
                             </div>
                             <div>
+                                <p class="margin10">Please add whatever information would help in your email to us. Thanks!!</p>
                                 <button ID="btnZutsBdClubSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
                                 <button type="reset" class="btn btn-primary">Clear</button>
                             </div>
                         </div>
-
                     </form>
 
 
@@ -313,118 +314,130 @@ French Colonial History, Missouri French, Missouri French History, 18th Century 
             </div>
             <div id="menu3" class="tab-pane fade">
                <h3>I don't have the foggiest idea why this is here</h3> 
-                <p>Murray the Mole is confused!  Can you help Murray out by telling him what is correct? Click on your answer. (We will tell you how you did at the end)</p>
-                <h4>1. Where am I?</h4> 
-                <ul>
-                    <li>I am at the Washington Monument</li>
-                    <li>I am at the Mole Disco</li>
-                    <li>I am at the Bolduc House Museum</li>
-                    <li>I am at your house</li>
-                </ul>
-                <h4>2. Louis Bolduc was:</h4>
-                <ul>
-                    <li>A butcher, baker and candlestick-maker</li>
-                    <li>A superhero in Marvel comics</li>
-                    <li>A merchant in New France</li>
-                    <li>Known for carrying soup on his head</li>
-                </ul> 
+                <div class="margin50">
+                    <p>Murray the Mole is confused!  Can you help Murray out by telling him what is correct? Click on your answer. (We will tell you how you did at the end)</p>
+                    <h4>1. Where am I?</h4>
+                    <ul>
+                        <li>I am at the Washington Monument</li>
+                        <li>I am at the Mole Disco</li>
+                        <li>I am at the Bolduc House Museum</li>
+                        <li>I am at your house</li>
+                    </ul>
+                    <h4>2. Louis Bolduc was:</h4>
+                    <ul>
+                        <li>A butcher, baker and candlestick-maker</li>
+                        <li>A superhero in Marvel comics</li>
+                        <li>A merchant in New France</li>
+                        <li>Known for carrying soup on his head</li>
+                    </ul>
                     <h4>3. The time period for the Bolduc house is:</h4>
-                <ul>
-                    <li>last Saturday</li>
-                    <li>When Columbus discovered America (1492)</li>
-                    <li>World War Two (1939-1945)</li>
-                    <li>French Colonial America (1790-1820)</li>
-                </ul> 
+                    <ul>
+                        <li>last Saturday</li>
+                        <li>When Columbus discovered America (1492)</li>
+                        <li>World War Two (1939-1945)</li>
+                        <li>French Colonial America (1790-1820)</li>
+                    </ul>
                     <h4>4. There is no refrigerator in the kitchen because:</h4>
-                <ul>
-                    <li>The cats stole it.</li>
-                    <li>Refrigerators had not been invented yet</li>
-                    <li>It is there It is just hiding behind the waffle iron. It is shy.</li>
-                    <li>It is on vacation in Chicago.</li>
-                </ul>
-                <h4>5. The bread oven is where:</h4>
-                <ul>
-                    <li>Bread is baked.</li>
-                    <li>Ships dock when they visit the museum.</li>
-                    <li>People carry soup on their heads.</li>
-                    <li>Squirrels watch movies.</li>
-                </ul>
-                <h4>6. The mascot of the museum is:</h4>
-                <ul>
-                    <li>Pierre le Chat</li>
-                    <li>Zuts the squirrel</li>
-                    <li>murray the mole</li>
-                    <li>Napoleon the Eagle</li>
-                </ul> 
-                <h4>7. The museum is closest to</h4>
-                <ul>
-                    <li>The Rhine River</li>
-                    <li>The Amazon River</li>
-                    <li>The Potomac River</li>
-                    <li>The Mississippi River</li>
-                </ul>
-                <h4>8. The museum is owned by:</h4>
-               <ul>
-                   <li>The Colonial Dames of America</li>
-                   <li>The New Bourbon Militia</li>
-                   <li>The Cats of Sainte Genevieve County</li>
-                   <li>The Adelaide, Australia United Wombat Confederation</li>
-               </ul>
-                <h4>9. Many of the books in the library are in</h4>
+                    <ul>
+                        <li>The cats stole it.</li>
+                        <li>Refrigerators had not been invented yet</li>
+                        <li>It is there It is just hiding behind the waffle iron. It is shy.</li>
+                        <li>It is on vacation in Chicago.</li>
+                    </ul>
+                    <h4>5. The bread oven is where:</h4>
+                    <ul>
+                        <li>Bread is baked.</li>
+                        <li>Ships dock when they visit the museum.</li>
+                        <li>People carry soup on their heads.</li>
+                        <li>Squirrels watch movies.</li>
+                    </ul>
+                    <h4>6. The mascot of the museum is:</h4>
+                    <ul>
+                        <li>Pierre le Chat</li>
+                        <li>Zuts the squirrel</li>
+                        <li>murray the mole</li>
+                        <li>Napoleon the Eagle</li>
+                    </ul>
+                    <h4>7. The museum is closest to</h4>
+                    <ul>
+                        <li>The Rhine River</li>
+                        <li>The Amazon River</li>
+                        <li>The Potomac River</li>
+                        <li>The Mississippi River</li>
+                    </ul>
+                    <h4>8. The museum is owned by:</h4>
+                    <ul>
+                        <li>The Colonial Dames of America</li>
+                        <li>The New Bourbon Militia</li>
+                        <li>The Cats of Sainte Genevieve County</li>
+                        <li>The Adelaide, Australia United Wombat Confederation</li>
+                    </ul>
+                    <h4>9. Many of the books in the library are in</h4>
                     <ul>
                         <li>Etruscan</li>
                         <li>Klingon</li>
                         <li>French</li>
                         <li>Penguin</li>
                     </ul>
-                <h4>10. We have many of this kind of plant in our gardens..</h4>
-               <ul>
-                   <li>Cactus</li>
-                   <li>Rose</li>
-                   <li>Sunflower</li>
-                   <li>Palm tree</li>
-               </ul>
-                <h4>11. Squirrels at the Museum like to eat mostly</h4>
-                <ul>
-                    <li>Pizza</li>
-                    <li>Pecans</li>
-                    <li>Pickles</li>
-                    <li>Popsicles</li>
-                </ul>
-                <h4>11. You get around the Museum by</h4>
-                <ul>
-                    <li>Airplane</li>
-                    <li>Train</li>
-                    <li>Ship</li>
-                    <li>Foot</li>
-                </ul>
-                <h4>12. We keep our books in</h4>
-                <ul>
-                    <li>The Rozier Library</li>
-                    <li>A swimming pool</li>
-                    <li>The Lewis and Clark Garden</li>
-                    <li>The Banjo Museum of Ste. Genevieve</li>
-                </ul>
+                    <h4>10. We have many of this kind of plant in our gardens..</h4>
+                    <ul>
+                        <li>Cactus</li>
+                        <li>Rose</li>
+                        <li>Sunflower</li>
+                        <li>Palm tree</li>
+                    </ul>
+                    <h4>11. Squirrels at the Museum like to eat mostly</h4>
+                    <ul>
+                        <li>Pizza</li>
+                        <li>Pecans</li>
+                        <li>Pickles</li>
+                        <li>Popsicles</li>
+                    </ul>
+                    <h4>11. You get around the Museum by</h4>
+                    <ul>
+                        <li>Airplane</li>
+                        <li>Train</li>
+                        <li>Ship</li>
+                        <li>Foot</li>
+                        <li>Mole tunnel</li>
+                    </ul>
+                    <h4>12. We keep our books in</h4>
+                    <ul>
+                        <li>The Rozier Library</li>
+                        <li>A swimming pool</li>
+                        <li>The Lewis and Clark Garden</li>
+                        <li>The Banjo Museum of Ste. Genevieve</li>
+                    </ul>
+                </div>
 </div>
             <div id="menu4" class="tab-pane fade">
                 <h2>Communicate</h2>
-                <article>
-                    <h3>Handy email links</h3>
-                    <ul class="listStyleWithPecan">
-                        <li>
-                            Are you 14 years old or older and want to do some community service? We’re always
-                            looking for volunteers.
-                        </li>
-                        <li>Are you a Boy Scout who needs to do an Eagle Scout project? Call us to find out more at 573-883-3105.</li>
-                        <li><a href="mailto:Zuts@bolduchouse.org?Subject=Email%20Newsletter" target="_top">Don’t forget to tell us that you want to receive the free email newsletter <em>Aujourd’hui Chez Louis</em>. </a></li>
-                        <li><a href="mailto:Zuts@bolduchouse.org?Subject=Art%20Contest" target="_top">Would you like to enter an art contest? </a></li>
-                        <li><a href="mailto:Zuts@bolduchouse.org?Subject=Classes%20and%Programs" target="_top">Would you like to register for our kids' classes and programs? </a></li>
-                        <li>You can either use the handy email links above or check out the convenient forms on the <a href="http://www.bolduchouse.org/Email.html">Email page</a> . Please give us your name and your grade level and interest. </li>
-                    </ul>
-                    <p>
-                        Visit us on the web and in Ste. Genevieve often to find out what’s happening for
-                        kids your age.
-                    </p>
+                <article> 
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="listStyleWithPecan">
+                                <li>
+                                    Are you 14 years old or older and want to do some community service? We’re always
+                                    looking for volunteers.
+                                </li>
+                                <li>Are you a Boy Scout who needs to do an Eagle Scout project?  </li>
+                                <li><a href="mailto:Zuts@bolduchouse.org?Subject=Email%20Newsletter" target="_top">Don’t forget to tell us that you want to receive the free email newsletter <em>Aujourd’hui Chez Louis</em>. </a></li>
+                                <li><a href="mailto:Zuts@bolduchouse.org?Subject=Art%20Contest" target="_top">Would you like to enter an art contest? </a></li>
+                                <li><a href="mailto:Zuts@bolduchouse.org?Subject=Classes%20and%Programs" target="_top">Would you like to register for our kids' classes and programs? </a></li>
+                                <li>You can either use the handy email links above or check out the convenient forms on the <a href="http://www.bolduchouse.org/Email.html">Email page</a> . Please give us your name and your grade level and interest. </li>
+                            </ul>
+                            <p>
+                                Visit us on the web and in Ste. Genevieve often to find out what’s happening for
+                                kids your age.
+                            </p>
+                        </div> 
+                        <div class="col-md-6">
+                            <figure class="Centered300">
+                                <img src="Images/Kids/ZutsOnPhone.jpg" width="300" height="400" alt="Zuts on the phone" />
+                                <figcaption>Our Staff is Standing by to Hear from YOU</figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </article>
             </div>
         </div>
