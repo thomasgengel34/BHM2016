@@ -53,6 +53,7 @@
             <li><a data-toggle="tab" href="#menu6">I'm Thinking about Getting Married Here</a></li>
             <li><a data-toggle="tab" href="#menu7">I'm Thinking about Bringing a Group</a></li>
             <li><a data-toggle="tab" href="#menu8">I Want to Sign my Child Up</a></li>
+            <li><a data-toggle="tab" href="#menu9">Zuts' Birthday Party Sign Up</a></li>
         </ul>
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
@@ -393,6 +394,118 @@
                     <p><em>This tab is under construction!</em></p>
                 </article>
             </div>
+            <div id="menu9" class="tab-pane fade">
+                <article>
+                    <h2>Sign Up for a Party Here!</h2>
+                    <form id="zbdpartyForm" method="post" enctype="text/plain" class="EmailForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>About You</h3>
+                                <label>Parent's Name</label>
+                                <p>
+                                    <input type="text" ID="tbParentName"
+                                           placeholder="Tit Monsieur"
+                                           MaxLength="25"
+                                           TabIndex="1"
+                                           data-toggle="tooltip"
+                                           title="Please enter SOMETHING!! I would like to know your name!! - Zuts"
+                                           name="RegisterParentName"
+                                           required="required" />
+                                </p>
+                                <label>Child's Name</label>
+                                <p>
+                                    <input type="text" ID="tbChildName"
+                                           placeholder="Zuts"
+                                           MaxLength="25"
+                                           TabIndex="2"
+                                           data-toggle="tooltip"
+                                           title="Mon ami, I would like to know your name!! - Zuts"
+                                           name="RegisterChildName"
+                                           required="required" />
+                                </p>
+                                <label>Phone (optional)</label>
+                                <p>
+                                    <input type="tel" ID="tbPhone" placeholder="(573)883-3105" pattern='^s?[\(]\d{3}[\)]\d{3}[\-]\d{4}s?$' name="Phone" title='Phone Number (Format:  (999)999-9999)' TabIndex="3" />
+                                </p>
+                                <h3>Birthday</h3>
+                                <input type="date" id="tbBirthday" placeholder="April 1, 2004" name="Birthday" TabIndex="4" required="required" />
+                                <h3>Boy or Girl?</h3>
+                                <input type="radio" id="rbBoy" name="boyOrGirl" value="Boy" TabIndex="4" />Boy
+                                <input type="radio" id="rbGirl" name="boyOrGirl" TabIndex="5" value="Girl" />Girl
+                                <h3>Favorite Animal</h3>
+                                <input type="text" id="tbFavAnimal" placeholder="Squirrel" name="favAnimal" TabIndex="6" maxlength="15" />
+                                <h3>Favorite Color</h3>
+                                <input type="color" id="tbFavColor" placeholder="Green" name="favColor" tabindex="7" maxlength="15" />
+                                <h3>Favorite Song</h3>
+                                <input type="text" id="tbFavSong" placeholder="The Squirrel Song" name="favSong" TabIndex="8" maxlength="25" />
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Mailing Address:</h3>
+                                <address>
+                                    <label>Street</label>
+                                    <p>
+                                        <input type="text" ID="tbStreet"
+                                               placeholder="125 South Main Street"
+                                               MaxLength="40"
+                                               TabIndex="9"
+                                               name="Street Address" />
+                                    </p>
+                                    <label>City</label>
+                                    <p>
+                                        <input type="text" ID="tbCity"
+                                               placeholder="Sainte Genevieve"
+                                               MaxLength="40"
+                                               TabIndex="10"
+                                               name="City" />
+                                    </p>
+                                    <label>State</label>
+                                    <p>
+                                        <input type="text" ID="tbState"
+                                               placeholder="Missouri"
+                                               MaxLength="40"
+                                               TabIndex="11"
+                                               name="State" />
+                                    </p>
+                                    <label>Country</label>
+                                    <p>Note: at this time we can only send cards to the US and Canada. If you live in another country, we can send you an e-card!</p>
+                                    <p>
+                                        <input type="text" ID="tbCountry"
+                                               placeholder="USA"
+                                               MaxLength="40"
+                                               TabIndex="12"
+                                               name="Country" />
+                                    </p>
+                                    <label>Zip/Postal Code</label>
+                                    <p>
+                                        <input type="text" ID="tbPostalCode"
+                                               placeholder="63670"
+                                               MaxLength="20"
+                                               TabIndex="13"
+                                               name="Postal Code" />
+                                    </p>
+                                </address>
+                            </div>
+                            <div>
+                                <p class="margin10">
+                                    Please add whatever information would help in your email to us. Like: 
+                                    <ul class="listStyleWithPecan">
+                                        <li>Do you want a party or just the card</li>
+                                        <li>Where you want the party</li>
+                                        <li>Whene you want it</li>
+                                        <li>etc. </li>
+                                    </ul>Thanks!!
+                                </p>
+                                <button ID="btnZutsBdClubSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
+                                <button type="reset" class="btn btn-primary">Clear</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <p>Zuts will mail you a birthday card within two weeks of your birthday. He loves to hear from the kids in his birthday club too so find and like his Face Book page.</p>
+                    <p>Zuts celebrates his birthday every year with a Garden Party during the week of Ground Hog Day.</p>
+                </article>
+            </div>
         </div>
     </div>
     <footer>
@@ -401,7 +514,7 @@
             Owned and operated since 1949 by The National Society of the Colonial Dames of America
             in the State of Missouri,  a 501(c)(3) tax-exempt organization, EIN # 43605814
         </p>
-        <p>&copy; 2016 - The Bolduc House Museum. All rights reserved.</p>
+        <p>&copy; <span class="timeSpan">2016</span> - The Bolduc House Museum. All rights reserved.</p>
         <p>Site design by <a href="http://www.prairiefirewind.com" target="_blank"><span class="pfw">PFW</span></a></p>
     </footer>
     <script src="Scripts/jquery-1.10.2.js"></script>

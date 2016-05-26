@@ -3,6 +3,8 @@
 /// <reference path="../jquery.validate.js" />
 /// <reference path="../respond.js" /> 
 /// <reference path="../modernizr-2.6.2.js" />
+/// <reference path="../default.js" />
+
 "use strict";
 var bhme = {};
 
@@ -20,7 +22,7 @@ window.onload = function () {
     $('#btnVolunteerSubmit').on("click", bhme.sendVolunteerEmail);
     $('#btnGiverSubmit').on("click", bhme.sendDonationEmail);
 
-
+    $('#btnZutsBdClubSubmit').on("click", bhme.sendZBDEmail);
     $('#ckTour').click(function () { $('#toggleTour').toggle(); });
 }
 
@@ -195,4 +197,46 @@ bhme.sendDonationEmail = function () {
     uri += '&body=' + body;
 
     $('#emailDonateForm').attr("action", uri);
+}
+
+bhme.sendZBDEmail = function () {
+    var subject = 'IMPORTANT%20Zuts%20Birthday%20Club%20Email%20from%20www.bolduchouse.org!!!';
+    var parentName = "No name supplied.";
+    if ($('#tbParentName').val().length > 0) {
+        parentName = encodeURIComponent($('#tbParentName').val());
+    }
+    var body = "Parent's Name:  " + parentName;
+    var childName = "No name supplied.";
+    if ($('#tbChildName').val().length > 0) {
+        childName = encodeURIComponent($('#tbChildName').val());
+    }
+    body += "  Child's Name:  " + childName;
+    var phone = "not filled out";
+    if ($('#tbPhone').val().length > 1) {
+        phone = $('#tbPhone').val();
+    }
+    body += "  Telephone: " + phone;
+    var bday = encodeURIComponent($('#tbBirthday').val()); 
+     var boyOrGirl = $("input[type='radio'][name='boyOrGirl']:checked").val()==null ? "": $("input[type='radio'][name='boyOrGirl']:checked").val();
+    if (boyOrGirl.length > 0) {
+        body += "  Boy Or Girl:  " + boyOrGirl ;
+    } 
+    if ($('#tbFavAnimal').val().length > 1) {
+        body += "  fav. animal= " + encodeURIComponent($('#tbFavAnimal').val());
+    }
+    if ($('#tbFavColor').val().length > 1) {
+        body += "  fav. color= " + encodeURIComponent($('#tbFavColor').val());
+    }
+    if ($('#tbFavSong').val().length > 1) {
+        body += "  fav. song= " +  "'" + encodeURIComponent($('#tbFavSong').val()) + "'";
+    }
+    var mail = " Mailing Address:  "+encodeURIComponent($('#tbStreet').val()) + " " + encodeURIComponent($('#tbCity').val()) + " " + encodeURIComponent($('#tbState').val()) + " " + encodeURIComponent($('#tbCountry').val()) + " " + encodeURIComponent($('#tbPostalCode').val())
+
+    body += mail;
+
+    //  var uri = 'mailto:Robbie.pratte@bolduchouse.org';
+    var uri = 'mailto:thomasgengel34@bolduchouse.org';
+    uri += '?subject=' + (subject);
+    uri += '&body=' + body;
+    $('#zbdpartyForm').attr("action", uri)
 }
