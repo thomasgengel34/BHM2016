@@ -12,5 +12,15 @@
     font-family: 'Comic Sans MS (25px)';
     color: green;
 }
+  
+.quiz li:checked {
+    color:red;
+}
 
+div.quiz li.right:checked {
+    color:green;
+}
 
+.quiz li {
+    list-style-type:none;
+}
