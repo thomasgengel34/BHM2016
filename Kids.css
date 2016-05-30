@@ -24,3 +24,7 @@ div.quiz li.right:checked {
 .quiz li {
     list-style-type:none;
 }
+.rightAnswer {
+    color:green; 
+    background-color:yellow;
+}

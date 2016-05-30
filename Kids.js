@@ -7,11 +7,11 @@
 "use strict";
 var bhmKids= {};
 
-window.onload = function () {
-    // not working
-    $("li.right input[type='checkbox']").on("click", function() {
-        $(this).toggle(css('color','green'));
+window.onload = function () { 
+    $("li.right input[type='checkbox']").change(function () {
+        alert("cole slaw!");
+           //  $( "li").addClass('rightAnswer');
+   //     $('parent([this]) li.right ').toggleClass('rightAnswer');  not working
     });
-    $("li.right input[type='checkbox']").on("click", function () { alert("Hello, World!"); });
 }
   
