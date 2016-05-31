@@ -26,5 +26,16 @@ div.quiz li.right:checked {
 }
 .rightAnswer {
     color:green; 
-    background-color:yellow;
+    background-color:palegreen; 
+}
+ #KidsQuizTab h3 {
+ font-family: 'Comic Sans MS' ;
+    color:green;
+ }
+
+#KidsQuizTab .quiz>p {
+    font-family:'Comic Sans MS';
+    color:green;
+    font-size:large;
+    font-weight:bolder;
 }

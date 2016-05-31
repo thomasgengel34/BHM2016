@@ -7,11 +7,13 @@
 "use strict";
 var bhmKids= {};
 
-window.onload = function () { 
-    $("li.right input[type='checkbox']").change(function () {
-        alert("cole slaw!");
-           //  $( "li").addClass('rightAnswer');
-   //     $('parent([this]) li.right ').toggleClass('rightAnswer');  not working
+window.onload = function () {
+    $("#KidsQuizTab").click(function () {
+      //  $("#KidsQuizTab :checkbox").removeAttr("checked");
     });
+    //  $("li.right input[type='checkbox']").change(function () { 
+    $("li.right").click(function () { 
+          $( this ).toggleClass('rightAnswer');  
+    }); 
 }
   
