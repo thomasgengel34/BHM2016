@@ -234,8 +234,7 @@ bhme.sendZBDEmail = function () {
 
     body += mail;
 
-    //  var uri = 'mailto:Robbie.pratte@bolduchouse.org';
-    var uri = 'mailto:thomasgengel34@bolduchouse.org';
+       var uri = 'mailto:participate@bolduchouse.org'; 
     uri += '?subject=' + (subject);
     uri += '&body=' + body;
     $('#zbdpartyForm').attr("action", uri)

@@ -33,4 +33,8 @@ p.ifAdult {
     margin:10px;  
 }
  
- 
+ #zbdNotes {
+     padding:10px;
+     background-color:white;
+     border:solid 1px  #036;
+ }

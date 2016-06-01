@@ -39,3 +39,6 @@ div.quiz li.right:checked {
     font-size:large;
     font-weight:bolder;
 }
+#Henry p {
+    font-size:x-large;
+}
