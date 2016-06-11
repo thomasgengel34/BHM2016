@@ -1,5 +1,50 @@
 ﻿ 
+
 #home p {
     margin:50px;
 }
   #also {margin-bottom:90px;}
+
+  #home img {box-shadow:none;}
+  #handblue1L {
+      position:absolute;
+      top:150px;
+      left:600px;
+      width:43px;
+      height:50px;
+      background-image:url('data:image/gif;base64,R0lGODlhKwAyAHAAACH5BAEAAPwALAAAAAArADIAhwAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAAAj/APcJHEiwoEAOHQwqXMiw4b4OCB1KdJiQIIcLHArqm8gRIsEOECsOFMmR4cWIAiFitOixJMOQFgaeJNnBAkmXBRGi3KeTpE6cC2u23Iex5kebQBUiRHow5ECbO5OO/JkS6tQLUg1CxdqUKc+hWVM6FbtTKNCoKU+OtBmzaUacY2UWlTn2QtySSwvCpMuUQ164Xg/afTu4ZYe5Z8H2PLg1LdiSKkUWbQuS6tZ8QIu+/YoSZsWQm+GqfWiVp+aqN11C/Yww8lKQq8MKzcgWtGbPYR9efGi79cnTFBfnBL1V522zDWcGFjg5JGjnM0PrXY3WLezZzY1Lp4sQscHW1EPesY5tMHvD2ULRz1S5vWd1gqvDv9auEj57ri/dYzwefuzz7Qbd99x+xt2XUXrLLeSeev+pdxuACiEo3nwENtjYRAv2ZBN0QhV3V3D7ddgbev/hN5F8zsnX3GxwaTbYg0UxmBR9GqYXHYFS1bjefBxmxSCPFL6HV4qH6WdkbkQtaFOMG1IVVpAN/pbbRroR+ZuTSH5V4YJZFgQjdhA+6VmBQob14HMJIukZgcB1KdiCHwIVEAA7') /*../Images/HandsOnHistory/HandBlue.gif*/;
+  }
+
+#handblue1R {
+    position: absolute;
+    top: 150px;
+    left: 660px;
+    width: 43px;
+    height: 50px;
+    background-image: url('data:image/gif;base64,R0lGODlhKwAyAHAAACH5BAEAAPwALAAAAAArADIAhwAAAAAAMwAAZgAAmQAAzAAA/wArAAArMwArZgArmQArzAAr/wBVAABVMwBVZgBVmQBVzABV/wCAAACAMwCAZgCAmQCAzACA/wCqAACqMwCqZgCqmQCqzACq/wDVAADVMwDVZgDVmQDVzADV/wD/AAD/MwD/ZgD/mQD/zAD//zMAADMAMzMAZjMAmTMAzDMA/zMrADMrMzMrZjMrmTMrzDMr/zNVADNVMzNVZjNVmTNVzDNV/zOAADOAMzOAZjOAmTOAzDOA/zOqADOqMzOqZjOqmTOqzDOq/zPVADPVMzPVZjPVmTPVzDPV/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YrAGYrM2YrZmYrmWYrzGYr/2ZVAGZVM2ZVZmZVmWZVzGZV/2aAAGaAM2aAZmaAmWaAzGaA/2aqAGaqM2aqZmaqmWaqzGaq/2bVAGbVM2bVZmbVmWbVzGbV/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkAmZkAzJkA/5krAJkrM5krZpkrmZkrzJkr/5lVAJlVM5lVZplVmZlVzJlV/5mAAJmAM5mAZpmAmZmAzJmA/5mqAJmqM5mqZpmqmZmqzJmq/5nVAJnVM5nVZpnVmZnVzJnV/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA/8wrAMwrM8wrZswrmcwrzMwr/8xVAMxVM8xVZsxVmcxVzMxV/8yAAMyAM8yAZsyAmcyAzMyA/8yqAMyqM8yqZsyqmcyqzMyq/8zVAMzVM8zVZszVmczVzMzV/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8rAP8rM/8rZv8rmf8rzP8r//9VAP9VM/9VZv9Vmf9VzP9V//+AAP+AM/+AZv+Amf+AzP+A//+qAP+qM/+qZv+qmf+qzP+q///VAP/VM//VZv/Vmf/VzP/V////AP//M///Zv//mf//zP///wAAAAAAAAAAAAAAAAj/APcJHEiwoMGBHTgcXMiwocGEHRxKdKivIIcLCglGnMhxI0IOHTzuA8lRIsiMAi+SFJgQY8mGHSyIbIlS5sqXB09q1MmSJ86HMgnavDAQZNCfD41+TIjQJtKDGD0alQrxqUGfMZkKjGrBasGsSz1CFOnVp8yjI6Mm/QmR6D6IKGl+vVnSZsasNasK1fqy5caTHdyCdKkRbUnAW43e9TmSb8l8XFOOFTgUodqfiN/a3Ai3aMunYBurlHxUJdm+U/EGBqkXYlfQm09Gndp16ly9DWWbpjn5cmG5MGXCnc0VMMqdrk973m085NSLC/0yJmj6OdesnRlaP5hcNtzkjrkbr78alXfqzYYXYow8kDjg2N1jmvze0zl43bNxBw8ZVGVU9xd8tx5duQ333nfNwXdcQ9c155914KUHk25ZbTaWgtlxlB9r1h0o04DKaYfdUAnalyBbB5rHG3EhOvQgbxUiOBtoHMbHW2xe3fgdhhK+VJ2KF2E3HU6ACRmggm55tQ+IDjaoJHU0XUffPhU9WZ9x64VnpWkfYmnlbfnh+GVTCA435nIDHqnfmWNhuSBBAQEAOw=='); /*../Images/HandsOnHistory/HandBlueR.gif*/
+}
+
+#handred1 {
+    position: absolute;
+    top: 250px;
+    left: 15px;
+    width: 43px;
+    height: 50px;
+    background-image: url("../Images/HandsOnHistory/HandRed.gif"); 
+}
+#handredR1 {
+    position: absolute;
+    top: 350px;
+    left: 800px;
+    width: 43px;
+    height: 50px;
+    background-image: url("../Images/HandsOnHistory/HandRedR.gif"); 
+}
+#handbrown1L {
+    position: absolute;
+    top: 450px;
+    left: 400px;
+    width: 43px;
+    height: 50px;
+    background-image: url("../Images/HandsOnHistory/HandBrown.gif"); 
+}
