@@ -49,6 +49,11 @@
     width:50px;
     height:50px;
 }
+#chip1 {
+    background-color:blue;
+    width:50px;
+    height:50px;
+}
 .begin { 
     left:150px;
     top:150px;
