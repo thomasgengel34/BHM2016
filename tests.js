@@ -15,314 +15,317 @@
   });
  
 //****0 tests are utility: is QUnit ok type tests ******************
-  QUnit.test("00: A Hello World Test", function (assert) {
+  QUnit.test("01: A Hello World Test", function (assert) {
       var greeting="Hello World";
     assert.equal(greeting, "Hello World", "Expect greeting of Hello World");
 });
+//****************************************************** 
+  QUnit.test("01: Verify title in default.html",  function (assert) {
+    assert.expect(1); 
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "default.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    actual = xhr.response;
+    actual = actual.toString();
+    var pos1 = actual.search("<title");
+    var pos2 = actual.search("</title>");
+    actual = actual.slice(pos1, pos2);
+    var expected = "<title>The Bolduc House Museum";
+    assert.equal(actual,expected,'Expected value: ' +expected + '  Actual value:  ' + actual);
+});
+//******1-xx tests look at HTML*************************
+
+//3   
+  QUnit.test("1-1 Verify page title and div brackets match in default.html",   function (assert) {
+    assert.expect(2);
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "Default.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }  
+ xhr.send(null);
+    actual = xhr.responseText; 
+    actual = actual.toString();
+    var pos1 = actual.search("<title>");
+    var pos2 = actual.search("</title>");
+    actual = actual.slice(pos1, pos2);
+    var expected = "<title>The Bolduc House Museum";
+    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+    //second test:
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "Default.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    var raw = xhr.responseText;
+    actual = raw.toString();
+    actual = actual.match(/<div/g);
+    actual = actual.length;
+    expected = raw.match(/<\/div>/g);
+    expected = expected.length;
+    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+});
+//******************************************************
+
+QUnit.test("1-2 Verify page title and divs match in About.html",   function(assert){
+    assert.expect(2);
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "About.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    actual = xhr.responseText;
+    actual = actual.toString();
+    var pos1 = actual.search("<title>");
+    var pos2 = actual.search("</title>");
+    actual = actual.slice(pos1, pos2);
+    var expected = "<title>About The Bolduc House Museum";
+    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+    //second test:  
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "About.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    var raw = xhr.responseText;
+    actual = raw.toString();
+    actual = actual.match(/<div/g);
+    actual = actual.length;
+    expected = raw.match(/<\/div>/g);
+    expected = expected.length;
+    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+});
+//******************************************************
+
+QUnit.test("1-3 Verify page title and divs match in Contact.html",  function(assert){
+    assert.expect(2);
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "Contact.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    actual = xhr.responseText;
+    actual = actual.toString();
+    var pos1 = actual.search("<title>");
+    var pos2 = actual.search("</title>");
+    actual = actual.slice(pos1, pos2);
+    var expected = "<title>The Bolduc House Museum";
+    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+    //second test:
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "Contact.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    var raw = xhr.responseText;
+    actual = raw.toString();
+     actual = actual.match(/<div/g);
+    actual = actual.length;
+    expected = raw.match(/<\/div>/g) ;
+    expected = expected.length;
+    assert.equal(actual, expected, 'Opening Divs: ' +actual + '  Closing Divs:  ' + expected);
+});
+//****************************************************** 
+QUnit.test("1-4 Verify page title and divs match in Explore.html",  function(assert){
+    assert.expect(2);
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "Explore.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    actual = xhr.responseText;
+    actual = actual.toString();
+    var pos1 = actual.search("<title>");
+    var pos2 = actual.search("</title>");
+    actual = actual.slice(pos1, pos2);
+    var expected = "<title>Explore The Bolduc House Museum";
+    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+    //second test:
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "SiteMap.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    var raw = xhr.responseText;
+    actual = raw.toString();
+    actual = actual.match(/<div/g);
+    actual = actual.length;
+    expected = raw.match(/<\/div>/g);
+    expected = expected.length;
+    assert.equal(actual, expected, 'Opening Divs: ' + actual + '  Closing Divs:  ' + expected);
+});
 //******************************************************
 // Due to breaking changes between QUnit 1.0 and 2.0, these will all need to be rewritten. They all worked in 1.0. 
-//QUnit.test("01: Verify title in default.html", 1, function () {
-//    expect(1); 
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "default.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    actual = xhr.response;
-//    actual = actual.toString();
-//    var pos1 = actual.search("<title");
-//    var pos2 = actual.search("</title>");
-//    actual = actual.slice(pos1, pos2);
-//    var expected = "<title>The Bolduc House Museum";
-//    equal(actual,expected,'Expected value: ' +expected + '  Actual value:  ' + actual);
-//});
-////******1-xx tests look at HTML*************************
-////3   
-//QUnit.test("1-1 Verify page title and div brackets match in default.html", 1, function () {
-//    expect(2);
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "Default.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }  
-// xhr.send(null);
-//    actual = xhr.responseText; 
-//    actual = actual.toString();
-//    var pos1 = actual.search("<title>");
-//    var pos2 = actual.search("</title>");
-//    actual = actual.slice(pos1, pos2);
-//    var expected = "<title>The Bolduc House Museum";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
-//    //second test:
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "Default.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    var raw = xhr.responseText;
-//    actual = raw.toString();
-//    actual = actual.match(/<div/g);
-//    actual = actual.length;
-//    expected = raw.match(/<\/div>/g);
-//    expected = expected.length;
-//    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
-//});
+ QUnit.test("1-5 Verify page title and divs match in LindenHouse.html",  function(assert){
+    assert.expect(2);
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "LindenHouse.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    actual = xhr.responseText;
+    actual = actual.toString();
+    var pos1 = actual.search("<title>");
+    var pos2 = actual.search("</title>");
+    actual = actual.slice(pos1, pos2);
+    var expected = "<title>The Linden House";
+    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+      //second test:  
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "LindenHouse.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    var raw = xhr.responseText;
+    actual = raw.toString();
+    actual = actual.match(/<div/g);
+    actual = actual.length;
+    expected = raw.match(/<\/div>/g);
+    expected = expected.length;
+    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+}); 
+//******************************************************
+QUnit.test("1-6 Verify page title and divs match in LeMeilleurHouse.html",   function(assert){
+    assert.expect(2);
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "LeMeilleurHouse.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    actual = xhr.responseText;
+    actual = actual.toString();
+    var pos1 = actual.search("<title>");
+    var pos2 = actual.search("</title>");
+    actual = actual.slice(pos1, pos2);
+    var expected = "<title>The LeMeilleur House";
+    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+       //second test:  
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "LeMeilleurHouse.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    var raw = xhr.responseText;
+    actual = raw.toString();
+    actual = actual.match(/<div/g);
+    actual = actual.length;
+    expected = raw.match(/<\/div>/g);
+    expected = expected.length;
+    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+});
+//******************************************************
+QUnit.test("1-7 Verify page title and divs match in JBValleHouse.html", function(assert){
+    assert.expect(2);
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "JBValleHouse.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    actual = xhr.responseText;
+    actual = actual.toString();
+    var pos1 = actual.search("<title>");
+    var pos2 = actual.search("</title>");
+    actual = actual.slice(pos1, pos2);
+    var expected = "<title>The J.B.Valle House";
+    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+    //second test:  
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "JBValleHouse.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    var raw = xhr.responseText;
+    actual = raw.toString();
+    actual = actual.match(/<div/g);
+    actual = actual.length;
+    expected = raw.match(/<\/div>/g);
+    expected = expected.length;
+    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+});
+//******************************************************
+QUnit.test("1-8 Verify page title and divs match in FrancoisValleHouse.html",  function(assert){
+    assert.expect(2);
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "FrancoisValleHouse.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    actual = xhr.responseText;
+    actual = actual.toString();
+    var pos1 = actual.search("<title>");
+    var pos2 = actual.search("</title>");
+    actual = actual.slice(pos1, pos2);
+    var expected = "<title>The Francois Valle House";
+    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+    //second test:  
+    var actual;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "FrancoisValleHouse.html", false);
+    xhr.timeout = 2000;
+    xhr.ontimeout = function () {
+        xml = "Request timed out";
+    }
+    xhr.send(null);
+    var raw = xhr.responseText;
+    actual = raw.toString();
+    actual = actual.match(/<div/g);
+    actual = actual.length;
+    expected = raw.match(/<\/div>/g);
+    expected = expected.length;
+    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+}); 
 ////******************************************************
-//QUnit.test("1-2 Verify page title and divs match in About.html", 1, function () {
-//    expect(2);
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "About.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    actual = xhr.responseText;
-//    actual = actual.toString();
-//    var pos1 = actual.search("<title>");
-//    var pos2 = actual.search("</title>");
-//    actual = actual.slice(pos1, pos2);
-//    var expected = "<title>About The Bolduc House Museum";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
-//    //second test:  
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "About.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    var raw = xhr.responseText;
-//    actual = raw.toString();
-//    actual = actual.match(/<div/g);
-//    actual = actual.length;
-//    expected = raw.match(/<\/div>/g);
-//    expected = expected.length;
-//    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
-//});
-////******************************************************
-//QUnit.test("1-3 Verify page title and divs match in Contact.html", 1, function () {
-//    expect(2);
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "Contact.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    actual = xhr.responseText;
-//    actual = actual.toString();
-//    var pos1 = actual.search("<title>");
-//    var pos2 = actual.search("</title>");
-//    actual = actual.slice(pos1, pos2);
-//    var expected = "<title>The Bolduc House Museum";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
-//    //second test:
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "Contact.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    var raw = xhr.responseText;
-//    actual = raw.toString();
-//     actual = actual.match(/<div/g);
-//    actual = actual.length;
-//    expected = raw.match(/<\/div>/g) ;
-//    expected = expected.length;
-//    equal(actual, expected, 'Opening Divs: ' +actual + '  Closing Divs:  ' + expected);
-//});
-////******************************************************
-//QUnit.test("1-4 Verify page title and divs match in Explore.html", 1, function () {
-//    expect(2);
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "Explore.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    actual = xhr.responseText;
-//    actual = actual.toString();
-//    var pos1 = actual.search("<title>");
-//    var pos2 = actual.search("</title>");
-//    actual = actual.slice(pos1, pos2);
-//    var expected = "<title>Explore The Bolduc House Museum";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
-//    //second test:
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "SiteMap.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    var raw = xhr.responseText;
-//    actual = raw.toString();
-//    actual = actual.match(/<div/g);
-//    actual = actual.length;
-//    expected = raw.match(/<\/div>/g);
-//    expected = expected.length;
-//    equal(actual, expected, 'Opening Divs: ' + actual + '  Closing Divs:  ' + expected);
-//});
-////******************************************************
-//QUnit.test("1-5 Verify page title and divs match in LindenHouse.html", 1, function () {
-//    expect(2);
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "LindenHouse.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    actual = xhr.responseText;
-//    actual = actual.toString();
-//    var pos1 = actual.search("<title>");
-//    var pos2 = actual.search("</title>");
-//    actual = actual.slice(pos1, pos2);
-//    var expected = "<title>The Linden House";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
-//      //second test:  
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "LindenHouse.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    var raw = xhr.responseText;
-//    actual = raw.toString();
-//    actual = actual.match(/<div/g);
-//    actual = actual.length;
-//    expected = raw.match(/<\/div>/g);
-//    expected = expected.length;
-//    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
-//}); 
-////******************************************************
-//QUnit.test("1-6 Verify page title and divs match in LeMeilleurHouse.html", 1, function () {
-//    expect(2);
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "LeMeilleurHouse.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    actual = xhr.responseText;
-//    actual = actual.toString();
-//    var pos1 = actual.search("<title>");
-//    var pos2 = actual.search("</title>");
-//    actual = actual.slice(pos1, pos2);
-//    var expected = "<title>The LeMeilleur House";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
-//       //second test:  
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "LeMeilleurHouse.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    var raw = xhr.responseText;
-//    actual = raw.toString();
-//    actual = actual.match(/<div/g);
-//    actual = actual.length;
-//    expected = raw.match(/<\/div>/g);
-//    expected = expected.length;
-//    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
-//});
-////******************************************************
-//QUnit.test("1-7 Verify page title and divs match in JBValleHouse.html", 1, function () {
-//    expect(2);
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "JBValleHouse.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    actual = xhr.responseText;
-//    actual = actual.toString();
-//    var pos1 = actual.search("<title>");
-//    var pos2 = actual.search("</title>");
-//    actual = actual.slice(pos1, pos2);
-//    var expected = "<title>The J.B.Valle House";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
-//    //second test:  
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "JBValleHouse.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    var raw = xhr.responseText;
-//    actual = raw.toString();
-//    actual = actual.match(/<div/g);
-//    actual = actual.length;
-//    expected = raw.match(/<\/div>/g);
-//    expected = expected.length;
-//    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
-//});
-////******************************************************
-//test("1-8 Verify page title and divs match in FrancoisValleHouse.html", 1, function () {
-//    expect(2);
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "FrancoisValleHouse.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    actual = xhr.responseText;
-//    actual = actual.toString();
-//    var pos1 = actual.search("<title>");
-//    var pos2 = actual.search("</title>");
-//    actual = actual.slice(pos1, pos2);
-//    var expected = "<title>The Francois Valle House";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
-//    //second test:  
-//    var actual;
-//    var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "FrancoisValleHouse.html", false);
-//    xhr.timeout = 2000;
-//    xhr.ontimeout = function () {
-//        xml = "Request timed out";
-//    }
-//    xhr.send(null);
-//    var raw = xhr.responseText;
-//    actual = raw.toString();
-//    actual = actual.match(/<div/g);
-//    actual = actual.length;
-//    expected = raw.match(/<\/div>/g);
-//    expected = expected.length;
-//    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
-//}); 
-////******************************************************
-//QUnit.test("1-9 Verify page title and divs match in BankBuilding.html", 1, function () {
-//    expect(2);
+//QUnit.test("1-9 Verify page title and divs match in BankBuilding.html", 1, function(assert){
+//    assert.expect(2);
 //    var actual;
 //    var xhr = new XMLHttpRequest();
 //    xhr.open("GET", "BankBuilding.html", false);
@@ -337,7 +340,7 @@
 //    var pos2 = actual.search("</title>");
 //    actual = actual.slice(pos1, pos2);
 //    var expected = "<title>The Bank Building";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+//    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
 //    //second test:  
 //    var actual;
 //    var xhr = new XMLHttpRequest();
@@ -353,11 +356,11 @@
 //    actual = actual.length;
 //    expected = raw.match(/<\/div>/g);
 //    expected = expected.length;
-//    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+//    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
 //});
 ////******************************************************
-//test("1-10 Verify page title and divs match in BolducFamilyHistory.html", 1, function () {
-//    expect(2);
+//test("1-10 Verify page title and divs match in BolducFamilyHistory.html", 1, function(assert){
+//    assert.expect(2);
 //    var actual;
 //    var xhr = new XMLHttpRequest();
 //    xhr.open("GET", "BolducFamilyHistory.html", false);
@@ -372,7 +375,7 @@
 //    var pos2 = actual.search("</title>");
 //    actual = actual.slice(pos1, pos2);
 //    var expected = "<title>Bolduc Family History";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+//    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
 //  //second test:  
 //    var actual;
 //    var xhr = new XMLHttpRequest();
@@ -388,11 +391,11 @@
 //    actual = actual.length;
 //    expected = raw.match(/<\/div>/g);
 //    expected = expected.length;
-//    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+//    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
 //});
 ////******************************************************
-//QUnit.test("1-11 Verify page title and divs match in OpeningDay.html", 1, function () {
-//    expect(2);
+//QUnit.test("1-11 Verify page title and divs match in OpeningDay.html", 1, function(assert){
+//    assert.expect(2);
 //    var xhr = new XMLHttpRequest();
 //    xhr.open("GET", "OpeningDay.html", false);
 //    xhr.timeout = 2000;
@@ -406,7 +409,7 @@
 //    var pos2 = actual.search("</title>");
 //    actual = actual.slice(pos1, pos2);
 //    var expected = "<title>Opening Day in 1958";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+//    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
 //    //second test:  
 //    var actual;
 //    var xhr = new XMLHttpRequest();
@@ -422,12 +425,12 @@
 //    actual = actual.length;
 //    expected = raw.match(/<\/div>/g);
 //    expected = expected.length;
-//    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+//    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
 //});
 ////******************************************************
  
-//QUnit.test("1-12 Verify page title and matching divs in Kids.html", 1, function () {
-//    expect(2);
+//QUnit.test("1-12 Verify page title and matching divs in Kids.html", 1, function(assert){
+//    assert.expect(2);
 //    var xhr = new XMLHttpRequest();
 //    xhr.open("GET", "Kids.html", false);
 //    xhr.timeout = 2000;
@@ -441,7 +444,7 @@
 //    var pos2 = actual.search("</title>");
 //    actual = actual.slice(pos1, pos2);
 //    var expected = "<title>Kids at The Bolduc House Museum";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+//    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
 //    //second test:  
 //    var actual;
 //    var xhr = new XMLHttpRequest();
@@ -457,11 +460,11 @@
 //    actual = actual.length;
 //    expected = raw.match(/<\/div>/g);
 //    expected = expected.length;
-//    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+//    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
 //});  
 ////******************************************************
-//QUnit.test("1-12 Verify page title and matching divs in Email.html", 1, function () {
-//    expect(2);
+//QUnit.test("1-12 Verify page title and matching divs in Email.html", 1, function(assert){
+//    assert.expect(2);
 //    var xhr = new XMLHttpRequest();
 //    xhr.open("GET", "Email.html", false);
 //    xhr.timeout = 2000;
@@ -475,7 +478,7 @@
 //    var pos2 = actual.search("</title>");
 //    actual = actual.slice(pos1, pos2);
 //    var expected = "<title>Email The Bolduc House Museum";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual); 
+//    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual); 
 ////second QUnit.test:  
 //var actual;
 //var xhr = new XMLHttpRequest();
@@ -491,11 +494,11 @@
 //actual = actual.length;
 //expected = raw.match(/<\/div>/g);
 //expected = expected.length;
-//equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+//assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
 //}); 
 ////******************************************************
-//test("1-13 Verify page title and matching divs in HandsOnHistoryRoom.html", 1, function () {
-//    expect(2);
+//test("1-13 Verify page title and matching divs in HandsOnHistoryRoom.html", 1, function(assert){
+//    assert.expect(2);
 //    var xhr = new XMLHttpRequest();
 //    xhr.open("GET", "HandsOnHistoryRoom.html", false);
 //    xhr.timeout = 2000;
@@ -509,7 +512,7 @@
 //    var pos2 = actual.search("</title>");
 //    actual = actual.slice(pos1, pos2);
 //    var expected = "<title>Hands On History Room";
-//    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+//    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
 //    //second test:  
 //    var actual;
 //    var xhr = new XMLHttpRequest();
@@ -525,11 +528,11 @@
 //    actual = actual.length;
 //    expected = raw.match(/<\/div>/g);
 //    expected = expected.length;
-//    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+//    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
 //});
 ////******************************************************
-////QUnit.test("x-xx Verify page title and matching divs in Email.html", 1, function () {
-////    expect(2);
+////QUnit.test("x-xx Verify page title and matching divs in Email.html", 1, function(assert){
+////    assert.expect(2);
 ////    var xhr = new XMLHttpRequest();
 ////    xhr.open("GET", "Email.html", false);
 ////    xhr.timeout = 2000;
@@ -543,7 +546,7 @@
 ////    var pos2 = actual.search("</title>");
 ////    actual = actual.slice(pos1, pos2);
 ////    var expected = "<title>Email The Bolduc House Museum";
-////    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+////    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
 ////    //second test:  
 ////    var actual;
 ////    var xhr = new XMLHttpRequest();
@@ -559,10 +562,10 @@
 ////    actual = actual.length;
 ////    expected = raw.match(/<\/div>/g);
 ////    expected = expected.length;
-////    equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
+////    assert.equal(actual, expected, 'Open Divs: ' + actual + '  Closing Divs:  ' + expected);
 ////});
-////test("1-14 Verify page title is present on live site", 1, function () {
-////    expect(1);
+////test("1-14 Verify page title is present on live site", 1, function(assert){
+////    assert.expect(1);
     
 ////    var Xray = new Xray();
 ////    xray('http://www.bolduchouse.org','title').write()
@@ -581,13 +584,13 @@
 ////    var pos2 = actual.search("</title>");
 ////    actual = actual.slice(pos1, pos2);
 ////    var expected = "<title>The Bolduc House Museum";
-////    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+////    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
 
 ////});
 ////******************************************************
 //// //4 won't work due to security issue
-////test("Verify title in default.html ( online)", 1, function () {
-////    expect(1);
+////test("Verify title in default.html ( online)", 1, function(assert){
+////    assert.expect(1);
 ////    var actual;
 ////    var xhr = new XMLHttpRequest();
 ////    xhr.open("GET", "http://www.bolduchouse.org/Default.html", false);
@@ -598,5 +601,5 @@
 ////    xhr.send(null);
 ////    actual = xhr.responseXML;  
 ////    var expected = 'Title=&quot;Home Page&quot;';
-////    equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
+////    assert.equal(actual, expected, 'Expected value: ' + expected + '  Actual value:  ' + actual);
 ////});
