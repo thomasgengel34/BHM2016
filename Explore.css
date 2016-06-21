@@ -1,0 +1,96 @@
+﻿@font-face {
+	font-family: AlexBrush-Regular;
+	src: url('../fonts/alex-brush/AlexBrush-Regular.ttf') format('truetype');
+}
+
+.admin {
+    background-color:  gold;
+    color: black;
+    border: 1px double black;
+} 
+
+.bldg {
+    background-color: #036;
+    color: white; 
+    border-radius:10px;
+}
+.kids {
+    font-family:'Comic Sans MS';
+    color: green;  
+    font-size:large;
+    background-color: yellow;
+    border-radius:20px;
+    -o-transform:rotate(10deg);
+    -moz-transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    transform:rotate(10deg);
+} 
+
+.kids::first-letter {
+    font-size:x-large;
+}
+#urhere{
+ font-family:'Comic Sans MS';
+ color:#036;
+ font:bolder;
+}
+
+
+#flexBoxSiteMap {   
+    display:-ms-flexbox; 
+    display:flex; 
+    border: 1px solid black;
+    border-radius:25px ;
+    -ms-flex-direction:row;
+    -webkit-flex-direction:row; 
+    flex-direction: row;
+    -ms-flex-flow:wrap;
+    -webkit-flex-flow:wrap; 
+    flex-flow:wrap; 
+    
+}
+
+.siteButton {
+    height:135px;
+    width: 135px;
+    margin: 25px;
+    padding: 10px; 
+    box-shadow: 3px 3px 3px #aaa;
+}
+
+.siteButton>img{
+    margin:auto;
+    box-shadow:none;
+    height:70px; 
+}
+
+.up {
+   /*this class is used for javascript only - for presentation use a category like activity, admin, bldg, craft, kids*/
+}
+
+.soon {
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.future {
+    border: 1px dashed black;
+}
+.history  {
+    background-color: lightgoldenrodyellow;
+    border:double 1px gold; 
+}
+
+@font-face{
+    font-family:AlexBrush-Regular;
+    src:url(../../fonts/alex-brush/AlexBrush-Regular.ttf);
+}
+.Wedding {
+    font-family:AlexBrush-Regular;
+    font-size: x-large;
+}
+.arrange {
+      background-color: khaki;
+    border:double 1px gold; 
+}

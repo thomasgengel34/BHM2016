@@ -1,0 +1,30 @@
+﻿ 
+#zutsSchedule{
+    text-align: center; 
+}
+
+#zutsSchedule img {
+    margin-top:55px; 
+} 
+
+#zutsAgenda{ 
+   border-radius:300px;
+   box-shadow:10px 10px 10px;
+   width:600px;
+   margin-left:100px;
+    padding: 10px  200px 10px 200px; 
+    background:linear-gradient(to bottom right,white,white,brown);
+}
+.botmarg40 li {
+    margin-bottom:40px;
+}
+
+#ceramicPot{
+    width:813px;
+    margin:auto;
+   
+}
+#ceramicPot img {
+ box-shadow:none;
+}
+ 
