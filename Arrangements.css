@@ -27,4 +27,21 @@
 #ceramicPot img {
  box-shadow:none;
 }
+
+@font-face{
+    font-family:AlexBrush-Regular;
+    src:url(../../fonts/alex-brush/AlexBrush-Regular.ttf);
+}
+.Wedding {
+    font-family:AlexBrush-Regular;
+    font-size:  large;
+}
+.Princess {
+    font-family:AlexBrush-Regular;
+    font-size:  larger;
+    color:lightpink;  
+}
+.BBQ {
+    font-family:Arial; 
+}
  
