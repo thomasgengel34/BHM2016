@@ -1,0 +1,18 @@
+﻿ #HerStory, #HerStory h2, #HerStory h3 {
+ font-family:cursive; 
+ }
+  #HerStory p{
+      font-size:large;
+  }
+
+#HerStory p::first-letter  {
+    font-size:x-large; 
+}
+
+ #HerStory p::first-line {
+     color:#036;
+ }
+
+ #HerStory article {
+     background:linear-gradient(to right,antiquewhite,lemonchiffon,antiquewhite,lemonchiffon,white); 
+ }
