@@ -100,3 +100,9 @@
      width:50px;
      margin:auto;  
 }
+.artwalk {
+    background:linear-gradient(to bottom right, white,yellow,blue);
+    border-radius:20px 2px 20px 2px;  
+    font-size:larger;
+    font-family: 'Copperplate Gothic';
+}
