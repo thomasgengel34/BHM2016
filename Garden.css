@@ -1,0 +1,19 @@
+﻿.GardenCarousel {
+    width:100%;
+    height:800px;
+    background-color:azure;
+}
+#SquirrelTourTitle {
+    margin:auto;
+    text-align:center;
+    background:radial-gradient(white azure);
+    height:800px;
+    font
+}
+#SquirrelTour h2, #SquirrelTour p {margin:50px;}
+
+#SquirrelTour img {margin:10px;}
+
+#sqWedPic {
+    width:269px;
+}
