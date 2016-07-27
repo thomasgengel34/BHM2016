@@ -1,19 +1,67 @@
-﻿.GardenCarousel {
-    width:100%;
-    height:800px;
-    background-color:azure;
+﻿.item, .GardenCarousel {
+    width: 100%;
+    height: 800px;
+    // background-color:yellow;
+    font-family: 'Comic Sans MS';
+    font-size: larger;
 }
-#SquirrelTourTitle {
-    margin:auto;
-    text-align:center;
-    background:radial-gradient(white azure);
-    height:800px;
-    font
-}
-#SquirrelTour h2, #SquirrelTour p {margin:50px;}
 
-#SquirrelTour img {margin:10px;}
+#SquirrelTourTitle {
+    margin: auto;
+    text-align: center;
+    background: radial-gradient( lightyellow,white, lightgreen);
+    height: 800px;
+    color: darkgreen;
+}
+
+    #SquirrelTourTitle h1 {
+        font-family: 'Comic Sans MS';
+        padding-top: 250px;
+    }
+
+    #SquirrelTourTitle h3, #SquirrelTour p {
+        margin: 50px;
+        font-family: 'Comic Sans MS';
+    }
+
+#SquirrelTour img {
+    margin: 10px;
+}
 
 #sqWedPic {
-    width:269px;
+    width: 269px;
 }
+
+#test {
+    // background-color:yellow;
+    //background:linear-gradient(to right, yellow,white,blue);
+    /*background:radial-gradient( yellow,white,blue,green);
+  width:100%;
+  height:100px;*/
+}
+
+#cardoon {
+    // background:radial-gradient( lightyellow,white, lightgreen);
+    background: -webkit-radial-gradient(60% 55%, closest-side, lightyellow, white, lightgreen); /* Safari 5.1 to 6.0 */
+    background: -moz-radial-gradient(60% 55%, closest-side, lightyello, yellow, lightgreen); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(closest-side at 60% 55%, lightyellow, white, lightgreen);
+}
+
+    #cardoon h2 {
+        font-family: 'Comic Sans MS';
+        margin-left: 100px;
+        color: darkgreen;
+        padding-top: 250px;
+    }
+
+    #cardoon figure {
+        width: 341px;
+        padding-top: 100px;
+        margin-left: 50px;
+    }
+
+    #cardoon p {
+        width:450px;
+
+    }
+
