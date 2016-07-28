@@ -43,7 +43,7 @@
 #cardoon {
     // background:radial-gradient( lightyellow,white, lightgreen);
     background: -webkit-radial-gradient(60% 55%, closest-side, lightyellow, white, lightgreen); /* Safari 5.1 to 6.0 */
-    background: -moz-radial-gradient(60% 55%, closest-side, lightyello, yellow, lightgreen); /* For Firefox 3.6 to 15 */
+    background: -moz-radial-gradient(60% 55%, closest-side,  lightyellow, white, lightgreen); /* For Firefox 3.6 to 15 */
     background: radial-gradient(closest-side at 60% 55%, lightyellow, white, lightgreen);
 }
 
@@ -61,7 +61,43 @@
     }
 
     #cardoon p {
-        width:450px;
-
+        width:450px;         
     }
 
+#cardoon p::first-letter {
+           font-size:x-large;
+     } 
+
+    #EasyAccess { 
+    background: -webkit-radial-gradient(closest-side at 25% 50%, lightyellow 75%,   lightgreen);
+    background: -moz-radial-gradient(closest-side at 25% 50%, lightyellow 75%,   lightgreen);
+    background: radial-gradient(closest-side at 25% 50%, lightyellow 75%,   lightgreen);
+    margin:0;
+    padding:0; 
+    font-family: 'Comic Sans MS';
+    } 
+     #EasyAccess p::first-letter {
+           font-size:x-large;
+     } 
+  #EasyAccess figure,#EasyAccess img {
+      margin:0;
+      padding:0;
+  }
+  #EasyAccess h2 {
+      text-align:center; 
+      margin-top:110px;
+       font-family: 'Comic Sans MS';
+  } 
+  #EasyAccess p {
+      margin-top:45px;
+      text-align:center;
+      width:475px;
+      margin-left:150px;
+  }
+  #Foxglove figure {
+      width:213px;
+      margin:auto;
+  }
+  #Foxglove div[class^="col"] {
+      background-color:purple;
+  }
