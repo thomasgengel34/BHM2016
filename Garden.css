@@ -6,6 +6,20 @@
     font-size: larger;
 }
 
+#ZutsNote {
+    border:20px solid grey;
+    width:400px;
+    padding:10px;
+    font-family:'Comic Sans MS';
+    font-size:larger;
+   transform:rotate(-20deg); 
+    background-color:palegoldenrod;
+    margin-left:100px;
+}
+#Deuel {
+    font-family:'Lucida Calligraphy';
+}
+
 #SquirrelTourTitle {
     margin: auto;
     text-align: center;
@@ -88,7 +102,7 @@
       margin-top:110px;
        font-family: 'Comic Sans MS';
   } 
-  #EasyAccess p {
+  #EasyAccess p, #Foxglove p {
       margin-top:45px;
       text-align:center;
       width:475px;
@@ -97,7 +111,112 @@
   #Foxglove figure {
       width:213px;
       margin:auto;
+      margin-top:195px;
   }
   #Foxglove div[class^="col"] {
-      background-color:purple;
+       background: -webkit-radial-gradient(closest-side at 50% 50%, lightyellow 75%,   lightgreen);
+    background: -moz-radial-gradient(closest-side at 50% 50%, lightyellow 75%,   lightgreen); 
+    background: radial-gradient(closest-side at 50% 50%, lightyellow 75%,   lightgreen);
+    height:800px;
   }
+
+  #Foxglove h2 {
+      text-align:center; 
+      margin-top:110px;
+       font-family: 'Comic Sans MS';
+       color:purple;
+  } 
+
+  #GrapeArbor {
+       background: radial-gradient(closest-side at 50% 50%, lightyellow 75%,   lightgreen);
+    height:800px;
+  }
+
+  #GrapeArbor figure {
+      width:600px;
+      text-align:center; 
+      margin-top:100px; 
+  }
+
+  #GrapeArbor h2 {
+      text-align:center;
+      color:green;
+      font-family:'Comic Sans MS';
+       margin-top:20px;
+  }
+
+  #GrapeArbor p {
+      margin-top:10px; 
+  }
+
+  #GrapeArbor div[class="col-md-3"]:first-child p {
+      margin-top:200px;
+      margin-left:180px; 
+      margin-right:0px;
+      width:200px;
+  }
+  #GrapeArbor div[class="col-md-4"]  p {
+      margin-top:180px;
+      margin-left: 0px; 
+      margin-right:0px;
+      width:200px; 
+  }
+  #BigKitchenGardens div[class="row"] div:first-child {
+       background: radial-gradient(closest-side at 60% 50%, lightyellow 50%,   lightgreen);
+       height:800px;
+  }
+   #BigKitchenGardens div[class="row"] div:last-child {
+       background:lightgreen;
+       height:800px;
+  }
+   #BigKitchenGardens p {
+      
+      margin-left:300px;
+      width:300px; 
+       font-family: 'Comic Sans MS';
+       color:green;
+   } 
+    #BigKitchenGardens p::first-letter {
+           font-size:x-large;
+     } 
+   #BigKitchenGardens h2 {
+         margin-left:300px;
+      margin-top:210px;
+       font-family: 'Comic Sans MS';
+       color:green;
+   }
+   
+   #BigKitchenGardens figure {
+      margin-top:175px;
+       padding:0; 
+   }
+
+   #LemWeddingAisle #ZutsNote {
+    border:20px solid grey;
+    width:600px;
+    padding:10px;
+    font-family:'Comic Sans MS';
+    font-size:larger;
+   transform:rotate(-20deg); 
+    background-color:palegoldenrod;
+    margin-left:100px;
+    z-index:100;
+}
+ 
+    #LemWeddingAisle {
+        margin:10px; 
+        background: radial-gradient(closest-side at 60% 50%, lightyellow 50%,   lightgreen);
+       height:800px;
+    }
+
+     #LemWeddingAisle h2 {
+         color:green;
+         font-family:'Comic Sans MS';
+     }
+
+        #LemWeddingAisle img {
+            border: 20px solid white;
+            top:100px;
+        }
+
+        
