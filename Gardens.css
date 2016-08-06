@@ -1,0 +1,337 @@
+﻿.item, .GardenCarousel {
+    width: 100%;
+    height: 800px;
+    background-color: lightgreen;
+    font-family: 'Comic Sans MS';
+    font-size: larger;
+}
+
+#ZutsNote {
+    border: 20px solid grey;
+    width: 400px;
+    padding: 10px;
+    font-family: 'Comic Sans MS';
+    font-size: larger;
+    transform: rotate(-20deg);
+    background-color: palegoldenrod;
+    margin-left: 100px;
+}
+
+#Deuel {
+    font-family: 'Lucida Calligraphy';
+}
+
+
+
+#SquirrelTourTitle {
+    margin: auto;
+    text-align: center;
+    height: 800px; 
+    background:radial-gradient(lightyellow 50%, lightgreen, green);
+}
+#SquirrelTourTitle h1
+{
+    font-family: 'Comic Sans MS';
+    padding-top: 150px;
+    animation: sqtth1 3s 1s infinite ;
+}
+
+@keyframes sqtth1 {
+    0%,100% {
+        transform: rotate(0deg);
+    } 
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
+#SquirrelTourTitle h3, #SquirrelTour p {
+    margin: 50px;
+    margin-top:100px;
+    font-family: 'Comic Sans MS';
+}
+
+#SquirrelTour img {
+    margin: 10px;
+}
+
+#sqWedPic {
+    width: 269px;
+}
+
+#test {
+    background-color: yellow;
+    /* //  background:linear-gradient(to right, yellow,white,blue);
+   background:radial-gradient( yellow,white,blue,green);
+  width:100%;
+  height:100px;*/
+}
+
+#cardoon {
+    background: -webkit-radial-gradient(60% 55%, closest-side, lightyellow, white, lightgreen); /* Safari 5.1 to 6.0 */
+    background: -moz-radial-gradient(60% 55%, closest-side, lightyellow, white, lightgreen); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(closest-side at 60% 55%, lightyellow, white, lightgreen);
+}
+
+    #cardoon h2 {
+        font-family: 'Comic Sans MS';
+        margin-left: 100px;
+        color: darkgreen;
+        padding-top: 250px;
+        animation: cardoon 3s 1s infinite ;
+    }
+
+    #cardoon figure {
+        width: 341px;
+        padding-top: 100px;
+        margin-left: 50px;
+        
+    } 
+
+    @keyframes cardoon {
+        0%,100% {color:darkgreen;}
+        50% { color:mediumpurple;}
+    }
+
+    #cardoon p {
+        width: 450px;
+    }
+
+        #cardoon p::first-letter {
+            font-size: x-large;
+        }
+
+#EasyAccess {
+    background: -webkit-radial-gradient(closest-side at 25% 50%, lightyellow 75%, lightgreen);
+    background: -moz-radial-gradient(closest-side at 25% 50%, lightyellow 75%, lightgreen);
+    background: radial-gradient(closest-side at 25% 50%, lightyellow 75%, lightgreen);
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS';
+}
+
+    #EasyAccess p::first-letter {
+        font-size: x-large;
+    }
+
+    #EasyAccess figure, #EasyAccess img {
+        margin: 0;
+        padding: 0;
+    }
+
+    #EasyAccess h2 {
+        text-align: center;
+        margin-top: 110px;
+        font-family: 'Comic Sans MS';
+    }
+
+    #EasyAccess p, #Foxglove p {
+        margin-top: 45px;
+        text-align: center;
+        width: 475px;
+        margin-left: 150px;
+    }
+
+#Foxglove figure {
+    width: 213px;
+    margin: auto;
+    margin-top: 195px;
+}
+
+#Foxglove div[class^="col"] {
+    background: -webkit-radial-gradient(closest-side at 50% 50%, lightyellow 75%, lightgreen);
+    background: -moz-radial-gradient(closest-side at 50% 50%, lightyellow 75%, lightgreen);
+    background: radial-gradient(closest-side at 50% 50%, lightyellow 75%, lightgreen);
+    height: 800px;
+}
+
+#Foxglove h2 {
+    text-align: center;
+    margin-top: 110px;
+    font-family: 'Comic Sans MS';
+    color: purple;
+}
+
+#GrapeArbor {
+    background: radial-gradient(closest-side at 50% 50%, lightyellow 75%, lightgreen);
+    height: 800px;
+}
+
+    #GrapeArbor figure {
+        width: 600px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #GrapeArbor h2 {
+        text-align: center;
+        color: green;
+        font-family: 'Comic Sans MS';
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
+
+    #GrapeArbor p {
+        margin-top: 10px;
+    }
+
+    #GrapeArbor div[class="col-md-3"]:first-child p {
+        margin-top: 200px;
+        margin-left: 180px;
+        margin-right: 0px;
+        width: 200px;
+    }
+
+    #GrapeArbor div[class="col-md-4"] p {
+        margin-top: 180px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 200px;
+    }
+
+#BigKitchenGardens div[class="row"] div:first-child {
+    background: radial-gradient(closest-side at 60% 50%, lightyellow 50%, lightgreen);
+    height: 800px;
+}
+
+#BigKitchenGardens div[class="row"] div:last-child {
+    background: lightgreen;
+    height: 800px;
+}
+
+#BigKitchenGardens p {
+    margin-left: 300px;
+    width: 300px;
+    font-family: 'Comic Sans MS';
+    color: green;
+}
+
+    #BigKitchenGardens p::first-letter {
+        font-size: x-large;
+    }
+
+#BigKitchenGardens h2 {
+    margin-left: 300px;
+    margin-top: 210px;
+    font-family: 'Comic Sans MS';
+    color: green;
+}
+
+#BigKitchenGardens figure {
+    margin-top: 175px;
+    padding: 0;
+}
+
+#LemWeddingAisle #ZutsNote {
+    border: 20px solid grey;
+    width: 600px;
+    padding: 10px;
+    font-family: 'Comic Sans MS';
+    font-size: larger;
+    transform: rotate(-20deg);
+    background-color: palegoldenrod;
+    margin-left: 100px;
+    z-index: 100;
+}
+
+#LemWeddingAisle {
+    margin: 10px;
+    background: radial-gradient(closest-side at 60% 50%, lightyellow 50%, lightgreen);
+    height: 800px;
+}
+
+    #LemWeddingAisle h2, #GrapeTrellis h2 {
+        color: green;
+        font-family: 'Comic Sans MS';
+        text-align: center;
+    }
+
+    #LemWeddingAisle figure {
+        margin-top: 220px;
+    }
+
+    #LemWeddingAisle img {
+        border: 20px solid white;
+    }
+
+#GrapeTrellis {
+    background: radial-gradient(farthest-side at 75% 50%, lightyellow 30%, lightgreen 5%, lightyellow 20%, lightgreen 4%, lightyellow 10%, lightgreen 3%, lightyellow, lightgreen );
+    height: 800px;
+}
+
+    #GrapeTrellis h2 {
+        margin-top: 315px;
+    }
+
+    #GrapeTrellis p {
+        width: 500px;
+        text-align: center;
+        margin-left: 150px;
+        margin-top:50px;
+    }
+
+
+
+
+#GoodWarmFood {
+    height: 800px;
+    animation-name: mymove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mymove {
+    from {
+        background: radial-gradient(closest-side at 60% 50%, lightyellow 50%, lightgreen);
+    } 
+    to {
+        background: radial-gradient(closest-side at 60% 50%, lightgreen 50%,lightyellow );
+    }
+}
+
+#GoodWarmFood h2 {
+    color: green;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+}
+
+#GoodWarmFood figure  {
+    width:600px;
+     margin:auto; 
+}
+#HyacinthBean {
+     height: 800px;
+    background: radial-gradient( closest-side at 15% 60%, lightyellow 75%, lightgreen,purple);
+} 
+    
+#HyacinthBean h2 {
+     color: white;
+    font-family: 'Comic Sans MS';
+    text-align: center; 
+}
+    #HyacinthBean p {
+        margin-left: 180px;
+        margin-top: 210px;
+        width: 150px;
+    }
+    #TheWayIn h2 {
+           color: white;
+    font-family: 'Comic Sans MS';
+    text-align: center; 
+    }
+
+     #TheWayIn p
+     {
+         margin-top:40px;
+     }
+
+     #SneakIn, #GoodHiding h2{
+         font-family: 'Comic Sans MS';
+    text-align: center; 
+     }
+     #GoodHiding p {
+         margin-top:20px;
+     }
