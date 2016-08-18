@@ -25,7 +25,7 @@
    right:0;
 }
 #ZutsGardenCarousel {
-    height:712px;
+     height:712px;
     overflow:hidden;
 }
 .item, .GardenCarousel {
@@ -33,6 +33,7 @@
     background-color: lightgreen;
     font-family: 'Comic Sans MS';
     font-size: larger;
+    height:712px;
 }
 
 #SquirrelTour h2 {
@@ -177,8 +178,6 @@
     font-family: 'Comic Sans MS';
 }
 
-    
-
     #EasyAccess figure, #EasyAccess img {
         margin: 0;
         padding: 0;
@@ -187,7 +186,7 @@
     
 
     #EasyAccess p  {
-        margin-top: 100px;
+        margin-top: 80px;
         text-align: center;
         width: 475px;
         margin-left: 150px;
@@ -294,10 +293,10 @@
     padding: 10px;
     font-family: 'Comic Sans MS';
     font-size: larger;
-    transform: rotate(-20deg);
+    transform: rotate(-15deg);
     background-color: palegoldenrod;
-    margin-left: 100px;
-    margin-top:100px;
+    margin-left: 120px;
+    margin-top:-20px;
     z-index: 100;
 }
 
@@ -317,9 +316,15 @@
         text-align: center;
     }
 
-    #LemWeddingAisle figure {
+    #LemWeddingAisle div[class="col-md-5"] figure {
         margin:auto;
-        margin-top: 220px; 
+        margin-top: 100px; 
+        width: 300px;
+    }
+
+      #LemWeddingAisle div[class="col-md-7"] figure {
+        margin:auto;
+        margin-top: 50px; 
         width: 400px;
     }
 
@@ -342,32 +347,23 @@
         text-align: center;
         margin-left: 150px;
         margin-top: 50px;
-    }
-
-
-
+    } 
 
 #GoodWarmFood {
-    height: 800px;
-    animation-name: mymove;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+     background: radial-gradient(farthest-side at 25% 50%, lightyellow 37%, lightgreen 5%, lightyellow 20%, lightgreen 4%, lightyellow 10%, lightgreen 3%, lightyellow, lightgreen );
 }
-
-@keyframes mymove {
-    from {
-        background: radial-gradient(closest-side at 60% 50%, lightyellow 50%, lightgreen);
-    }
-
-    to {
-        background: radial-gradient(closest-side at 60% 50%, lightgreen 50%,lightyellow );
-    }
-}
+ 
 
 #GoodWarmFood h2 {
     color: green;
     font-family: 'Comic Sans MS';
     text-align: center;
+}
+
+#GoodWarmFood p {
+    margin:auto;
+    margin-top:235px;
+    width:700px;
 }
 
 #GoodWarmFood figure {
@@ -376,8 +372,8 @@
 }
 
 #HyacinthBean {
-    height: 800px;
-    background: radial-gradient( closest-side at 15% 60%, lightyellow 75%, lightgreen,purple);
+   
+    background: radial-gradient( closest-side at 15% 55%, lightyellow 75%, lightgreen,purple);
 }
 
     #HyacinthBean h2 {
@@ -388,7 +384,7 @@
 
     #HyacinthBean p {
         margin-left: 180px;
-        margin-top: 210px;
+        margin-top: 145px;
         width: 150px;
     }
 
