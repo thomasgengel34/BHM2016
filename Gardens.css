@@ -58,13 +58,15 @@
 #SquirrelTourTitle {
     text-align: center;
     height: 800px;
-    background: radial-gradient(lightyellow 50%, lightgreen, green);
+    background: -webkit-radial-gradient(lightyellow 50%, lightgreen, green);
+     background: radial-gradient(lightyellow 50%, lightgreen, green);
 }
 
     #SquirrelTourTitle h1 {
         font-family: 'Comic Sans MS';
         color: green;
         padding-top: 150px;
+        -webkit-animation: sqtth1 3s 1s infinite;
         animation: sqtth1 3s 1s infinite;
     }
 
@@ -81,7 +83,8 @@
 
     #SquirrelTourTitle div[class="col-md-2"]:last-child {
         width: 183px;
-        animation: squirrelTitle 5s ease-in-out 0s infinite;
+        -webkit-animation: squirrelTitle 5s ease-in-out 0s infinite;
+         animation: squirrelTitle 5s ease-in-out 0s infinite;
     }
 
         #SquirrelTourTitle div[class="col-md-2"]:last-child img {
@@ -91,10 +94,12 @@
     #SquirrelTourTitle h2, #SquirrelTour p {
         margin: 25px;
         margin-top: 75px;
+        font-family:'Comic Sans MS';
     }
 
 #SquirrelTour img {
     margin: 10px;
+    overflow:hidden;
 }
 
 #SquirrelTourTitle div[class="col-md-10"] h3 {
@@ -195,8 +200,10 @@
         text-align: left;
         margin-left: 100px;
         color: darkgreen;
-        padding-top: 100px;
+        padding-top: 100px; 
+         -webkit-animation: cardoon 3s 1s infinite;
         animation: cardoon 3s 1s infinite;
+      
     }
 
 .cardoon {
@@ -212,6 +219,7 @@
     width: 181px;
     height: 192px;
     overflow: hidden;
+    -webkit-animation: squirrelTitle 5s ease-in-out 2s infinite;
     animation: squirrelTitle 5s ease-in-out 2s infinite;
 }
 
@@ -293,6 +301,7 @@
 }
 
 #GrapeArbor {
+     background: -webkit-radial-gradient(closest-side at 50% 50%, lightyellow 75%, lightgreen);
     background: radial-gradient(closest-side at 50% 50%, lightyellow 75%, lightgreen);
     height: 800px;
 }
@@ -329,6 +338,7 @@
     }
 
 #BigKitchenGardens div[class="row"] div:first-child {
+    background: -webkit-radial-gradient(closest-side at 60% 60%, lightyellow 80%, lightgreen);
     background: radial-gradient(closest-side at 60% 60%, lightyellow 80%, lightgreen);
 }
 
@@ -362,6 +372,7 @@
     width: 500px;
     padding: 10px;
     font-family: 'Comic Sans MS';
+    -webkit-transform:rotate(-5deg);
     transform: rotate(-5deg);
     background-color: palegoldenrod;
     margin-left: 220px;
@@ -399,13 +410,19 @@
         width: 400px;
     }
 
+    #LemWeddingAisle figure  {
+       overflow:hidden;
+    }
+
     #LemWeddingAisle img {
-        border: 20px solid white;
+        border: 20px solid white; 
+        /*overflow:hidden;*/
     }
 
 
 #GrapeTrellis {
-    background: radial-gradient(farthest-side at 75% 60%, lightyellow 30%, lightgreen );
+    background: -webkit-radial-gradient(farthest-side at 75% 60%, lightyellow 30%, lightgreen );
+     background: radial-gradient(farthest-side at 75% 60%, lightyellow 30%, lightgreen );
 }
 
     #GrapeTrellis h2 {
@@ -426,6 +443,7 @@
         top: -100px;
         right: 400px;
         background-image: url('../Images/pecan_20.png');
+        -webkit-animation: pecanFall 2s ease-in 1s infinite;
         animation: pecanFall 2s ease-in 1s infinite;
     }
    
@@ -437,6 +455,7 @@
         position: absolute;
         top: -100px;
         right: 400px;
+        -webkit-animation: pecanFall 2s ease-in 1s infinite;
         animation: pecanFall 2s ease-in 1s infinite;
     }
 
@@ -446,6 +465,7 @@
         position: absolute;
         top: -100px;
         right: 100px;
+        -webkit-animation: pecanFall 2s ease-in 2s infinite;
         animation: pecanFall 2s ease-in 2s infinite;
     }
 
@@ -455,6 +475,7 @@
         position: absolute;
         top: -100px;
         right: 300px;
+        -webkit-animation: pecanFall 2s ease-in 3s infinite;
         animation: pecanFall 2s ease-in 3s infinite;
     }
 
@@ -464,6 +485,7 @@
         position: absolute;
         top: -100px;
         right: 500px;
+        -webkit-animation: pecanFall 2s ease-in 4s infinite;
         animation: pecanFall 2s ease-in 4s infinite;
     }
 
@@ -473,6 +495,7 @@
         position: absolute;
         top: -100px;
         right: 600px;
+        -webkit-animation: pecanFall 2s ease-in 5s infinite;
         animation: pecanFall 2s ease-in 5s infinite;
     }
 
@@ -482,6 +505,7 @@
         position: absolute;
         top: -100px;
         right: 600px;
+        -webkit-animation: pecanFall 2s ease-in 6s infinite;
         animation: pecanFall 2s ease-in 6s infinite;
     }
 
@@ -502,7 +526,8 @@
 
 
 #GoodWarmFood {
-    background: radial-gradient(farthest-side at 25% 50%, lightyellow 37%, lightgreen);
+    background: -webkit-radial-gradient(farthest-side at 25% 50%, lightyellow 37%, lightgreen);
+      background: radial-gradient(farthest-side at 25% 50%, lightyellow 37%, lightgreen);
 }
 
 
@@ -525,6 +550,7 @@
     }
 
 #HyacinthBean {
+    background: -webkit-radial-gradient( closest-side at 15% 55%, lightyellow 75%, lightgreen,purple);
     background: radial-gradient( closest-side at 15% 55%, lightyellow 75%, lightgreen,purple);
 }
 
@@ -571,12 +597,14 @@
 
 #ISpy div[class="col-md-6"]:first-child {
     height: 800px;
-    background: radial-gradient( closest-side at 50% 30%, lightyellow 75%, lightgreen, lightyellow 10%,green);
+    background: -webkit-radial-gradient( closest-side at 50% 30%, lightyellow 75%, lightgreen, lightyellow 10%,green);
+      background: radial-gradient( closest-side at 50% 30%, lightyellow 75%, lightgreen, lightyellow 10%,green);
 }
 
 #ISpy div[class="col-md-6"]:last-child {
     height: 800px;
-    background: linear-gradient(left,lightyellow 75%,green );
+    background: -webkit-linear-gradient(left,lightyellow 75%,green );
+     background: linear-gradient(left,lightyellow 75%,green );
 }
 
 
@@ -598,6 +626,7 @@
     right: 120px;
     bottom: 120px;
     overflow: hidden;
+    -webkit-animation: squirrelTitle 5s ease-in-out 0s 1;
     animation: squirrelTitle 5s ease-in-out 0s 1;
 }
 
@@ -636,16 +665,19 @@
     width: 100%;
     padding-top: 0px;
     z-index: 100;
+    -webkit-animation: camper 5s ease-out;
     animation: camper 5s ease-out;
 }
 
 #MoreForTheMenu div[class="col-md-6"]:first-child {
+    background: -webkit-linear-gradient(left,lightyellow 75%,green );
     background: linear-gradient(left,lightyellow 75%,green );
     height: 800px;
 }
 
 #MoreForTheMenu div[class="col-md-6"]:last-child {
-    background: linear-gradient(left,lightyellow 75%,green );
+    background: -webkit-linear-gradient(left,lightyellow 75%,green );
+       background: linear-gradient(left,lightyellow 75%,green );
 }
 
 
@@ -678,7 +710,8 @@
 
 #MYNewestGarden div[class="col-md-6"]:last-child {
     height: 800px;
-    background: radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen,purple,lightyellow 10%,green);
+    background: -webkit-radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen,purple,lightyellow 10%,green);
+      background: radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen,purple,lightyellow 10%,green);
 }
 
 #MYNewestGarden h2 {
@@ -718,6 +751,7 @@
     top: 150px;
     z-index: 100;
     opacity: 0;
+    -webkit-animation: croquet 2s ease-in-out 1s 1;
     animation: croquet 2s ease-in-out 1s 1;
 }
 
@@ -730,6 +764,7 @@
     top: 300px;
     z-index: 100;
     opacity: 0;
+    -webkit-animation: croquet 3s ease-in-out 2s 1 reverse;
     animation: croquet 3s ease-in-out 2s 1 reverse;
 }
 
@@ -742,6 +777,7 @@
     top: 450px;
     z-index: 100;
     opacity: 0;
+    -webkit-animation: croquet 1s ease-in-out 3s 1;
     animation: croquet 1s ease-in-out 3s 1;
 }
 
@@ -771,6 +807,7 @@
         left: -200px;
         padding-left: 0;
         margin-left: 0;
+        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
         opacity: 0;
     }
@@ -801,7 +838,7 @@
 
 
 #IntoTheBoxwoods {
-    /*background:linear-gradient(lightyellow,lightgreen, lightyellow,lightgreen,lightyellow,lightgreen  )   ;*/
+   background: -webkit-linear-gradient( rgba(255,0,0,0), rgba(0,255,0,1));
     background: linear-gradient( rgba(255,0,0,0), rgba(0,255,0,1));
 }
 
@@ -839,11 +876,11 @@
     }
 
 #Water {
+     background: -webkit-linear-gradient(lightblue,lightgreen 50%,darkblue);
     background: linear-gradient(lightblue,lightgreen 50%,darkblue);
 }
 
-    #Water h2 {
-        font-family: 'Comic Sans MS';
+    #Water h2 { 
         text-align: center;
         color: blue;
     }
@@ -863,11 +900,11 @@
     }
 
 #MoreDeliciousPlants {
+     background: -webkit-linear-gradient(lightblue,lightgreen, brown);
     background: linear-gradient(lightblue,lightgreen, brown);
 }
 
-    #MoreDeliciousPlants h2 {
-        font-family: 'Comic Sans MS';
+    #MoreDeliciousPlants h2 { 
         text-align: center;
     }
 
@@ -881,8 +918,7 @@
     padding: 0;
 }
 
-    #LookAtMe h2 {
-        font-family: 'Comic Sans MS';
+    #LookAtMe h2 { 
         text-align: center;
     }
 
