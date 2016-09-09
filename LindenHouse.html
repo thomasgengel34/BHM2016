@@ -4,12 +4,13 @@
     <title>The Linden House</title>
     <link rel="shortcut icon" href="favicon.ico" type="favicon/ico" />
     <meta charset="utf-8" />
-    <meta name="description" content="Bolduc House Museum offices. shop and library are at the Linden House in Ste.Genevieve,Missouri"  />
+    <meta name="description" content="Bolduc House Museum offices. shop and library are at the Linden House in Ste.Genevieve,Missouri" />
     <meta name="keywords" content="Bolduc House Museum offices, shop, library, archives, genealogy resources in 1820 vertical log French colonial style house and headquarters of Missouri Society of The Colonial Dames (NSCDA)" />
     <script src="Scripts/jquery-1.10.2.js"></script>
     <script src="Scripts/bootstrap.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/LindenHouse.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -40,14 +41,14 @@
         <h1>The Linden House</h1>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home">Welcome!</a></li>
-            <li><a data-toggle="tab" href="#menu1">The Parlor</a></li>
-            <li><a data-toggle="tab" href="#menu2">The Gallery Hallway</a></li>
-            <li><a data-toggle="tab" href="#menu3">The Shop</a></li>
-            <li><a data-toggle="tab" href="#menu4">The Rozier Library & Heritage Room</a></li>
-            <li><a data-toggle="tab" href="#menu5">The Plant Nursery</a></li>
-            <li><a data-toggle="tab" href="#menu6">The Kitchen</a></li>
-            <li><a data-toggle="tab" href="#menu7">The Boxwoods</a></li>
-            <li><a data-toggle="tab" href="#menu8">On Display Now</a></li>
+            <li><a data-toggle="tab" href="#Parlor">The Parlor</a></li>
+            <li><a data-toggle="tab" href="#Gallery">The Gallery Hallway</a></li>
+            <li><a data-toggle="tab" href="#Shop">The Shop</a></li>
+            <li><a data-toggle="tab" href="#Rozier">The Rozier Library & Heritage Room</a></li>
+            <li><a data-toggle="tab" href="#Nursery">The Plant Nursery</a></li>
+            <li><a data-toggle="tab" href="#Kitchen">The Kitchen</a></li>
+            <li><a data-toggle="tab" href="#Boxwoods">The Boxwoods</a></li>
+            <li><a data-toggle="tab" href="#DisplayNow">On Display Now</a></li>
         </ul>
         <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
@@ -72,21 +73,23 @@
                             <p>Our curator’s office is upstairs. </p>
                         </div>
                         <div class="col-md-6">
-                            <img id="imgLindenHouse"
-                                 alt="The Linden House"
-                                 src="images/LindenHouse/LindenHouse350.jpg" />
+                            <figure>
+                                <img id="imgLindenHouse"
+                                     alt="The Linden House"
+                                     src="images/LindenHouse/LindenHouse350.jpg" width="700" height="464" />
+                            </figure>
                         </div>
                     </div>
                 </article>
             </div>
-            <div id="menu1" class="tab-pane fade">
+            <div id="Parlor" class="tab-pane fade">
                 <article>
                     <h2>The Parlor</h2>
                     <div class="row">
                         <div class="col-md-6">
                             <figure>
                                 <img alt="Linden House Parlor"
-                                     src="images/LindenHouse/Linden%20House%20Parlor300.jpg" />
+                                     src="images/LindenHouse/Linden%20House%20Parlor300.jpg" width="600" height="800" />
                                 <figcaption>The parlor in the Linden House</figcaption>
                             </figure>
                         </div>
@@ -107,14 +110,14 @@
                     </div>
                 </article>
             </div>
-            <div id="menu2" class="tab-pane fade">
+            <div id="Gallery" class="tab-pane fade">
                 <article>
                     <h2>The Gallery Hallway </h2>
                     <div class="row">
                         <div class="col-md-6">
                             <figure>
-                                <img alt="Making Salt by Grant Kniffen" src="images/LindenHouse/Making%20Salt%20by%20Grant%20Kniffen.jpg" /><br />
-                                <figcaption><em>Making Salt </em>by Grant Kniffen -small (please see the larger one below for more detail)</figcaption>
+                                <img alt="Making Salt by Grant Kniffen" src="images/LindenHouse/Making%20Salt%20by%20Grant%20Kniffen.jpg" width="600" height="946" /><br />
+                                <figcaption> 'Making Salt'  by Grant Kniffen</figcaption>
                             </figure>
                         </div>
                         <div class="col-md-6">
@@ -127,37 +130,34 @@
                                 the gallery. We change the exhibit about once every six weeks.
                             </p>
                             <figure>
-                                <img alt="The Gallery Hallway in the Linden House" src="images/LindenHouse/Gallery%20Hallway.jpg" />
+                                <img alt="The Gallery Hallway in the Linden House" src="images/LindenHouse/Gallery%20Hallway.jpg" width="560" height="434" />
                                 <figcaption>Looking Down the Gallery Hallway</figcaption>
                             </figure>
                         </div>
                     </div>
-                    <div id="lnMakSalt">
-                        <figure>
-                            <img alt="Making Salt by Grant Kniffen" src="images/LindenHouse/Making%20Salt%20by%20Grant%20Kniffen.jpg" />
-                            <figcaption><em>Making Salt </em>by Grant Kniffen - please see the smaller one above  for a view at a glance)</figcaption>
-                        </figure>
-                    </div>
                 </article>
             </div>
-            <div id="menu3" class="tab-pane fade">
+            <div id="Shop" class="tab-pane fade">
                 <article>
-                    <h2>The Shop</h2>
                     <div class="row">
-                        <div class="col-md-5" style="margin: 0; padding-right: 10px;">
-                            <img alt="Zuts in the bookshelf" src="images/LindenHouse/ZutsInTheBookShelf.jpg" />
+                        <div class="col-md-5">
+                            <figure>
+                                <img alt="Zuts in the bookshelf" src="images/LindenHouse/ZutsInTheBookShelf.jpg" width="600" height="550" />
+                                <figcaption>I am always ready to help YOU!</figcaption>
+                            </figure>
                         </div>
-                        <p class="col-md-5" style="margin-left: 10px">
-                            Step up to get into the shop. It is filled with affordable
+                        <p class="col-md-5">
+                            <h2>The Shop</h2>
+                            Step up to enter. The shop is filled with affordable
                             mementoes of our French colonial American site. For some reason we have quite a
                             few squirrel-themed items, as well, for sale in the shop – not for pecans, though,
                             no matter what Zuts tries to tell you.
                         </p>
-                        <p class="col-md-6" style="margin-left: 10px">Our online shop is at <a>http.shop.bolduchouse.org</a>.</p>
+                        <p>Our online shop is at <a>http.shop.bolduchouse.org</a>. It is also on the main menu here (the blue band above where you are reading now).</p>
                     </div>
                 </article>
             </div>
-            <div id="menu4" class="tab-pane fade">
+            <div id="Rozier" class="tab-pane fade">
                 <article>
                     <h2>The Rozier Library &amp; Heritage Room</h2>
                     <p>
@@ -173,15 +173,15 @@
                         House and much more.
                     </p>
                     <p>
-                        We have a whole page on <a href="">The Rozier Library &amp; Heritage Room</a>. <em>Coming again, soon.</em>
+                        We have a whole page on  The Rozier Library &amp; Heritage Room. <em>Coming again, soon.</em>
                     </p>
                 </article>
             </div>
-            <div id="menu5" class="tab-pane fade">
+            <div id="Nursery" class="tab-pane fade">
                 <article>
-                    <h2>The Plant Nursery</h2>
                     <div class="row">
                         <div class="col-md-6">
+                            <h2>The Plant Nursery</h2>
                             <p>
                                 Patti raises most of the heirloom vegetables and herbs
                                 for our gardens in the basement plant nursery on the south side of the Linden House.
@@ -198,40 +198,50 @@
                         </div>
                         <div class="col-md-6">
                             <figure>
-                                <img alt="The south side of the Lindenhouse has greenhouse windows for the nursery" src="images/LindenHouse/the%20greenhouse_900.jpg" />
+                                <img alt="The south side of the Lindenhouse has greenhouse windows for the nursery" src="images/LindenHouse/the%20greenhouse_900.jpg" width="900" height="675" />
                                 <figcaption>The south side of the Lindenhouse has greenhouse windows for the nursery. Here you can see the Bolduc House across the street is sneaking into the picture. </figcaption>
                             </figure>
                         </div>
                     </div>
                 </article>
             </div>
-            <div id="menu6" class="tab-pane fade">
+            <div id="Kitchen" class="tab-pane fade">
                 <article>
-                    <h2>The Kitchen</h2>
+
                     <div class="row">
                         <div class="col-md-4">
                             <img alt="Pottery Class in Kitchen"
-                                 src="images/LindenHouse/PotteryClass.jpg" />
+                                 src="images/LindenHouse/PotteryClass.jpg" width="400" height="300" />
                         </div>
                         <div class="col-md-8">
-                            It looks cool and we do our Native American Ceramics
-                            classes in there but it isn’t that special. Really we use it as a kitchen and our
-                            staff break room. Of course, if you are holding a reception, wedding, or other event
-                            in the Linden House Yard, you may borrow the kitchen and the adjoining service area
-                            for your preparations.
+                            <h2>The Kitchen</h2>
+                            <p>
+                                It looks cool and we do our Native American Ceramics
+                                classes in there but it isn’t that special.
+                            </p><p>
+                                Really we use it as a kitchen and our
+                                staff break room.
+                            </p>
+                            <p>
+                                Of course, if you are holding a reception, wedding, or other event
+                                in the Linden House Yard, you may borrow the kitchen and the adjoining service area
+                                for your preparations.
+                            <p>The squirrels and mice and bugs would appreciate it if you would not clean it up like the STAFF tends to.  I think they want us to STARVE!!</p>
                         </div>
                     </div>
                 </article>
             </div>
-            <div id="menu7" class="tab-pane fade">
+            <div id="Boxwoods" class="tab-pane fade">
                 <article>
-                    <h2>The Boxwoods</h2>
                     <div class="row">
                         <div class="col-md-5">
-                            The grove of Ste. Genevieve boxwoods in the Linden House
-                            Yard is probably 250 years old. We can fit a whole fourth grade class with their
-                            teachers and parent chaperones inside the bushes and, from the outside, the group
-                            cannot be seen at all!
+                            <h2>The Boxwoods</h2>
+                            <p>
+                                The grove of Ste. Genevieve boxwoods in the Linden House
+                                Yard is probably 250 years old. We can fit a whole fourth grade class with their
+                                teachers and parent chaperones inside the bushes and, from the outside, the group
+                                cannot be seen at all!
+                            </p>
                             <p>
                                 While you are outside, don’t miss the Lewis &amp; Clark Garden.
                                 Zuts would direct you to the pecan tree in the center of the yard. If it is fall,
@@ -239,19 +249,19 @@
                             </p>
                         </div>
                         <p class="col-md-5">
-                            <img alt="the Boxwoods" src="images/LindenHouse/IntoTheBoxwoods.jpg" />
+                            <img alt="the Boxwoods" src="images/LindenHouse/IntoTheBoxwoods.jpg" width="456" height="342" />
                             <br />
                         </p>
                     </div>
 
                 </article>
             </div>
-            <div id="menu8" class="tab-pane fade">
+            <div id="DisplayNow" class="tab-pane fade">
                 <article>
                     <h2>On Display Now</h2>
                     <p>Native American Ceramics</p>
                     <img alt="Display Case of Native American Ceramics"
-                         src="images/LindenHouse/Native%20American%20Ceramics.jpg" />
+                         src="images/LindenHouse/Native%20American%20Ceramics.jpg" width="200" height="" />
 
 
                 </article>
@@ -266,6 +276,6 @@
         </p>
         <p>&copy;<span class="timeSpan">2016</span> - The Bolduc House Museum. All rights reserved.</p>
         <p>Site design by <a href="http://www.prairiefirewind.com" target="_blank"><span class="pfw">PFW</span></a></p>
-    </footer> 
+    </footer>
 </body>
 </html> 

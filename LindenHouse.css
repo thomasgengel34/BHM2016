@@ -1,0 +1,35 @@
+﻿#home figure{
+     width:700px;
+     height:462px;
+ }
+#Parlor figure {
+    width:600px;
+    height:800px;
+    margin-bottom:10px;
+}
+#Gallery figure:first-child {
+    width:600px;
+    height:946px; 
+    margin-bottom:40px;
+} 
+#Gallery figure:last-child {
+    width:560px;
+    height:434px; 
+}
+ #Gallery div[class="row"] {height:980px;}
+
+ #Kitchen p:last-child{
+      border: 20px solid grey;
+    width:  200px;
+    padding: 10px;
+    font-family: 'Comic Sans MS';
+    font-size: larger;
+    transform: rotate(-20deg);
+    background-color: palegoldenrod;
+    margin-left: 220px;
+ }
+ #Kitchen figure {
+     height:300px;
+     width: 400px;
+ }
+  

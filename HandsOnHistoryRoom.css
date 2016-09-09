@@ -195,4 +195,38 @@
 }
 
 
- 
+ article#sponsors figure:first-child {
+      width:160px;
+      height:59px; 
+      margin:10px;
+ }
+
+ article#sponsors  figure:nth-child(2) {
+     width:200px;
+     height:86px; 
+      margin:10px;
+ }
+
+ div#play figure{
+     margin:auto;
+     margin-top:50px; 
+ } 
+
+ div#play div[class="row"]:first-of-type div[class="col-md-6"]:last-child figure
+  {
+      width:600px;
+     height:450px;  
+ } 
+
+ div#play div[class="row"]:last-of-type div[class="col-md-6"]:first-of-type figure{
+      width:300px;
+      height:500px; 
+ } 
+
+  #play div[class="row"]:last-of-type
+  [class="col-md-6"]:last-of-type figure {
+      width:300px;
+      height:224px; /
+      background-color:orange;
+ } 
+  
