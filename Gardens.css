@@ -12,12 +12,16 @@
     transform: rotate(-20deg);
     background-color: palegoldenrod;
     margin-left: 220px;
+    z-index: 100;
 }
 
-#Deuel {
+div#home div[class="col-md-5"] p {
     font-family: 'Lucida Calligraphy';
 }
+/* 
+    Squirrel's Tour of the General, general stuff
 
+*/
 .carousel-inner {
     position: absolute;
     top: 0;
@@ -39,8 +43,13 @@
     height: 712px;
 }
 
+#SquirrelTour h1 {
+    font-family: 'Comic Sans MS';
+}
+
 #SquirrelTour h2 {
     font-family: 'Comic Sans MS';
+    font-size: 1.5em;
     color: white;
     text-align: center;
 }
@@ -54,58 +63,48 @@
         font-size: larger;
         font-weight: 700;
     }
-
+/* 
+ ******** Squirrel Tour Title Tab ******
+*/
 #SquirrelTourTitle {
-    text-align: center;
-    height: 800px;
+    text-align: center; 
     background: -webkit-radial-gradient(lightyellow 50%, lightgreen, green);
-     background: radial-gradient(lightyellow 50%, lightgreen, green);
+    background: radial-gradient(lightyellow 50%, lightgreen, green);
 }
 
-    #SquirrelTourTitle h1 {
-        font-family: 'Comic Sans MS';
+    #SquirrelTourTitle figure {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 181px;
+        -webkit-animation: squirrelTitle 5s ease-in-out 0s infinite;
+        animation: squirrelTitle 5s ease-in-out 0s infinite; 
+    }
+
+#SquirrelTourTitle h2 {  
+        color: green; 
+        margin: 25px;
+        margin-top: 75px; 
+    }
+
+    #SquirrelTourTitle h1  {
         color: green;
         padding-top: 150px;
-        /*-webkit-animation: sqtth1 3s 1s infinite;*/
-        animation: sqtth1 3s 1s infinite;
+        -webkit-animation: sqtth1 3s 1s infinite; 
+       animation: sqtth1 3s 1s infinite;  
     }
 
-    #SquirrelTourTitle h2 {
-        font-family: 'Comic Sans MS';
-        font-size: 1.5em;
-        color: green;
-        text-align: center;
-    }
+    
 
-    #SquirrelTourTitle div[class="col-md-10"] h2:last-of-type {
-        margin-left: 300px;
-    }
-
-    #SquirrelTourTitle div[class="col-md-2"]:last-child {
-        width: 183px;
-        -webkit-animation: squirrelTitle 5s ease-in-out 0s infinite;
-         animation: squirrelTitle 5s ease-in-out 0s infinite;
-    }
-
-        #SquirrelTourTitle div[class="col-md-2"]:last-child img {
-            box-shadow: none;
-        }
-
-    #SquirrelTourTitle h2, #SquirrelTour p {
-        margin: 25px;
-        margin-top: 75px;
-        font-family:'Comic Sans MS';
-    }
+    #SquirrelTourTitle img {
+        box-shadow: none;
+    } 
 
 #SquirrelTour img {
     margin: 10px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-#SquirrelTourTitle div[class="col-md-10"] h3 {
-    margin-left: 200px;
-    margin-top: 75px;
-}
 
 @-webkit-keyframes sqtth1 {
     0%,100% {
@@ -186,7 +185,9 @@
         opacity: 0;
     }
 }
-
+/*
+  *********  Cardoon Tab *********
+*/
 
 
 #cardoon {
@@ -200,10 +201,9 @@
         text-align: left;
         margin-left: 100px;
         color: darkgreen;
-        padding-top: 100px; 
-         -webkit-animation: cardoon 3s 1s infinite;
+        padding-top: 100px;
+        -webkit-animation: cardoon 3s 1s infinite;
         animation: cardoon 3s 1s infinite;
-      
     }
 
 .cardoon {
@@ -262,9 +262,9 @@
 
     #EasyAccess figure, #EasyAccess img {
         margin: 0;
-        padding: 0; 
-        background-image: url('../Images/Gardens/SquirrelGardenTour/ClipArtSquirrel.png'); 
-    } 
+        padding: 0;
+        background-image: url('../Images/Gardens/SquirrelGardenTour/ClipArtSquirrel.png');
+    }
 
     #EasyAccess p {
         margin-top: 50px;
@@ -301,7 +301,7 @@
 }
 
 #GrapeArbor {
-     background: -webkit-radial-gradient(closest-side at 50% 50%, lightyellow 75%, lightgreen);
+    background: -webkit-radial-gradient(closest-side at 50% 50%, lightyellow 75%, lightgreen);
     background: radial-gradient(closest-side at 50% 50%, lightyellow 75%, lightgreen);
     height: 800px;
 }
@@ -372,7 +372,7 @@
     width: 500px;
     padding: 10px;
     font-family: 'Comic Sans MS';
-    -webkit-transform:rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
     background-color: palegoldenrod;
     margin-left: 220px;
@@ -410,19 +410,19 @@
         width: 400px;
     }
 
-    #LemWeddingAisle figure  {
-       overflow:hidden;
+    #LemWeddingAisle figure {
+        overflow: hidden;
     }
 
     #LemWeddingAisle img {
-        border: 20px solid white; 
+        border: 20px solid white;
         /*overflow:hidden;*/
     }
 
 
 #GrapeTrellis {
     background: -webkit-radial-gradient(farthest-side at 75% 60%, lightyellow 30%, lightgreen );
-     background: radial-gradient(farthest-side at 75% 60%, lightyellow 30%, lightgreen );
+    background: radial-gradient(farthest-side at 75% 60%, lightyellow 30%, lightgreen );
 }
 
     #GrapeTrellis h2 {
@@ -446,7 +446,7 @@
         -webkit-animation: pecanFall 2s ease-in 1s infinite;
         animation: pecanFall 2s ease-in 1s infinite;
     }
-   
+
 
 
     #GrapeTrellis div:nth-child(3) {
@@ -499,7 +499,7 @@
         animation: pecanFall 2s ease-in 5s infinite;
     }
 
-     #GrapeTrellis div:nth-child(8) {
+    #GrapeTrellis div:nth-child(8) {
         width: 20px;
         height: 12px;
         position: absolute;
@@ -527,7 +527,7 @@
 
 #GoodWarmFood {
     background: -webkit-radial-gradient(farthest-side at 25% 50%, lightyellow 37%, lightgreen);
-      background: radial-gradient(farthest-side at 25% 50%, lightyellow 37%, lightgreen);
+    background: radial-gradient(farthest-side at 25% 50%, lightyellow 37%, lightgreen);
 }
 
 
@@ -598,13 +598,13 @@
 #ISpy div[class="col-md-6"]:first-child {
     height: 800px;
     background: -webkit-radial-gradient( closest-side at 50% 30%, lightyellow 75%, lightgreen, lightyellow 10%,green);
-      background: radial-gradient( closest-side at 50% 30%, lightyellow 75%, lightgreen, lightyellow 10%,green);
+    background: radial-gradient( closest-side at 50% 30%, lightyellow 75%, lightgreen, lightyellow 10%,green);
 }
 
 #ISpy div[class="col-md-6"]:last-child {
     height: 800px;
     background: -webkit-linear-gradient(left,lightyellow 75%,green );
-     background: linear-gradient(left,lightyellow 75%,green );
+    background: linear-gradient(left,lightyellow 75%,green );
 }
 
 
@@ -677,13 +677,13 @@
 
 #MoreForTheMenu div[class="col-md-6"]:last-child {
     background: -webkit-linear-gradient(left,lightyellow 75%,green );
-       background: linear-gradient(left,lightyellow 75%,green );
+    background: linear-gradient(left,lightyellow 75%,green );
 }
 
 
-#MoreForTheMenu h2 {  
-    margin-left:50px; 
-    text-align:left;
+#MoreForTheMenu h2 {
+    margin-left: 50px;
+    text-align: left;
 }
 
 #MoreForTheMenu figure {
@@ -705,13 +705,13 @@
 #MYNewestGarden div[class="col-md-6"]:first-child {
     height: 800px;
     background: -webkit-radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen, lightyellow 10%,green);
-      background: radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen ,lightyellow 10%,green);
+    background: radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen,lightyellow 10%,green);
 }
 
 #MYNewestGarden div[class="col-md-6"]:last-child {
     height: 800px;
     background: -webkit-radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen,purple,lightyellow 10%,green);
-      background: radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen,purple,lightyellow 10%,green);
+    background: radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen,purple,lightyellow 10%,green);
 }
 
 #MYNewestGarden h2 {
@@ -838,7 +838,7 @@
 
 
 #IntoTheBoxwoods {
-   background: -webkit-linear-gradient( rgba(255,0,0,0), rgba(0,255,0,1));
+    background: -webkit-linear-gradient( rgba(255,0,0,0), rgba(0,255,0,1));
     background: linear-gradient( rgba(255,0,0,0), rgba(0,255,0,1));
 }
 
@@ -850,50 +850,56 @@
 
     #IntoTheBoxwoods div[class="col-md-3"]:first-child p {
         width: 220px;
-        margin-left: 75px;  
+        margin-left: 75px;
     }
-    #IntoTheBoxwoods div[class="col-md-3"]:first-child figure { 
+
+    #IntoTheBoxwoods div[class="col-md-3"]:first-child figure {
         width: 112px;
-        margin-top: 200px; 
+        margin-top: 200px;
     }
 
         #IntoTheBoxwoods div[class="col-md-3"]:first-child figure img {
             box-shadow: none;
-            opacity:0;
-            animation: bijou 2s ease 4s  1; 
+            opacity: 0;
+            animation: bijou 2s ease 4s 1;
         }
 
-        @keyframes bijou {
-            0% {opacity:0}
-            100% {opacity:1}
-        }
+@keyframes bijou {
+    0% {
+        opacity: 0;
+    }
 
-#IntoTheBoxwoods [class="col-md-3"]:nth-child(2)  figure {
-    margin-top:100px; 
+    100% {
+        opacity: 1;
+    }
+}
+
+#IntoTheBoxwoods [class="col-md-3"]:nth-child(2) figure {
+    margin-top: 100px;
 }
 
 
-    #IntoTheBoxwoods div[class="col-md-3"]:nth-last-child(2) {
-        margin-top: 200px;
-        margin-left: 120px;
-        width: 260px;
-        padding-left: 0;
-        padding-right: 0;  
-    }
+#IntoTheBoxwoods div[class="col-md-3"]:nth-last-child(2) {
+    margin-top: 200px;
+    margin-left: 120px;
+    width: 260px;
+    padding-left: 0;
+    padding-right: 0;
+}
 
 
-    #IntoTheBoxwoods div[class="col-md-3"]:last-child {
-        margin-top: 100px;
-        margin-left: 100px;
-        width: 220px;  
-    }
+#IntoTheBoxwoods div[class="col-md-3"]:last-child {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 220px;
+}
 
 #Water {
-     background: -webkit-linear-gradient(lightblue,lightgreen 50%,darkblue);
+    background: -webkit-linear-gradient(lightblue,lightgreen 50%,darkblue);
     background: linear-gradient(lightblue,lightgreen 50%,darkblue);
 }
 
-    #Water h2 { 
+    #Water h2 {
         text-align: center;
         color: blue;
     }
@@ -913,11 +919,11 @@
     }
 
 #MoreDeliciousPlants {
-     background: -webkit-linear-gradient(lightblue,lightgreen, brown);
+    background: -webkit-linear-gradient(lightblue,lightgreen, brown);
     background: linear-gradient(lightblue,lightgreen, brown);
 }
 
-    #MoreDeliciousPlants h2 { 
+    #MoreDeliciousPlants h2 {
         text-align: center;
     }
 
@@ -931,7 +937,7 @@
     padding: 0;
 }
 
-    #LookAtMe h2 { 
+    #LookAtMe h2 {
         text-align: center;
     }
 
