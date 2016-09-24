@@ -9,6 +9,7 @@
     padding: 10px;
     font-family: 'Comic Sans MS';
     font-size: smaller;
+    -webkit-transform: rotate(-20deg);
     transform: rotate(-20deg);
     background-color: palegoldenrod;
     margin-left: 220px;
@@ -43,6 +44,28 @@ div#home div[class="col-md-5"] p {
     height: 712px;
 }
 
+@media only screen and (max-width:767px) {
+    #SquirrelTour h2, .item, .GardenCarousel {
+        font-size: medium;
+    }
+}
+
+@media (orientation:landscape) and (max-height:767px) {
+    #SquirrelTour p, #SquirrelTour h2 {
+        margin: 5px;
+    }
+}
+
+@media (orientation:portrait) and (max-width:464px) {
+    #SquirrelTour p, #SquirrelTour h2 {
+        margin: 5px;
+    }
+
+    h2, .item, .GardenCarousel {
+        font-size: small;
+    }
+}
+
 #SquirrelTour h1 {
     font-family: 'Comic Sans MS';
 }
@@ -52,6 +75,12 @@ div#home div[class="col-md-5"] p {
     font-size: 1.5em;
     color: white;
     text-align: center;
+}
+
+#SquirrelTour img {
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: none;
 }
 
 #SquirrelTour p, #SquirrelTour h3 {
@@ -66,47 +95,45 @@ div#home div[class="col-md-5"] p {
 /* 
  ******** Squirrel Tour Title Tab ******
 */
+
+
 #SquirrelTourTitle {
-    text-align: center; 
+    text-align: center;
     background: -webkit-radial-gradient(lightyellow 50%, lightgreen, green);
     background: radial-gradient(lightyellow 50%, lightgreen, green);
+    margin: 0;
+    padding: 0;
 }
 
     #SquirrelTourTitle figure {
         position: absolute;
-        top: 10px;
+        bottom: 10px;
         right: 10px;
         width: 181px;
         -webkit-animation: squirrelTitle 5s ease-in-out 0s infinite;
-        animation: squirrelTitle 5s ease-in-out 0s infinite; 
+        animation: squirrelTitle 5s ease-in-out 0s infinite;
     }
 
-#SquirrelTourTitle h2 {  
-        color: green; 
+    #SquirrelTourTitle h2 {
+        color: green;
         margin: 25px;
-        margin-top: 75px; 
+        margin-top: 75px;
     }
 
-    #SquirrelTourTitle h1  {
+
+    #SquirrelTourTitle h1 {
         color: green;
         padding-top: 150px;
-        -webkit-animation: sqtth1 3s 1s infinite; 
-       animation: sqtth1 3s 1s infinite;  
     }
 
-    
-
-    #SquirrelTourTitle img {
-        box-shadow: none;
-    } 
-
-#SquirrelTour img {
-    margin: 10px;
-    overflow: hidden;
-}
+    #SquirrelTourTitle h2:last-of-type {
+        -o-animation: squirrelteeter 5s ease-in-out 0s infinite;
+        -webkit-animation: squirrelteeter 5s ease-in-out 0s infinite;
+        animation: squirrelteeter 5s ease-in-out 0s infinite;
+    }
 
 
-@-webkit-keyframes sqtth1 {
+@-webkit-keyframes squirrelteeter {
     0%,100% {
         transform: rotate(0deg);
     }
@@ -120,7 +147,7 @@ div#home div[class="col-md-5"] p {
     }
 }
 
-@-ms-keyframes sqtth1 {
+@-o-keyframes squirrelteeter {
     0%,100% {
         transform: rotate(0deg);
     }
@@ -134,7 +161,7 @@ div#home div[class="col-md-5"] p {
     }
 }
 
-@-o-keyframes sqtth1 {
+@-moz-keyframes squirrelteeter {
     0%,100% {
         transform: rotate(0deg);
     }
@@ -148,7 +175,7 @@ div#home div[class="col-md-5"] p {
     }
 }
 
-@-moz-keyframes sqtth1 {
+@keyframes squirrelteeter {
     0%,100% {
         transform: rotate(0deg);
     }
@@ -162,17 +189,43 @@ div#home div[class="col-md-5"] p {
     }
 }
 
-@keyframes sqtth1 {
+@-webkit-keyframes squirrelTitle {
     0%,100% {
-        transform: rotate(0deg);
+        opacity: 1;
     }
 
-    25% {
-        transform: rotate(2deg);
+    50% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes squirrelTitle {
+    0%,100% {
+        opacity: 1;
     }
 
-    75% {
-        transform: rotate(-2deg);
+    50% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes squirrelTitle {
+    0%,100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes squirrelTitle {
+    0%,100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
     }
 }
 
@@ -188,39 +241,129 @@ div#home div[class="col-md-5"] p {
 /*
   *********  Cardoon Tab *********
 */
-
-
-#cardoon {
-    height: 800px;
-    background: -webkit-radial-gradient(60% 55%, closest-side, lightyellow, white, lightgreen); /* Safari 5.1 to 6.0 */
-    background: -moz-radial-gradient(60% 55%, closest-side, lightyellow, white, lightgreen); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(closest-side at 60% 55%, lightyellow, white, lightgreen);
+/* cardoon general */
+#cardoon p::first-letter {
+    font-size: x-large;
 }
 
-    #cardoon h2 {
-        text-align: left;
-        margin-left: 100px;
-        color: darkgreen;
-        padding-top: 100px;
-        -webkit-animation: cardoon 3s 1s infinite;
-        animation: cardoon 3s 1s infinite;
+#cardoon h2 {
+    -webkit-animation: cardoon 5s 1s infinite;
+    animation: cardoon 5s 1s infinite;
+}
+
+@media (max-width:767px) {
+    #cardoon {
+        overflow: scroll;
     }
 
-.cardoon {
-    width: 390px;
-    padding-top: 75px;
-    margin-left: 25px;
+        #cardoon h2 {
+            text-align: center;
+            color: darkgreen;
+            padding-top: 20px;
+        }
+
+        #cardoon .ClipArtSquirrel {
+            display: none;
+        }
+
+        #cardoon p {
+            margin: 5px;
+            padding: 5px;
+        }
+
+            #cardoon p:last-child {
+                margin-bottom: 20px;
+            }
 }
 
-.ClipArtSquirrel {
+@media (min-width:768px) and (max-width:978px) {
+    #cardoon {
+        background: radial-gradient(closest-side at 75% 50%, lightyellow, white, lightgreen);
+    }
+
+        #cardoon .ClipArtSquirrel {
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            width: 181px;
+            overflow: hidden;
+            -webkit-animation: squirrelTitle 5s ease-in-out 2s infinite;
+            -moz-animation: squirrelTitle 5s ease-in-out 2s infinite;
+            -o-animation: squirrelTitle 5s ease-in-out 2s infinite;
+            animation: squirrelTitle 5s ease-in-out 2s infinite;
+        }
+
+        #cardoon p {
+            padding-left:40px;
+            padding-right:40px;
+        }
+
+        #cardoon p:first-of-type {
+            margin-top:180px;
+        }
+}
+
+ 
+
+@media (min-width:979px) {
+    #cardoon { 
+        background: -webkit-radial-gradient(60% 55%, closest-side, lightyellow, white, lightgreen); /* Safari 5.1 to 6.0 */
+        background: -moz-radial-gradient(60% 55%, closest-side, lightyellow, white, lightgreen); /* For Firefox 3.6 to 15 */
+        background: radial-gradient(closest-side at 60% 55%, lightyellow, white, lightgreen);
+    }
+
+        #cardoon h2 {
+            color: darkgreen;
+            padding-top: 100px;
+            -webkit-animation: cardoon 5s 1s infinite;
+            animation: cardoon 5s 1s infinite;
+        }
+
+           #cardoon p:first-of-type {
+            margin-top:180px;
+        }
+
+        #cardoon div[class="col-md-7"] {
+            width: 600px;
+            text-align: center;
+        }
+
+            #cardoon div[class="col-md-7"] p {
+                width: 500px;
+                text-align: center;
+            }
+            
+#cardoon .ClipArtSquirrel {
     position: absolute;
-    top: 10px;
-    right: 40px;
+    top: 5px;
+    right: 20px;
     width: 181px;
-    height: 192px;
     overflow: hidden;
     -webkit-animation: squirrelTitle 5s ease-in-out 2s infinite;
+    -moz-animation: squirrelTitle 5s ease-in-out 2s infinite;
+    -o-animation: squirrelTitle 5s ease-in-out 2s infinite;
     animation: squirrelTitle 5s ease-in-out 2s infinite;
+}
+}
+
+@-moz-keyframes cardoon {
+    0%,100% {
+        color: darkgreen;
+    }
+
+    50% {
+        color: mediumpurple;
+    }
+}
+
+@-webkit-keyframes cardoon {
+    0%,100% {
+        color: darkgreen;
+    }
+
+    50% {
+        color: mediumpurple;
+    }
 }
 
 @keyframes cardoon {
@@ -233,31 +376,18 @@ div#home div[class="col-md-5"] p {
     }
 }
 
-#cardoon p {
-    width: 450px;
-    margin-top: 50px;
-}
 
-#cardoon div[class="col-md-7"] p:nth-child(2) {
-    margin-top: 100px;
-}
 
-#cardoon p::first-letter {
-    font-size: x-large;
-}
-
-#cardoon div[class="col-md-7"] p:nth-child(3) {
-    width: 600px;
-    margin-left: 0px;
-}
-
+/*
+ ***   Easy Access Tab ************************
+*/
 #EasyAccess {
     background: -webkit-radial-gradient(closest-side at 25% 50%, lightyellow 75%, lightgreen);
     background: -moz-radial-gradient(closest-side at 25% 50%, lightyellow 75%, lightgreen);
     background: radial-gradient(closest-side at 25% 50%, lightyellow 80%, lightgreen);
     margin: 0;
     padding: 0;
-    font-family: 'Comic Sans MS';
+    /*font-family: 'Comic Sans MS';*/
 }
 
     #EasyAccess figure, #EasyAccess img {
