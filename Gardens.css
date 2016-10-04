@@ -62,7 +62,7 @@ div#home div[class="col-md-5"] p {
     }
 
     h2, .item, .GardenCarousel {
-        font-size: small;
+        font-size: small; 
     }
 }
 
@@ -304,13 +304,7 @@ div#home div[class="col-md-5"] p {
 
 
 
-@media (min-width:979px) {
-    #cardoon {
-        background: -webkit-radial-gradient(60% 55%, closest-side, lightyellow, white, lightgreen); /* Safari 5.1 to 6.0 */
-        background: -moz-radial-gradient(60% 55%, closest-side, lightyellow, white, lightgreen); /* For Firefox 3.6 to 15 */
-        background: radial-gradient(closest-side at 60% 55%, lightyellow, white, lightgreen);
-    }
-
+@media (min-width:979px) { 
         #cardoon h2 {
             color: darkgreen;
             padding-top: 100px;
@@ -318,13 +312,25 @@ div#home div[class="col-md-5"] p {
             animation: cardoon 5s 1s infinite;
         }
 
+        #cardoon p {
+            width:60%;
+            margin:auto;
+        }
+
         #cardoon p:first-of-type {
             margin-top: 180px;
         }
 
-        #cardoon div[class="col-md-7"] {
-            width: 600px;
+    #cardoon div[class="col-sm-5"] {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+        #cardoon div[class="col-sm-7"] { 
             text-align: center;
+            height:800px;
+             
+             background: radial-gradient(  lightyellow, white, lightgreen); 
         }
 
             #cardoon div[class="col-md-7"] p {
@@ -343,6 +349,7 @@ div#home div[class="col-md-5"] p {
             -o-animation: squirrelTitle 5s ease-in-out 2s infinite;
             animation: squirrelTitle 5s ease-in-out 2s infinite;
         }
+         
 }
 
 @-moz-keyframes cardoon {
@@ -780,6 +787,32 @@ div#home div[class="col-md-5"] p {
         #GoodWarmFood p:first-of-type {
             margin-top: 60px;
         }
+
+        #GoodWarmFood div[class="row"] > figure  {
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    width: 181px;
+    opacity:0;
+    -webkit-animation: appearing 5s ease-in-out 0s 1 reverse;
+    animation: appearing 5s ease-in-out 0s 1 reverse;
+}
+
+        #ZutsFoodComment {
+    border: 20px solid grey; 
+    width:280px;
+    padding: 10px;
+    font-family: 'Comic Sans MS';
+    font-size: smaller;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    background-color: palegoldenrod;
+    position:absolute;
+    left:40px;
+    bottom:140px;
+    margin-left: 220px;
+    z-index: 100;
+}
     
     /*
         ***** Good Hiding Slide *******
@@ -791,6 +824,10 @@ div#home div[class="col-md-5"] p {
 #GoodHiding p {
     margin-top: 20px;
 }
+/*
+    ******* I Spy Slide *******
+*/
+
 #ISpy div[class="col-md-6"]:first-child {
     height: 800px;
     background: -webkit-radial-gradient( closest-side at 50% 30%, lightyellow 75%, lightgreen, lightyellow 10%,green);
@@ -807,6 +844,12 @@ div#home div[class="col-md-5"] p {
 #ISpy h2 {
     font-family: 'Comic Sans MS';
     text-align: center;
+}
+
+#ISpy p {
+    width:300px;
+    margin:auto;
+    margin-top:50px;
 }
 
 #ISpy #imSpyingonaDangerousFOE {
@@ -826,8 +869,7 @@ div#home div[class="col-md-5"] p {
     animation: squirrelTitle 5s ease-in-out 0s 1;
 }
 /*
-#CameraCamper  {
-}
+***** CameraCamper Slide *****  
 */
 #CameraCamper h2 {
     font-family: 'Comic Sans MS';
@@ -863,6 +905,9 @@ div#home div[class="col-md-5"] p {
     -webkit-animation: camper 5s ease-out;
     animation: camper 5s ease-out;
 }
+/*
+    ***** MoreForTheMenu Slide
+*/
 
 #MoreForTheMenu div[class="col-md-6"]:first-child {
     background: -webkit-linear-gradient(left,lightyellow 75%,green );
@@ -896,6 +941,9 @@ div#home div[class="col-md-5"] p {
     #MoreForTheMenu p:first-of-type {
         margin-top: 90px;
     }
+    /*
+        ***** MYNewestGarden Slide *****
+    */
 
 #MYNewestGarden div[class="col-md-6"]:first-child {
     height: 800px;
@@ -927,10 +975,19 @@ div#home div[class="col-md-5"] p {
     margin: auto;
     margin-top: 20px;
 }
+/*
+    ***** LookOutForCroquetBalls *****
+*/
 
 #LookOutForCroquetBalls h2 {
     font-family: 'Comic Sans MS';
     text-align: center;
+}
+
+#LookOutForCroquetBalls p{
+    margin:auto;
+    width:600px;
+    margin-top:20px;
 }
 
 #LookOutForCroquetBalls figure {
@@ -1030,7 +1087,9 @@ div#home div[class="col-md-5"] p {
         margin-right: 0;
     }
 }
-
+/*
+    ***** IntoTheBoxwoods Slide *****
+*/
 
 #IntoTheBoxwoods {
     background: -webkit-linear-gradient( rgba(255,0,0,0), rgba(0,255,0,1));

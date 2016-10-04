@@ -1,6 +1,4 @@
-﻿body {
-
-}
+﻿ 
 .EmailForm{
     border:1px solid #036;
     box-shadow:inset 5px 0 5px 0;
@@ -37,4 +35,12 @@ p.ifAdult {
      padding:10px;
      background-color:white;
      border:solid 1px  #036;
+ }
+
+ .w100 {
+     width:100%;
+ }
+
+ .marginauto {
+     margin:auto;
  }

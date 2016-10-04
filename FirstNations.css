@@ -3,3 +3,17 @@
     margin-bottom:50px;
 
 }
+ 
+#StoneCottage  div[class="col-md-6"]:nth-child(2) figure{
+    width:450px; 
+    margin:auto; 
+}
+
+#StoneCottage  div[class="col-md-6"]  figure{
+    width:340px; 
+    margin:auto; 
+}
+
+ #TheBaskets figure:nth-of-type(2) {
+     
+}
