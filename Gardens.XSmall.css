@@ -1,0 +1,1076 @@
+﻿@import 'bootstrap.min.css';
+@import 'Site.css';
+@import 'BolducHouse.css';
+/* BEGIN diagnostic - comment out after development*/
+body {
+    background-color: orange;
+}
+/* END diagnostic*/
+
+#home h1 {
+    color: green;
+    margin-left: 20px;
+}
+
+#home div[class="col-md-6 margin10"] > div {
+    border: 20px solid grey;
+    font-family: 'Comic Sans MS';
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-1deg);
+    background-color: palegoldenrod;
+    z-index: 100;
+}
+
+    #home div[class="col-md-6 margin10"] > div p:first-letter {
+        font-size: larger;
+        font-weight: 700;
+    }
+
+div#home div[class="col-md-5"] p {
+    font-family: 'Lucida Calligraphy';
+}
+/* 
+    Squirrel's Tour of the Gardens, general stuff
+
+*/
+.carousel-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#ZutsGardenCarousel {
+    height: 712px;
+    overflow: hidden;
+}
+
+.carousel-control {
+    z-index:100;
+}
+
+.item, .GardenCarousel {
+    width: 100%;
+    background-color: lightgreen;
+    font-family: 'Comic Sans MS';
+    font-size: larger;
+    height: 100%;
+}
+
+#SquirrelTour h1 {
+     font-family: 'Comic Sans MS'; 
+}
+
+#SquirrelTour h2 {
+    font-family: 'Comic Sans MS';
+    font-size: 1.5em;
+    color: darkgreen;
+    text-align: center;
+}
+
+#SquirrelTour img {
+    overflow: hidden;
+    box-shadow: none;
+}
+
+#SquirrelTour p, #SquirrelTour h3 {
+    font-family: 'Comic Sans MS';
+    font-size: 1.17em;
+    margin: auto;
+    text-align: center;
+}
+
+    #SquirrelTour p:first-letter {
+        font-size: larger;
+        font-weight: 700;
+    }
+/* 
+ ******** Squirrel Tour Title Tab ******
+*/
+
+
+#SquirrelTourTitle {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-image: url('../Images/Gardens/SquirrelGardenTour/BHM_BW_1611.JPG');
+}
+
+    #SquirrelTourTitle figure {
+        display:none; 
+    }
+
+    #SquirrelTourTitle h1 {
+        color: green;
+        text-align: center; 
+        margin:10%;
+        text-shadow: 0 0 10px white, 0 0 30px green, 0 0 50px lightgreen;
+        
+    }
+
+    #SquirrelTourTitle h2 {
+        color: green;
+        text-align: center;
+        margin:10%;       
+    }
+ 
+/*
+  *********  Cardoon Slide *********
+*/
+
+
+#cardoon h2 {
+    text-align: center;
+    color: darkgreen;
+    padding-top: 1%;
+    -webkit-animation: cardoon 5s 1s infinite;
+    animation: cardoon 5s 1s infinite;
+}
+
+#cardoon div[class="col-sm-5"] {
+    position: absolute;
+    bottom: 10%;
+    left:35%;
+    width: 30%;
+    height: 30%;
+    z-index: 0;
+}
+
+    #cardoon div[class="col-sm-5"]:hover {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin:0;
+        padding:0;
+    }
+
+
+#cardoon div[class="col-sm-7"] {
+    z-index: 5;
+}
+
+
+
+    #cardoon div[class="col-sm-7"] p {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+
+#cardoon p:first-of-type {
+    margin-top: 180px;
+}
+
+
+
+#cardoon p:last-child {
+    margin-bottom: 20px;
+}
+
+
+
+@-moz-keyframes cardoon {
+    0%,100% {
+        color: darkgreen;
+    }
+
+    50% {
+        color: mediumpurple;
+    }
+}
+
+@-webkit-keyframes cardoon {
+    0%,100% {
+        color: darkgreen;
+    }
+
+    50% {
+        color: mediumpurple;
+    }
+}
+
+@keyframes cardoon {
+    0%,100% {
+        color: darkgreen;
+    }
+
+    50% {
+        color: mediumpurple;
+    }
+}
+/*
+ ***   Easy Access Tab ***** 
+*/
+
+
+#EasyAccess figure, #EasyAccess img {
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/Gardens/SquirrelGardenTour/ClipArtSquirrel.png');
+}
+
+
+
+#EasyAccess p { 
+    text-align: center;
+    width: 70%;
+    margin: auto; 
+}
+ 
+#EasyAccess p:first-of-type  {
+    background-color:white;
+    margin-left:0;
+    margin-top:0;
+    border:#036 solid 1px;
+    z-index:3;
+}
+#EasyAccess p:first-of-type:hover {
+    z-index:100;
+    background-color:yellow;
+}
+
+#EasyAccess p:last-of-type  {
+    background-color:white;
+      position: absolute;
+      left:15%;
+      top:15%;
+    border:#036 solid 1px;
+    z-index:0;
+}
+#EasyAccess p:last-of-type:hover {
+    background-color:aliceblue;
+    z-index:4;
+}
+
+#EasyAccess div[class="col-md-6"]:last-of-type {
+    position: absolute;
+    bottom: 10%;
+    left:35%;
+    width: 30%;
+    height: 30%;
+    z-index: 0;
+}
+
+ #EasyAccess div[class="col-md-6"]:last-of-type:hover {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin:0;
+        padding:0;
+    }
+
+/*
+    ***** Foxglove Slide *****
+*/
+#Foxglove p {
+    margin-top: 45px;
+    text-align: center;
+    width: 475px;
+    margin-left: 150px;
+}
+
+#Foxglove figure {
+    width: 213px;
+    margin: auto;
+    margin-top: 195px;
+}
+
+
+#Foxglove h2 {
+    text-align: center;
+    margin-top: 110px;
+    font-family: 'Comic Sans MS';
+    color: purple;
+    animation: foxgloveh2 5s 1s infinite;
+}
+
+#Foxglove div[class="row"] > figure {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 181px;
+    -webkit-animation: squirrelTitle 5s ease-in-out 0s infinite;
+    animation: squirrelTitle 5s ease-in-out 0s infinite;
+}
+
+@keyframes foxgloveh2 {
+    0%,100% {
+        color: darkgreen;
+    }
+
+    50% {
+        color: purple;
+    }
+}
+
+}
+
+#GrapeArbor p {
+    width: 90%;
+    margin-auto;
+}
+/*
+    ***** BigKitchenGardens Slide
+*/
+
+
+
+
+#BigKitchenGardens p {
+    width: 250px;
+    color: green;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#BigKitchenGardens h2 {
+    margin: auto;
+    margin-top: 180px;
+    color: green;
+}
+
+#BigKitchenGardens figure {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0;
+}
+
+#BigKitchenGardens div[class="row"] > figure:first-of-type {
+    position: absolute;
+    bottom: 10px;
+    left: 290px;
+    width: 181px;
+    opacity: 0;
+    -webkit-animation: appearing 5s ease-in-out 0s 1 reverse;
+    animation: appearing 5s ease-in-out 0s 1 reverse;
+}
+
+#BigKitchenGardens div[class="row"] > figure:last-child {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    width: 200px;
+    opacity: 1;
+    -webkit-animation: BkgEntering 3s ease-in-out 0s 1;
+    animation: BkgEntering 5s ease-in-out 0s 1;
+}
+
+@keyframes appearing {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes BkgEntering {
+    0% {
+        left: -50px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+/*
+ ********  LemWeddingAisle **************
+*/
+#LemWeddingAisle div[class="col-md-4"] p {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+    #LemWeddingAisle div[class="col-md-4"] p:last-of-type {
+        border: 20px solid grey;
+        width: 80%;
+        padding: 10px;
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+        background-color: palegoldenrod;
+    }
+
+#LemWeddingAisle h2 {
+    color: green;
+    text-align: center;
+}
+
+#LemWeddingAisle div[class="col-md-8"] {
+    height: 800px;
+}
+
+    #LemWeddingAisle div[class="col-md-8"] figure:first-of-type {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 55%;
+        margin-left: 1%;
+    }
+
+        #LemWeddingAisle div[class="col-md-8"] figure:first-of-type:hover {
+            width: 100%;
+            z-index: 100;
+            margin: 0;
+        }
+
+    #LemWeddingAisle div[class="col-md-8"] figure:last-of-type {
+        position: absolute;
+        right: 0;
+        bottom: 0%;
+        z-index: 1;
+        width: 55%;
+        padding: 1%;
+    }
+
+        #LemWeddingAisle div[class="col-md-8"] figure:last-of-type img {
+            border: 10px solid silver;
+        }
+
+
+        #LemWeddingAisle div[class="col-md-8"] figure:last-of-type:hover {
+            z-index: 100;
+            width: 100%;
+            margin: 0;
+        }
+
+
+/*
+    ********** Grape Trellis slide **********
+*/
+
+#GrapeTrellis h2 {
+    color: green;
+    text-align: center;
+    margin-top: 280px;
+}
+
+#GrapeTrellis p {
+    width: 500px;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+#GrapeTrellis .fallingPecan {
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: -100px;
+    right: 400px;
+    background-image: url('../Images/pecan_20.png');
+    -webkit-animation: pecanFall 2s ease-in 1s infinite;
+    animation: pecanFall 2s ease-in 1s infinite;
+}
+
+
+
+#GrapeTrellis div:nth-child(3) {
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: -100px;
+    right: 400px;
+    -webkit-animation: pecanFall 2s ease-in 1s infinite;
+    animation: pecanFall 2s ease-in 1s infinite;
+}
+
+#GrapeTrellis div:nth-child(4) {
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: -100px;
+    right: 100px;
+    -webkit-animation: pecanFall 2s ease-in 2s infinite;
+    animation: pecanFall 2s ease-in 2s infinite;
+}
+
+#GrapeTrellis div:nth-child(5) {
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: -100px;
+    right: 300px;
+    -webkit-animation: pecanFall 2s ease-in 3s infinite;
+    animation: pecanFall 2s ease-in 3s infinite;
+}
+
+#GrapeTrellis div:nth-child(6) {
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: -100px;
+    right: 500px;
+    -webkit-animation: pecanFall 2s ease-in 4s infinite;
+    animation: pecanFall 2s ease-in 4s infinite;
+}
+
+#GrapeTrellis div:nth-child(7) {
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: -100px;
+    right: 600px;
+    -webkit-animation: pecanFall 2s ease-in 5s infinite;
+    animation: pecanFall 2s ease-in 5s infinite;
+}
+
+#GrapeTrellis div:nth-child(8) {
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: -100px;
+    right: 600px;
+    -webkit-animation: pecanFall 2s ease-in 6s infinite;
+    animation: pecanFall 2s ease-in 6s infinite;
+}
+
+#GrapeTrellis .fallingPecan img {
+    box-shadow: none;
+}
+
+
+@keyframes pecanFall {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 900px;
+    }
+}
+/*
+    ***** Hyacinth Bean Slide ************
+*/
+
+
+#HyacinthBean h2 {
+    color: white;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+}
+
+#HyacinthBean p {
+    margin-left: 175px;
+    margin-top: 110px;
+    width: 180px;
+}
+/*
+        ***** The Way In Slide ********
+    */
+
+
+#TheWayIn p {
+    width: 90%;
+    margin: auto;
+    margin-top: 8%;
+}
+/*
+    **** Sneak In Slide *******
+*/
+
+#SneakIn h2 {
+    text-align: center;
+}
+
+#SneakIn figure {
+    transform: rotate(45deg);
+    margin-top: 80px;
+    margin-right: 35px;
+}
+
+#SneakIn p {
+    margin-right: 40px;
+    margin-top: 35px;
+}
+/*
+    ******* Good Warm Food Slide *******
+*/
+
+
+
+#GoodWarmFood h2 {
+    color: green;
+    font-family: 'Comic Sans MS';
+    text-align: center;
+}
+
+#GoodWarmFood p {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+    #GoodWarmFood p:first-of-type {
+        margin-top: 60px;
+    }
+
+#GoodWarmFood div[class="row"] > figure {
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    width: 181px;
+    opacity: 0;
+    -webkit-animation: appearing 5s ease-in-out 0s 1 reverse;
+    animation: appearing 5s ease-in-out 0s 1 reverse;
+}
+
+#ZutsFoodComment {
+    border: 20px solid grey;
+    width: 280px;
+    padding: 10px;
+    font-family: 'Comic Sans MS';
+    font-size: smaller;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    background-color: palegoldenrod;
+    position: absolute;
+    left: 40px;
+    bottom: 130px;
+    margin-left: 220px;
+    z-index: 100;
+}
+
+/*
+        ***** Good Hiding Slide *******
+    */
+#GoodHiding h2 {
+    text-align: center;
+}
+
+#GoodHiding p {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/*
+    ******* I Spy Slide *******
+*/
+
+
+#ISpy div[class="col-md-6"]:first-child figure {
+    width: 400px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+
+#ISpy div[class="col-md-6"]:last-child {
+    height: 800px;
+}
+
+    #ISpy div[class="col-md-6"]:last-child figure:first-of-type {
+        width: 181px;
+        height: 200px;
+        position: absolute;
+        right: 90px;
+        bottom: 120px;
+        overflow: hidden;
+        -webkit-animation: ISpySquirrel 8s ease-in-out 0s 1;
+        animation: ISpySquirrel 8s ease-in-out 0s 1;
+        opacity: 0;
+    }
+
+    #ISpy div[class="col-md-6"]:last-child figure:last-of-type img {
+        width: 150px;
+        position: absolute;
+        left: 350px;
+        bottom: 100px;
+        overflow: hidden;
+        opacity: 0;
+        animation: ISpyTelescope 8s 0s linear 1;
+    }
+
+#ISpy h2 {
+    text-align: center;
+}
+
+#ISpy p {
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+@keyframes ISpySquirrel {
+    0%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ISpyTelescope {
+    0% {
+        opacity: 0;
+    }
+
+    49% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*
+***** CameraCamper Slide *****  
+*/
+
+#CameraCamper p {
+    font-style: italic;
+    font-size: large;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*
+    ***** MoreForTheMenu Slide *****
+*/
+
+#MoreForTheMenu div[class="col-md-6"]:first-child {
+    height: 800px;
+}
+
+#MoreForTheMenu div[class="col-md-6"]:last-child {
+    height: 800px;
+}
+
+
+    #MoreForTheMenu div[class="col-md-6"]:last-child h2 {
+        margin-top: 20%;
+    }
+
+#MoreForTheMenu figure {
+    width: 620px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#MoreForTheMenu p {
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+    #MoreForTheMenu p:first-of-type {
+        width: 65%;
+        margin: auto;
+    }
+
+    #MoreForTheMenu p:last-of-type {
+        width: 65%;
+        margin: auto;
+    }
+
+/*
+        ***** MYNewestGarden Slide *****
+    */
+
+
+#MYNewestGarden h2 {
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    margin-top: 120px;
+    color: green;
+}
+
+#MYNewestGarden figure {
+    width: 500px;
+    margin-top: 10%;
+    margin-left: 17%;
+}
+
+#MYNewestGarden p {
+    border: 20px solid grey;
+    width: 500px;
+    padding: 10px;
+    font-family: 'Comic Sans MS';
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    background-color: palegoldenrod;
+    position: absolute;
+    z-index: 100;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+/*
+    ***** LookOutForCroquetBalls Slide *****
+*/
+
+#LookOutForCroquetBalls h2 {
+    font-family: 'Comic Sans MS';
+    text-align: center;
+}
+
+#LookOutForCroquetBalls p {
+    margin: auto;
+    width: 90%;
+}
+
+.croquetBallBlue {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 105%;
+    z-index: 0;
+    opacity: 0;
+    -webkit-animation: croquet 2s ease-in-out 1s infinite;
+    animation: croquet 2s ease-in-out 1s infinite;
+}
+
+.croquetBallGreen {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 100%;
+    z-index: 0;
+    opacity: 0;
+    -webkit-animation: croquet 3s ease-in-out 2s infinite reverse;
+    animation: croquet 3s ease-in-out 2s infinite reverse;
+}
+
+.croquetBallRed {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 110%;
+    z-index: 0;
+    opacity: 0;
+    -webkit-animation: croquet 4s ease-in-out 2s infinite;
+    animation: croquet 4s ease-in-out 2s infinite;
+}
+
+.bluestripe {
+    height: 100px;
+    width: 20px;
+    background-color: blue;
+    margin: auto;
+    z-index: 1;
+}
+
+.greenstripe {
+    height: 100px;
+    width: 20px;
+    background-color: green;
+    margin: auto;
+    z-index: 1;
+}
+
+.redstripe {
+    height: 100px;
+    width: 20px;
+    background-color: red;
+    margin: auto;
+}
+
+@keyframes croquet {
+    0% {
+        left: -200px;
+        padding-left: 0;
+        margin-left: 0;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    1% {
+        left: -200px;
+        opacity: 1;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    99% {
+        transform: rotate(270deg);
+        left: 1600px;
+        opacity: 1;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    100% {
+        left: 1600px;
+        opacity: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+}
+/*
+    ***** IntoTheBoxwoods Slide *****
+*/
+
+#IntoTheBoxwoods {
+}
+
+    #IntoTheBoxwoods h2 {
+        text-align: center;
+        color: green;
+    }
+
+    #IntoTheBoxwoods p {
+        margin: auto;
+        width: 400px;
+        margin-top: 20px;
+    }
+
+    #IntoTheBoxwoods div[class="col-md-4"] div[class="col-md-8"] figure img {
+        opacity: 0;
+        width: 300px;
+        animation: BoxwoodBijou 5s ease-in-out 4s infinite;
+    }
+
+    #IntoTheBoxwoods div[class="col-md-4"] div[class="col-md-4"] figure img {
+        animation: BoxwoodBijou 7s ease-in-out 0s infinite;
+        opacity: 1;
+    }
+
+@keyframes BoxwoodBijou {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/*
+    ***** Water Slide *****  
+*/
+
+#Water {
+    background-color: -webkit-linear-gradient(lightblue,lightgreen 50%,lightblue);
+    background: linear-gradient(lightblue,lightgreen 50%,lightblue);
+}
+
+    #Water h2 {
+        text-align: center;
+        color: blue;
+    }
+
+    #Water figure {
+        width: 500px;
+        margin: 100px;
+        margin-top: 100px;
+    }
+
+    #Water img {
+        margin: 10px;
+    }
+
+    #Water p {
+        margin: auto;
+        margin-top: 8px;
+        width: 700px;
+    }
+
+        #Water p:last-of-type {
+            border: 20px solid grey;
+            width: 80%;
+            padding: 10px;
+            -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+            background-color: palegoldenrod;
+        }
+/*
+        ***** MoreDeliciousPlants Slide *****
+    */
+#MoreDeliciousPlants {
+    background: -webkit-linear-gradient(lightblue,lightgreen );
+    background: linear-gradient(lightblue,lightgreen );
+    text-align: center;
+}
+
+    #MoreDeliciousPlants p {
+        margin: auto;
+        margin-bottom: 5%;
+        width: 90%;
+    }
+
+        #MoreDeliciousPlants p:last-of-type {
+            border: 20px solid grey;
+            width: 80%;
+            padding: 10px;
+            -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+            background-color: palegoldenrod;
+        }
+
+    #MoreDeliciousPlants div[class="col-md-4"] figure {
+        width: 181px;
+    }
+
+    #MoreDeliciousPlants div[class="col-md-8"] {
+        height: 800px;
+    }
+
+        #MoreDeliciousPlants div[class="col-md-8"] figure:first-of-type {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            margin-left: 1%;
+        }
+
+            #MoreDeliciousPlants div[class="col-md-8"] figure:first-of-type:hover {
+                width: 100%;
+                z-index: 100;
+                margin: 0;
+            }
+
+        #MoreDeliciousPlants div[class="col-md-8"] figure:last-of-type {
+            position: absolute;
+            right: 0;
+            bottom: 0%;
+            z-index: 1;
+            width: 55%;
+            padding: 1%;
+        }
+
+            #MoreDeliciousPlants div[class="col-md-8"] figure:last-of-type:hover {
+                z-index: 100;
+                width: 100%;
+                margin: 0;
+            }
+
+
+/* 
+    ***** LookAtMe Slide *****  
+ */
+
+#LookAtMe h2 {
+    text-align: center;
+}
+
+#LookAtMe figure, #LookAtMe img {
+    margin: 0;
+    padding: 0;
+}
+
+#LookAtMe p {
+    width: 80%;
+    margin-top: 50px;
+}

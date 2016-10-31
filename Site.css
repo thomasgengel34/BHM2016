@@ -1,4 +1,6 @@
-﻿html {
+﻿@import  'bootstrap.css';
+
+html {
     width: 100%;
     padding: 10px 0 0 0;
 }
@@ -130,6 +132,10 @@ figcaption {
 
 .margin50 {
     margin: 50px;
+}
+
+.margin50bot {
+    margin-bottom:50px;
 }
 /*******************************************************/
 /* Default                      none presently, thanks for asking!           */

@@ -1,0 +1,56 @@
+﻿@import  'Site.css';
+
+#BolducHouse {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+article {
+    margin-left: 0;
+}
+ 
+
+.portraitText {
+    width: 50%;
+    margin-top: 200px;
+}
+
+#asideJST {
+    width: 40%;
+}
+
+#divJST {
+    height: 500px;
+}
+
+#pJST {
+    padding-top: 200px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#normantruss {
+    width: 49%;
+} 
+ 
+
+#p_imgMortarPestle {
+    text-align: left;
+    float: left;
+    margin-bottom: 10px;
+}
+.fullwidth{
+    width:100%;
+}
+
+.w500
+{
+    width:500px; 
+}
+
+figure
+{
+    overflow-x:hidden;
+}
