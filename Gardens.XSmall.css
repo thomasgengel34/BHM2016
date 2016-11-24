@@ -1,21 +1,16 @@
-﻿@import 'bootstrap.min.css';
-@import 'Site.css';
-@import 'BolducHouse.css';
-/* BEGIN diagnostic - comment out after development*/
+﻿ /* BEGIN diagnostic - comment out after development
 body {
     background-color: orange;
-}
+}*/
 /* END diagnostic*/
 
 #home h1 {
-    color: green;
-    margin-left: 20px;
+    color: green; 
 }
-
+/*  Zut's slapped on note  */ 
 #home div[class="col-md-6 margin10"] > div {
     border: 20px solid grey;
-    font-family: 'Comic Sans MS';
-    -webkit-transform: rotate(-5deg);
+    font-family: 'Comic Sans MS'; 
     transform: rotate(-1deg);
     background-color: palegoldenrod;
     z-index: 100;
@@ -25,13 +20,12 @@ body {
         font-size: larger;
         font-weight: 700;
     }
-
+    /* note from Deuels*/
 div#home div[class="col-md-5"] p {
     font-family: 'Lucida Calligraphy';
 }
 /* 
-    Squirrel's Tour of the Gardens, general stuff
-
+    Squirrel's Tour of the Gardens, general stuff 
 */
 .carousel-inner {
     position: absolute;
@@ -47,7 +41,7 @@ div#home div[class="col-md-5"] p {
 }
 
 .carousel-control {
-    z-index:100;
+    z-index: 100;
 }
 
 .item, .GardenCarousel {
@@ -59,7 +53,7 @@ div#home div[class="col-md-5"] p {
 }
 
 #SquirrelTour h1 {
-     font-family: 'Comic Sans MS'; 
+    font-family: 'Comic Sans MS';
 }
 
 #SquirrelTour h2 {
@@ -67,6 +61,12 @@ div#home div[class="col-md-5"] p {
     font-size: 1.5em;
     color: darkgreen;
     text-align: center;
+}
+
+#SquirrelTour figure {
+    width: 30%;
+    margin: auto;
+    margin-top: 1%;
 }
 
 #SquirrelTour img {
@@ -79,6 +79,11 @@ div#home div[class="col-md-5"] p {
     font-size: 1.17em;
     margin: auto;
     text-align: center;
+}
+
+#SquirrelTour p {
+    width: 80%; 
+    margin-top: 1%;
 }
 
     #SquirrelTour p:first-letter {
@@ -99,23 +104,22 @@ div#home div[class="col-md-5"] p {
 }
 
     #SquirrelTourTitle figure {
-        display:none; 
+        display: none;
     }
 
     #SquirrelTourTitle h1 {
         color: green;
-        text-align: center; 
-        margin:10%;
+        text-align: center;
+        margin: 10%;
         text-shadow: 0 0 10px white, 0 0 30px green, 0 0 50px lightgreen;
-        
     }
 
     #SquirrelTourTitle h2 {
         color: green;
         text-align: center;
-        margin:10%;       
+        margin: 10%;
     }
- 
+
 /*
   *********  Cardoon Slide *********
 */
@@ -124,75 +128,17 @@ div#home div[class="col-md-5"] p {
 #cardoon h2 {
     text-align: center;
     color: darkgreen;
-    padding-top: 1%;
-    -webkit-animation: cardoon 5s 1s infinite;
+    padding-top: 1%; 
     animation: cardoon 5s 1s infinite;
 }
 
-#cardoon div[class="col-sm-5"] {
-    position: absolute;
-    bottom: 10%;
-    left:35%;
-    width: 30%;
-    height: 30%;
-    z-index: 0;
+#cardoon div[class="col-sm-5"] figure:hover {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-    #cardoon div[class="col-sm-5"]:hover {
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        margin:0;
-        padding:0;
-    }
-
-
-#cardoon div[class="col-sm-7"] {
-    z-index: 5;
-}
-
-
-
-    #cardoon div[class="col-sm-7"] p {
-        width: 90%;
-        text-align: center;
-        margin: auto;
-    }
-
-#cardoon p:first-of-type {
-    margin-top: 180px;
-}
-
-
-
-#cardoon p:last-child {
-    margin-bottom: 20px;
-}
-
-
-
-@-moz-keyframes cardoon {
-    0%,100% {
-        color: darkgreen;
-    }
-
-    50% {
-        color: mediumpurple;
-    }
-}
-
-@-webkit-keyframes cardoon {
-    0%,100% {
-        color: darkgreen;
-    }
-
-    50% {
-        color: mediumpurple;
-    }
-}
-
+  
 @keyframes cardoon {
     0%,100% {
         color: darkgreen;
@@ -205,8 +151,6 @@ div#home div[class="col-md-5"] p {
 /*
  ***   Easy Access Tab ***** 
 */
-
-
 #EasyAccess figure, #EasyAccess img {
     margin: 0;
     padding: 0;
@@ -214,89 +158,44 @@ div#home div[class="col-md-5"] p {
 }
 
 
-
-#EasyAccess p { 
-    text-align: center;
-    width: 70%;
-    margin: auto; 
-}
- 
-#EasyAccess p:first-of-type  {
-    background-color:white;
-    margin-left:0;
-    margin-top:0;
-    border:#036 solid 1px;
-    z-index:3;
-}
-#EasyAccess p:first-of-type:hover {
-    z-index:100;
-    background-color:yellow;
-}
-
-#EasyAccess p:last-of-type  {
-    background-color:white;
-      position: absolute;
-      left:15%;
-      top:15%;
-    border:#036 solid 1px;
-    z-index:0;
-}
-#EasyAccess p:last-of-type:hover {
-    background-color:aliceblue;
-    z-index:4;
-}
-
-#EasyAccess div[class="col-md-6"]:last-of-type {
-    position: absolute;
-    bottom: 10%;
-    left:35%;
+#EasyAccess div[class="col-md-6"] figure {
     width: 30%;
-    height: 30%;
-    z-index: 0;
+    margin: auto;
 }
 
- #EasyAccess div[class="col-md-6"]:last-of-type:hover {
-        z-index: 10;
+    #EasyAccess div[class="col-md-6"] figure:hover {
         width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        margin:0;
-        padding:0;
+        margin: 0;
+        margin-top: -65%;
+        padding: 0;
     }
 
 /*
     ***** Foxglove Slide *****
-*/
-#Foxglove p {
-    margin-top: 45px;
-    text-align: center;
-    width: 475px;
-    margin-left: 150px;
-}
-
-#Foxglove figure {
-    width: 213px;
+*/ 
+#Foxglove div div:last-of-type figure {
+    width: 30%;
     margin: auto;
-    margin-top: 195px;
+    margin-top: 1%;
 }
 
+    #Foxglove div div:last-of-type figure:hover {
+        width: 100%;
+        margin: 0;
+        margin-top: -40%;
+        padding: 0;
+    }
 
-#Foxglove h2 {
-    text-align: center;
-    margin-top: 110px;
-    font-family: 'Comic Sans MS';
+
+#Foxglove h2 { 
+    margin-top: 1%;
+    margin-bottom: 2%; 
     color: purple;
     animation: foxgloveh2 5s 1s infinite;
 }
 
 #Foxglove div[class="row"] > figure {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 181px;
-    -webkit-animation: squirrelTitle 5s ease-in-out 0s infinite;
-    animation: squirrelTitle 5s ease-in-out 0s infinite;
+    display: none;
 }
 
 @keyframes foxgloveh2 {
@@ -308,56 +207,72 @@ div#home div[class="col-md-5"] p {
         color: purple;
     }
 }
+/*
+    ***** Grape Arbor Slide *****
+*/ 
 
-}
+    #GrapeArbor div[class="col-md-8"] figure:hover {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
 
 #GrapeArbor p {
     width: 90%;
-    margin-auto;
+    margin: auto;
 }
 /*
     ***** BigKitchenGardens Slide
 */
 
-
-
+#BigKitchenGardens div[class="col-md-8"] {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 #BigKitchenGardens p {
-    width: 250px;
     color: green;
-    margin: auto;
-    margin-top: 20px;
 }
 
 #BigKitchenGardens h2 {
     margin: auto;
-    margin-top: 180px;
     color: green;
 }
 
+
+
 #BigKitchenGardens figure {
-    margin-top: 0px;
-    margin-left: 0px;
-    padding: 0;
+    margin: auto;
+    width: 30%;
+    margin-top: 1%;
 }
+
+    #BigKitchenGardens figure:hover {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 
 #BigKitchenGardens div[class="row"] > figure:first-of-type {
     position: absolute;
     bottom: 10px;
     left: 290px;
     width: 181px;
-    opacity: 0;
-    -webkit-animation: appearing 5s ease-in-out 0s 1 reverse;
+    opacity: 0; 
     animation: appearing 5s ease-in-out 0s 1 reverse;
 }
 
 #BigKitchenGardens div[class="row"] > figure:last-child {
     position: absolute;
-    bottom: 15px;
-    left: 0px;
+    bottom: -2%;
+    left: 0;
     width: 200px;
-    opacity: 1;
-    -webkit-animation: BkgEntering 3s ease-in-out 0s 1;
+    opacity: 0; 
     animation: BkgEntering 5s ease-in-out 0s 1;
 }
 
@@ -373,36 +288,29 @@ div#home div[class="col-md-5"] p {
 
 @keyframes BkgEntering {
     0% {
-        left: -50px;
+        left: -10%;
+        opacity: 1;
     }
 
     100% {
-        left: 0px;
+        left: 0;
+        opacity: 1;
     }
 }
 
 /*
  ********  LemWeddingAisle **************
 */
-#LemWeddingAisle div[class="col-md-4"] p {
+
+
+#LemWeddingAisle div[class="col-md-4"] p:last-of-type {
+    border: 20px solid grey;
     width: 80%;
-    margin: auto;
-    margin-top: 10%;
+    padding: 1%; 
+    transform: rotate(-5deg);
+    background-color: palegoldenrod;
 }
-
-    #LemWeddingAisle div[class="col-md-4"] p:last-of-type {
-        border: 20px solid grey;
-        width: 80%;
-        padding: 10px;
-        -webkit-transform: rotate(-5deg);
-        transform: rotate(-5deg);
-        background-color: palegoldenrod;
-    }
-
-#LemWeddingAisle h2 {
-    color: green;
-    text-align: center;
-}
+ 
 
 #LemWeddingAisle div[class="col-md-8"] {
     height: 800px;
@@ -420,15 +328,17 @@ div#home div[class="col-md-5"] p {
             width: 100%;
             z-index: 100;
             margin: 0;
+            top: -50%;
         }
 
     #LemWeddingAisle div[class="col-md-8"] figure:last-of-type {
         position: absolute;
         right: 0;
-        bottom: 0%;
+        top: 0;
         z-index: 1;
         width: 55%;
         padding: 1%;
+        bottom: 0;
     }
 
         #LemWeddingAisle div[class="col-md-8"] figure:last-of-type img {
@@ -440,6 +350,7 @@ div#home div[class="col-md-5"] p {
             z-index: 100;
             width: 100%;
             margin: 0;
+            top: -50%;
         }
 
 
@@ -447,18 +358,28 @@ div#home div[class="col-md-5"] p {
     ********** Grape Trellis slide **********
 */
 
-#GrapeTrellis h2 {
-    color: green;
-    text-align: center;
-    margin-top: 280px;
+#GrapeTrellis div[class="col-md-6"]:first-child figure {
+    width: 30%;
+    margin: auto;
+    margin-top:1%;
+    margin-bottom: 1%;
+}
+
+    #GrapeTrellis div[class="col-md-6"]:first-child figure:hover {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+#GrapeTrellis h2 { 
+    margin-top: 10%;
 }
 
 #GrapeTrellis p {
-    width: 500px;
-    text-align: center;
-    margin-left: 150px;
-    margin-top: 50px;
+    width: 70%; 
+    margin-top: 10%;
 }
+
 
 #GrapeTrellis .fallingPecan {
     width: 20px;
@@ -466,8 +387,7 @@ div#home div[class="col-md-5"] p {
     position: absolute;
     top: -100px;
     right: 400px;
-    background-image: url('../Images/pecan_20.png');
-    -webkit-animation: pecanFall 2s ease-in 1s infinite;
+    background-image: url('../Images/pecan_20.png'); 
     animation: pecanFall 2s ease-in 1s infinite;
 }
 
@@ -478,8 +398,7 @@ div#home div[class="col-md-5"] p {
     height: 12px;
     position: absolute;
     top: -100px;
-    right: 400px;
-    -webkit-animation: pecanFall 2s ease-in 1s infinite;
+    right: 400px; 
     animation: pecanFall 2s ease-in 1s infinite;
 }
 
@@ -488,8 +407,7 @@ div#home div[class="col-md-5"] p {
     height: 12px;
     position: absolute;
     top: -100px;
-    right: 100px;
-    -webkit-animation: pecanFall 2s ease-in 2s infinite;
+    right: 100px; 
     animation: pecanFall 2s ease-in 2s infinite;
 }
 
@@ -498,8 +416,7 @@ div#home div[class="col-md-5"] p {
     height: 12px;
     position: absolute;
     top: -100px;
-    right: 300px;
-    -webkit-animation: pecanFall 2s ease-in 3s infinite;
+    right: 300px; 
     animation: pecanFall 2s ease-in 3s infinite;
 }
 
@@ -508,8 +425,7 @@ div#home div[class="col-md-5"] p {
     height: 12px;
     position: absolute;
     top: -100px;
-    right: 500px;
-    -webkit-animation: pecanFall 2s ease-in 4s infinite;
+    right: 500px; 
     animation: pecanFall 2s ease-in 4s infinite;
 }
 
@@ -518,8 +434,7 @@ div#home div[class="col-md-5"] p {
     height: 12px;
     position: absolute;
     top: -100px;
-    right: 600px;
-    -webkit-animation: pecanFall 2s ease-in 5s infinite;
+    right: 600px; 
     animation: pecanFall 2s ease-in 5s infinite;
 }
 
@@ -528,8 +443,7 @@ div#home div[class="col-md-5"] p {
     height: 12px;
     position: absolute;
     top: -100px;
-    right: 600px;
-    -webkit-animation: pecanFall 2s ease-in 6s infinite;
+    right: 600px; 
     animation: pecanFall 2s ease-in 6s infinite;
 }
 
@@ -551,106 +465,85 @@ div#home div[class="col-md-5"] p {
     ***** Hyacinth Bean Slide ************
 */
 
-
 #HyacinthBean h2 {
     color: white;
     font-family: 'Comic Sans MS';
     text-align: center;
 }
 
-#HyacinthBean p {
-    margin-left: 175px;
-    margin-top: 110px;
-    width: 180px;
+#HyacinthBean figure {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
+
 /*
         ***** The Way In Slide ********
-    */
+ */
 
-
-#TheWayIn p {
-    width: 90%;
+#TheWayIn figure {
     margin: auto;
-    margin-top: 8%;
+    width: 40%;
+    margin-top: 1%;
 }
+
+    #TheWayIn figure:hover {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
 /*
     **** Sneak In Slide *******
 */
-
-#SneakIn h2 {
-    text-align: center;
-}
+ 
 
 #SneakIn figure {
-    transform: rotate(45deg);
-    margin-top: 80px;
-    margin-right: 35px;
-}
-
-#SneakIn p {
-    margin-right: 40px;
-    margin-top: 35px;
-}
+    width:40%;
+    transform: rotate(45deg); 
+    padding:2%;
+    margin:3%;
+    float:left;
+} 
+ 
 /*
     ******* Good Warm Food Slide *******
 */
 
-
-
 #GoodWarmFood h2 {
-    color: green;
-    font-family: 'Comic Sans MS';
-    text-align: center;
+    color: green;   
+}
+ 
+ 
+
+#GoodWarmFood #ZutsFoodComment {
+    display: none;
 }
 
-#GoodWarmFood p {
-    width: 90%;
+#GoodWarmFood figure {
     margin: auto;
-    margin-top: 10px;
+    width: 40%;
+    margin-top: 1%;
 }
 
-    #GoodWarmFood p:first-of-type {
-        margin-top: 60px;
+    #GoodWarmFood figure:hover {
+        margin: 0;
+        margin-top:-20%;
+        padding: 0;
+        width: 100%;
     }
-
-#GoodWarmFood div[class="row"] > figure {
-    position: absolute;
-    bottom: 10px;
-    left: 40px;
-    width: 181px;
-    opacity: 0;
-    -webkit-animation: appearing 5s ease-in-out 0s 1 reverse;
-    animation: appearing 5s ease-in-out 0s 1 reverse;
-}
-
-#ZutsFoodComment {
-    border: 20px solid grey;
-    width: 280px;
-    padding: 10px;
-    font-family: 'Comic Sans MS';
-    font-size: smaller;
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-    background-color: palegoldenrod;
-    position: absolute;
-    left: 40px;
-    bottom: 130px;
-    margin-left: 220px;
-    z-index: 100;
-}
+    #GoodWarmFood div[class="row"]>figure  {
+        display:none;
+    }
 
 /*
         ***** Good Hiding Slide *******
     */
-#GoodHiding h2 {
-    text-align: center;
-}
-
-#GoodHiding p {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-}
+ #GoodHiding figure {
+     width:100%;
+     margin:0;
+     padding:0;
+ }
 
 /*
     ******* I Spy Slide *******
@@ -658,47 +551,41 @@ div#home div[class="col-md-5"] p {
 
 
 #ISpy div[class="col-md-6"]:first-child figure {
-    width: 400px;
+    width: 30%;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 1%;
 }
 
+    #ISpy div[class="col-md-6"]:first-child figure:hover {
+        width: 100%;
+        z-index: 10;
+    }
 
 #ISpy div[class="col-md-6"]:last-child {
-    height: 800px;
+    height: 100%;
 }
 
     #ISpy div[class="col-md-6"]:last-child figure:first-of-type {
-        width: 181px;
-        height: 200px;
+        width: 14%;
         position: absolute;
-        right: 90px;
-        bottom: 120px;
-        overflow: hidden;
-        -webkit-animation: ISpySquirrel 8s ease-in-out 0s 1;
+        right: 5%;
+        bottom: -5%;
+        overflow: hidden; 
         animation: ISpySquirrel 8s ease-in-out 0s 1;
         opacity: 0;
     }
 
     #ISpy div[class="col-md-6"]:last-child figure:last-of-type img {
-        width: 150px;
+        width: 15%;
         position: absolute;
-        left: 350px;
-        bottom: 100px;
+        left: 5%;
+        bottom: -5%;
         overflow: hidden;
         opacity: 0;
         animation: ISpyTelescope 8s 0s linear 1;
     }
+ 
 
-#ISpy h2 {
-    text-align: center;
-}
-
-#ISpy p {
-    width: 300px;
-    margin: auto;
-    margin-top: 50px;
-}
 
 @keyframes ISpySquirrel {
     0%, 100% {
@@ -734,267 +621,102 @@ div#home div[class="col-md-5"] p {
 
 #CameraCamper p {
     font-style: italic;
-    font-size: large;
-    margin-top: 50px;
-    text-align: center;
+    font-size: large; 
 }
+
+#CameraCamper  figure {
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
 
 /*
     ***** MoreForTheMenu Slide *****
 */
-
-#MoreForTheMenu div[class="col-md-6"]:first-child {
-    height: 800px;
-}
-
-#MoreForTheMenu div[class="col-md-6"]:last-child {
-    height: 800px;
-}
-
-
-    #MoreForTheMenu div[class="col-md-6"]:last-child h2 {
-        margin-top: 20%;
-    }
-
 #MoreForTheMenu figure {
-    width: 620px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 1%;
+    width: 30%;
 }
 
-#MoreForTheMenu p {
-    width: 70%;
-    margin: auto;
-    margin-top: 5%;
-}
-
-    #MoreForTheMenu p:first-of-type {
-        width: 65%;
-        margin: auto;
-    }
-
-    #MoreForTheMenu p:last-of-type {
-        width: 65%;
-        margin: auto;
+    #MoreForTheMenu figure:hover {
+        width: 100%;
     }
 
 /*
         ***** MYNewestGarden Slide *****
     */
 
+    #MYNewestGarden figure:hover {
+        width: 100%;
+    }
 
-#MYNewestGarden h2 {
-    font-family: 'Comic Sans MS';
-    text-align: center;
-    margin-top: 120px;
-    color: green;
-}
-
-#MYNewestGarden figure {
-    width: 500px;
-    margin-top: 10%;
-    margin-left: 17%;
-}
-
-#MYNewestGarden p {
-    border: 20px solid grey;
-    width: 500px;
-    padding: 10px;
-    font-family: 'Comic Sans MS';
-    -webkit-transform: rotate(-2deg);
-    transform: rotate(-2deg);
-    background-color: palegoldenrod;
-    position: absolute;
-    z-index: 100;
-    margin-top: 10%;
-    margin-left: 15%;
-}
 /*
     ***** LookOutForCroquetBalls Slide *****
 */
-
-#LookOutForCroquetBalls h2 {
-    font-family: 'Comic Sans MS';
-    text-align: center;
+#LookOutForCroquetBalls figure:hover {
+    width:100%;
+    margin:0;
+    margin-top:-35%;
+    padding:0;
 }
-
-#LookOutForCroquetBalls p {
-    margin: auto;
-    width: 90%;
+ 
+.croquetBallBlue, .croquetBallGreen, .croquetBallRed,.bluestripe,.greenripe,.redstripe
+  {
+    display: none;
 }
+   
+ 
 
-.croquetBallBlue {
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    border-radius: 50px;
-    position: absolute;
-    top: 105%;
-    z-index: 0;
-    opacity: 0;
-    -webkit-animation: croquet 2s ease-in-out 1s infinite;
-    animation: croquet 2s ease-in-out 1s infinite;
-}
-
-.croquetBallGreen {
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    border-radius: 50px;
-    position: absolute;
-    top: 100%;
-    z-index: 0;
-    opacity: 0;
-    -webkit-animation: croquet 3s ease-in-out 2s infinite reverse;
-    animation: croquet 3s ease-in-out 2s infinite reverse;
-}
-
-.croquetBallRed {
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    border-radius: 50px;
-    position: absolute;
-    top: 110%;
-    z-index: 0;
-    opacity: 0;
-    -webkit-animation: croquet 4s ease-in-out 2s infinite;
-    animation: croquet 4s ease-in-out 2s infinite;
-}
-
-.bluestripe {
-    height: 100px;
-    width: 20px;
-    background-color: blue;
-    margin: auto;
-    z-index: 1;
-}
-
-.greenstripe {
-    height: 100px;
-    width: 20px;
-    background-color: green;
-    margin: auto;
-    z-index: 1;
-}
-
-.redstripe {
-    height: 100px;
-    width: 20px;
-    background-color: red;
-    margin: auto;
-}
-
-@keyframes croquet {
-    0% {
-        left: -200px;
-        padding-left: 0;
-        margin-left: 0;
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        opacity: 0;
-    }
-
-    1% {
-        left: -200px;
-        opacity: 1;
-        padding-left: 0;
-        margin-left: 0;
-    }
-
-    99% {
-        transform: rotate(270deg);
-        left: 1600px;
-        opacity: 1;
-        padding-right: 0;
-        margin-right: 0;
-    }
-
-    100% {
-        left: 1600px;
-        opacity: 0;
-        padding-right: 0;
-        margin-right: 0;
-    }
-}
 /*
     ***** IntoTheBoxwoods Slide *****
-*/
+*/ 
+    #IntoTheBoxwoods figure:hover {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
-#IntoTheBoxwoods {
+#IntoTheBoxwoods div[class="col-md-4"] div[class="col-md-8"] figure img {
+    display: none;
 }
 
-    #IntoTheBoxwoods h2 {
-        text-align: center;
-        color: green;
-    }
-
-    #IntoTheBoxwoods p {
-        margin: auto;
-        width: 400px;
-        margin-top: 20px;
-    }
-
-    #IntoTheBoxwoods div[class="col-md-4"] div[class="col-md-8"] figure img {
-        opacity: 0;
-        width: 300px;
-        animation: BoxwoodBijou 5s ease-in-out 4s infinite;
-    }
-
-    #IntoTheBoxwoods div[class="col-md-4"] div[class="col-md-4"] figure img {
-        animation: BoxwoodBijou 7s ease-in-out 0s infinite;
-        opacity: 1;
-    }
-
-@keyframes BoxwoodBijou {
-    0%, 100% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
+#IntoTheBoxwoods div[class="col-md-4"] div[class="col-md-4"] figure img {
+    display: none;
 }
-
-
 /*
     ***** Water Slide *****  
 */
 
 #Water {
-    background-color: -webkit-linear-gradient(lightblue,lightgreen 50%,lightblue);
+    background: -webkit-linear-gradient(lightblue,lightgreen 50%,lightblue);
     background: linear-gradient(lightblue,lightgreen 50%,lightblue);
 }
 
-    #Water h2 {
-        text-align: center;
+    #Water h2 { 
         color: blue;
     }
 
     #Water figure {
-        width: 500px;
-        margin: 100px;
-        margin-top: 100px;
-    }
-
-    #Water img {
-        margin: 10px;
-    }
-
-    #Water p {
+        width: 30%;
         margin: auto;
-        margin-top: 8px;
-        width: 700px;
+        margin-top: 1%;
     }
 
-        #Water p:last-of-type {
-            border: 20px solid grey;
-            width: 80%;
-            padding: 10px;
-            -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
-            background-color: palegoldenrod;
+        #Water figure:hover {
+            width: 100%;
+            margin: 0;
+            padding: 0;
         }
+
+    #Water p:last-of-type {
+        border: 20px solid grey;
+        width: 80%;
+        padding: 1%; 
+        transform: rotate(-3deg);
+        background-color: palegoldenrod;
+    }
 /*
         ***** MoreDeliciousPlants Slide *****
     */
@@ -1004,73 +726,44 @@ div#home div[class="col-md-5"] p {
     text-align: center;
 }
 
-    #MoreDeliciousPlants p {
-        margin: auto;
-        margin-bottom: 5%;
-        width: 90%;
+
+    #MoreDeliciousPlants p:last-of-type {
+        display: none;
     }
-
-        #MoreDeliciousPlants p:last-of-type {
-            border: 20px solid grey;
-            width: 80%;
-            padding: 10px;
-            -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-            background-color: palegoldenrod;
-        }
-
+    /*Zuts*/
     #MoreDeliciousPlants div[class="col-md-4"] figure {
-        width: 181px;
+        display: none;
     }
+     
 
-    #MoreDeliciousPlants div[class="col-md-8"] {
-        height: 800px;
-    }
-
-        #MoreDeliciousPlants div[class="col-md-8"] figure:first-of-type {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50%;
-            margin-left: 1%;
+        #MoreDeliciousPlants div[class="col-md-8"] figure:first-of-type:hover {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            z-index: 2;
         }
 
-            #MoreDeliciousPlants div[class="col-md-8"] figure:first-of-type:hover {
-                width: 100%;
-                z-index: 100;
-                margin: 0;
-            }
+     
 
-        #MoreDeliciousPlants div[class="col-md-8"] figure:last-of-type {
-            position: absolute;
-            right: 0;
-            bottom: 0%;
-            z-index: 1;
-            width: 55%;
-            padding: 1%;
+        #MoreDeliciousPlants div[class="col-md-8"] figure:last-of-type:hover {
+            width: 100%;
+            margin: 0;
+            margin-top: -29%;
+            padding: 0;
         }
-
-            #MoreDeliciousPlants div[class="col-md-8"] figure:last-of-type:hover {
-                z-index: 100;
-                width: 100%;
-                margin: 0;
-            }
-
-
 /* 
     ***** LookAtMe Slide *****  
  */
 
-#LookAtMe h2 {
-    text-align: center;
+
+#LookAtMe figure {
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
 }
 
-#LookAtMe figure, #LookAtMe img {
-    margin: 0;
-    padding: 0;
-}
-
-#LookAtMe p {
-    width: 80%;
-    margin-top: 50px;
-}
+    #LookAtMe figure:hover {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }

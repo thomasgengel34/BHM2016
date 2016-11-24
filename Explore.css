@@ -1,4 +1,4 @@
-﻿@font-face {
+﻿ @font-face {
 	font-family: AlexBrush-Regular;
 	src: url('../fonts/alex-brush/AlexBrush-Regular.ttf') format('truetype');
 }
@@ -109,4 +109,8 @@
     border-radius:20px 2px 20px 2px;  
     font-size:larger;
     font-family: 'Copperplate Gothic';
+}
+.gardens {
+    background:linear-gradient(lightblue,darkgreen);
+    color: darkgreen; 
 }

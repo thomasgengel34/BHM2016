@@ -6,10 +6,15 @@
     <meta charset="utf-8" />
     <meta name="description" content="This webpage shows all the webpages on the Bolduc House Museum website for the various buildings, activities, crafts and people including children and adults." />
     <meta name="keywords" content="Bolduc House Museum,Ste.Genevieve, explore the Bolduc House Museum,site menu"/>
-    <script src="Scripts/jquery-1.10.2.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="Content/BolducHouse.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='Scripts/jquery-1.10.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>$.fn.modal || document.write('<script src="Scripts/bootstrap.min.js">\x3C/script>')</script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
     <link href="Content/Explore.css" rel="stylesheet" />
 </head>
@@ -100,24 +105,19 @@
             <div data-link="FirstNations" class="siteButton up history">First<br/> Nations<img src="Images/SiteMap/tribalFlags100.jpg" width="100" height="75" alt="Flags of the Five Tribes" />  
             </div>
             <div data-link="ArtWalkAndGalleries" class="siteButton up artwalk">Art Walk and Galleries</div>
-            <div class="siteButton soon">The Gardens</div>
-            <div class="siteButton soon">A Squirrel's Tour of the Gardens</div>
+            <div data-link="Gardens" class="siteButton  up gardens">The Gardens</div> 
             <div class="siteButton soon">The Rozier Library</div>
             <div class="siteButton soon">The Way We Worked</div>
             <div class="siteButton soon">Future Workers</div>
             <div class="siteButton soon">1812 New Madrid Earthquake Exhibit</div>
             <div class="siteButton soon">Colonial Dames</div>
-            <div class="siteButton soon">Dr. E. A. Connally</div>
-            <div class="siteButton soon">1967 LaGuignole</div>
-            <div class="siteButton soon">2010 LaGuignole</div>
-            <div class="siteButton soon">2011 LaGuignole</div>
+            <div class="siteButton soon">Dr. E. A. Connally</div>          
             <div class="siteButton soon">Junior Militia</div>
             <div class="siteButton future">Quizzes</div>
             <div class="siteButton  future">Junior Quizzes</div>
             <div class="siteButton future">Slavery in Ste.Genevieve</div>
-            <div class="siteButton future">2012 LaGuignole</div>
-            <div class="siteButton future">2013 LaGuignole</div>
-            <div class="siteButton future">2014 LaGuignole</div>
+            <div class="siteButton future">  LaGuignole</div>
+            <div class="siteButton future">Boosillage</div> 
             <div class="siteButton future">2015-6 Evacuation due to Possible Flood</div>
             <div class="siteButton future">Archaeology at the Museum</div>
             <div class="siteButton future">Ceramics</div>

@@ -1,4 +1,4 @@
-﻿@import  'bootstrap.css';
+﻿ /* this class and bootstrap.min.css should be loaded directly in each page.css*/
 
 html {
     width: 100%;
@@ -76,7 +76,8 @@ form {
 
 figure {
     padding: 0;
-    margin: 0;
+    margin: 0; 
+    overflow-x:hidden;    /* variation from default */
 }
 
 img {
@@ -136,19 +137,7 @@ figcaption {
 
 .margin50bot {
     margin-bottom:50px;
-}
-/*******************************************************/
-/* Default                      none presently, thanks for asking!           */
-/*******************************************************/
-
-/*******************************************************/
-/* About                                                                                   */
-/*******************************************************/
-#AboutMap {
-    width: 100%;
-    overflow: hidden;
-    padding: 10px;
-}
+} 
 
 /*******************************************************/
 /* BolducFamilyHistory (first use)                                                 */
@@ -194,4 +183,14 @@ figure.Centered600 {
 figure.Centered300 {
     margin: auto;
     width: 300px;
+}
+
+
+.fullwidth{
+    width:100%;
+}
+
+.w500
+{
+    width:500px; 
 }

@@ -1,27 +1,25 @@
-﻿@import 'bootstrap.min.css';
-@import 'Site.css';
-@import 'BolducHouse.css';
-
+﻿ 
+/* BEGIN diagnostic - comment out after development
 body {
     background-color: deepskyblue;
-}
-/* temporary*/
+}*/
+/* END diagnostic*/
 
 #home h1 {
     color: green;
-    margin-left: 20px;
 }
 
-#ZutsNote {
+
+
+#home div[class="col-md-6 margin10"] > div {
+    width: 60%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
     border: 20px solid grey;
-    width: 400px;
-    padding: 10px;
-    font-family: 'Comic Sans MS';
-    font-size: smaller;
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
+    font-family: 'Comic Sans MS'; 
+    transform: rotate(-1deg);
     background-color: palegoldenrod;
-    margin-left: 220px;
     z-index: 100;
 }
 
@@ -50,34 +48,7 @@ div#home div[class="col-md-5"] p {
     background-color: lightgreen;
     font-family: 'Comic Sans MS';
     font-size: larger;
-    height: 712px;
-}
-
-#SquirrelTour h2 {
-    color: darkgreen;
-    font-family: 'Comic Sans MS';
-}
-
-@media only screen and (max-width:767px) {
-    #SquirrelTour h2, .item, .GardenCarousel {
-        font-size: medium;
-    }
-}
-
-@media (orientation:landscape) and (max-height:767px) {
-    #SquirrelTour p, #SquirrelTour h2 {
-        margin: 5px;
-    }
-}
-
-@media (orientation:portrait) and (max-width:464px) {
-    #SquirrelTour p, #SquirrelTour h2 {
-        margin: 5px;
-    }
-
-    h2, .item, .GardenCarousel {
-        font-size: small;
-    }
+    height: 100%;
 }
 
 #SquirrelTour h1 {
@@ -91,6 +62,13 @@ div#home div[class="col-md-5"] p {
     text-align: center;
 }
 
+#SquirrelTour figure {
+    width: 30%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+
 #SquirrelTour img {
     overflow: hidden;
     box-shadow: none;
@@ -99,6 +77,13 @@ div#home div[class="col-md-5"] p {
 #SquirrelTour p, #SquirrelTour h3 {
     font-family: 'Comic Sans MS';
     font-size: 1.17em;
+    margin: auto;
+    text-align: center;
+}
+
+#SquirrelTour p {
+    width: 80%;
+    margin-top: 1%;
 }
 
     #SquirrelTour p:first-letter {
@@ -120,8 +105,8 @@ div#home div[class="col-md-5"] p {
 
     #SquirrelTourTitle figure {
         position: absolute;
-        bottom: 43px;
-        right: 900px;
+        bottom: 0%;
+        right: 1%;
         width: 181px;
     }
 
@@ -150,192 +135,36 @@ div#home div[class="col-md-5"] p {
     }
 
     100% {
-        font-size: 60px;
+        font-size: 55px;
     }
 }
 
-/* 
-@-webkit-keyframes squirrelTitle {
-    0%,100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-}
-
-@-o-keyframes squirrelTitle {
-    0%,100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes squirrelTitle {
-    0%,100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-}
-
-/*@-ms-keyframes squirrelTitle {
-    0%,100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-}
-
-@keyframes squirrelTitle {
-    0%,100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-}*/
 /*
   *********  Cardoon Tab *********
-*/
-/* cardoon general */
-#cardoon p::first-letter {
-    font-size: x-large;
+*/ 
+#cardoon   { 
+    background: radial-gradient( lightyellow, white, lightgreen);
 }
-
-#cardoon h2 {
-    -webkit-animation: cardoon 5s 1s infinite;
+#cardoon h2 { 
     animation: cardoon 5s 1s infinite;
 }
+ 
 
-@media (max-width:767px) {
-    #cardoon {
-        overflow: scroll;
-    }
-
-        #cardoon h2 {
-            text-align: center;
-            color: darkgreen;
-            padding-top: 20px;
-        }
-
-        #cardoon .ClipArtSquirrel {
-            display: none;
-        }
-
-        #cardoon p {
-            margin: 5px;
-            padding: 5px;
-        }
-
-            #cardoon p:last-child {
-                margin-bottom: 20px;
-            }
+#cardoon div[class="col-sm-5"] {
+   width:100%;
 }
 
-@media (min-width:768px) and (max-width:978px) {
-    #cardoon {
-        background: radial-gradient(closest-side at 75% 50%, lightyellow, white, lightgreen);
-    }
-
-        #cardoon .ClipArtSquirrel {
-            position: absolute;
-            top: 5px;
-            right: 20px;
-            width: 181px;
-            overflow: hidden;
-            -webkit-animation: squirrelTitle 5s ease-in-out 2s infinite;
-            -moz-animation: squirrelTitle 5s ease-in-out 2s infinite;
-            -o-animation: squirrelTitle 5s ease-in-out 2s infinite;
-            animation: squirrelTitle 5s ease-in-out 2s infinite;
-        }
-
-        #cardoon p {
-            padding-left: 40px;
-            padding-right: 40px;
-        }
-
-            #cardoon p:first-of-type {
-                margin-top: 180px;
-            }
+#cardoon div[class="col-sm-5"] figure:hover{
+    width:100%;
+    margin:0;
+    padding:0;
 }
 
-
-
-@media (min-width:979px) {
-    #cardoon h2 {
-        color: darkgreen;
-        padding-top: 100px;
-        -webkit-animation: cardoon 5s 1s infinite;
-        animation: cardoon 5s 1s infinite;
-    }
-
-    #cardoon p {
-        width: 60%;
-        margin: auto;
-    }
-
-        #cardoon p:first-of-type {
-            margin-top: 180px;
-        }
-
-    #cardoon div[class="col-sm-5"] {
-        margin-right: 0;
-        padding-right: 0;
-    }
-
-    #cardoon div[class="col-sm-7"] {
-        text-align: center;
-        height: 800px;
-        background: radial-gradient( lightyellow, white, lightgreen);
-    }
-
-    #cardoon div[class="col-md-7"] p {
-        width: 500px;
-        text-align: center;
-    }
-
-    #cardoon .ClipArtSquirrel {
-        position: absolute;
-        top: 5px;
-        right: 20px;
-        width: 181px;
-        overflow: hidden;
-        -webkit-animation: squirrelTitle 5s ease-in-out 2s infinite;
-        -moz-animation: squirrelTitle 5s ease-in-out 2s infinite;
-        -o-animation: squirrelTitle 5s ease-in-out 2s infinite;
-        animation: squirrelTitle 5s ease-in-out 2s infinite;
-    }
+#cardoon div[class="col-sm-7"] {
+    width:100%;  
 }
+ 
 
-@-moz-keyframes cardoon {
-    0%,100% {
-        color: darkgreen;
-    }
-
-    50% {
-        color: mediumpurple;
-    }
-}
-
-@-webkit-keyframes cardoon {
-    0%,100% {
-        color: darkgreen;
-    }
-
-    50% {
-        color: mediumpurple;
-    }
-}
 
 @keyframes cardoon {
     0%,100% {
@@ -349,57 +178,48 @@ div#home div[class="col-md-5"] p {
 /*
  ***   Easy Access Tab ************************
 */
-#EasyAccess p::first-letter {
-    font-size: x-large;
+#EasyAccess figure, #EasyAccess img {
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/Gardens/SquirrelGardenTour/ClipArtSquirrel.png');
 }
 
 
-
-@media (max-width:978px) {
-    #EasyAccess {
-        overflow: scroll;
-    }
+#EasyAccess div[class="col-md-6"] figure {
+    width: 30%;
+    margin: auto;
 }
 
-
-@media (min-width:979px) {
-    #EasyAccess {
-        background: -webkit-radial-gradient(closest-side at 25% 50%, lightyellow 75%, lightgreen);
-        background: -moz-radial-gradient(closest-side at 25% 50%, lightyellow 75%, lightgreen);
-        background: radial-gradient(closest-side at 25% 50%, lightyellow 80%, lightgreen);
+    #EasyAccess div[class="col-md-6"] figure:hover {
+        width: 100%;
         margin: 0;
+        margin-top: -65%;
         padding: 0;
     }
 
-        #EasyAccess figure, #EasyAccess img {
-            margin: 0;
-            padding: 0;
-            background-image: url('../Images/Gardens/SquirrelGardenTour/ClipArtSquirrel.png');
-        }
 
-
-
-        #EasyAccess p {
-            margin: auto;
-            margin-top: 50px;
-            text-align: center;
-            width: 500px;
-        }
-}
 /*
-    ***** Foxglove *****
+    ***** Foxglove Slide *****
 */
-#Foxglove p {
-    margin-top: 45px;
-    text-align: center;
-    width: 475px;
-    margin-left: 150px;
+#Foxglove div div:last-of-type figure {
+    width: 30%;
+    margin: auto;
+    margin-top: 60%;
 }
 
-#Foxglove figure {
-    width: 213px;
-    margin: auto;
-    margin-top: 195px;
+    #Foxglove div div:last-of-type figure:hover {
+        width: 100%;
+        margin: 0;
+        margin-top: 10%;
+        padding: 0;
+    }
+
+
+#Foxglove h2 {
+    margin-top: 25%;
+    margin-bottom: 5%;
+    color: purple;
+    animation: foxgloveh2 5s 1s infinite;
 }
 
 #Foxglove div[class^="col"] {
@@ -409,20 +229,11 @@ div#home div[class="col-md-5"] p {
     height: 800px;
 }
 
-#Foxglove h2 {
-    text-align: center;
-    margin-top: 110px;
-    font-family: 'Comic Sans MS';
-    color: purple;
-    animation: foxgloveh2 5s 1s infinite;
-}
-
 #Foxglove div[class="row"] > figure {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 181px;
-    -webkit-animation: squirrelTitle 5s ease-in-out 0s infinite;
+    bottom: 0;
+    right: 1%;
+    width: 181px; 
     animation: squirrelTitle 5s ease-in-out 0s infinite;
 }
 
@@ -435,7 +246,9 @@ div#home div[class="col-md-5"] p {
         color: purple;
     }
 }
-
+/*
+    ***** Grape Arbor Slide *****
+*/
 #GrapeArbor {
     background: -webkit-radial-gradient(closest-side at 50% 50%, lightyellow 75%, lightgreen);
     background: radial-gradient(closest-side at 50% 50%, lightyellow 75%, lightgreen);
@@ -443,65 +256,42 @@ div#home div[class="col-md-5"] p {
 }
 
     #GrapeArbor figure {
-        margin-top: 0;
+        margin-top: 1%;
     }
 
-    #GrapeArbor h2 {
-        text-align: center;
-        font-family: 'Comic Sans MS';
-        margin-top: 30px;
+    #GrapeArbor div[class="col-md-8"] figure:hover {
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
     }
 
-    #GrapeArbor p {
-        margin-top: 30px;
-        margin-left: 10px;
-        margin-right: 20px;
-    }
-
-
-#BigKitchenGardens div[class="col-md-4"] {
-    height: 800px;
-    background: radial-gradient( lightyellow 40%, lightgreen);
-}
-
-
-
-#BigKitchenGardens p {
-    width: 250px;
-    color: green;
-    margin: auto;
-    margin-top: 20px;
-}
-
-#BigKitchenGardens h2 {
-    margin: auto;
-    margin-top: 180px;
-    color: green;
-}
+/*
+    ***** BigKitchenGardens Slide
+*/
 
 #BigKitchenGardens figure {
-    margin-top: 0px;
-    margin-left: 0px;
+    margin: auto;
     padding: 0;
+    width: 100%;
 }
 
 #BigKitchenGardens div[class="row"] > figure:first-of-type {
     position: absolute;
-    bottom: 10px;
-    left: 290px;
+    bottom: 1%;
+    left: 50%;
     width: 181px;
-    opacity: 0;
-    -webkit-animation: appearing 5s ease-in-out 0s 1 reverse;
+    opacity: 0; 
     animation: appearing 5s ease-in-out 0s 1 reverse;
 }
 
 #BigKitchenGardens div[class="row"] > figure:last-child {
     position: absolute;
-    bottom: 15px;
+    bottom: 0;
     left: 0px;
     width: 200px;
-    opacity: 1;
-    -webkit-animation: BkgEntering 3s ease-in-out 0s 1;
+    opacity: 0; 
     animation: BkgEntering 5s ease-in-out 0s 1;
 }
 
@@ -518,71 +308,123 @@ div#home div[class="col-md-5"] p {
 @keyframes BkgEntering {
     0% {
         left: -50px;
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 1;
     }
 
     100% {
         left: 0px;
+        opacity: 0;
     }
 }
 
 /*
  ********  LemWeddingAisle **************
 */
-#LemWeddingAisle div[class="col-md-5"] p {
-    margin: 10px;
+
+#LemWeddingAisle {
+    background: linear-gradient(white,lightgreen);
 }
 
-#LemWeddingAisle h2 {
-    color: green;
-    text-align: center;
-}
 
-#LemWeddingAisle div[class="col-md-5"] figure:first-of-type {
-    margin: auto;
-    margin-top: 10px;
-    width: 200px;
-}
-
-    #LemWeddingAisle div[class="col-md-5"] figure:first-of-type:hover {
-        width: 600px;
+    #LemWeddingAisle div[class="col-md-4"] p:last-of-type {
+        border: 20px solid grey;
+        width: 70%; 
+        transform: rotate(-5deg);
+        background-color: palegoldenrod;
+        z-index: 5;
     }
 
-
-#LemWeddingAisle div[class="col-md-5"] img {
-    border: 20px solid white;
-}
-
-    #LemWeddingAisle div[class="col-md-5"] img:hover {
-        border: none;
+    #LemWeddingAisle div[class="col-md-8"] {
+        height: 310px;
     }
 
+        #LemWeddingAisle div[class="col-md-8"] figure:first-of-type {
+            position: absolute;
+            left: 5%;
+            top: 0;
+            z-index: 1;
+            width: 40%;
+            padding: 1%;
+            bottom: 0;
+        }
+
+            #LemWeddingAisle div[class="col-md-8"] figure:first-of-type:hover {
+                z-index: 100;
+                left: 0;
+                width: 100%;
+                margin: 0;
+                top: -120%;
+            }
+
+
+        #LemWeddingAisle div[class="col-md-8"] img {
+            border: 10px solid white;
+        }
+
+            #LemWeddingAisle div[class="col-md-8"] img:hover {
+                border: none;
+            }
 
 
 
-#LemWeddingAisle div[class="col-md-7"] figure {
-    margin: auto;
-}
+
+        #LemWeddingAisle div[class="col-md-8"] figure {
+            margin: auto;
+        }
+
+            #LemWeddingAisle div[class="col-md-8"] figure:last-of-type {
+                position: absolute;
+                right: 5%;
+                top: 0;
+                z-index: 1;
+                width: 40%;
+                padding: 1%;
+                bottom: 0;
+            }
+
+                #LemWeddingAisle div[class="col-md-8"] figure:last-of-type img {
+                    border: 10px solid silver;
+                }
+
+
+
+                #LemWeddingAisle div[class="col-md-8"] figure:last-of-type:hover {
+                    z-index: 100;
+                    width: 100%;
+                    margin: 0;
+                    top: -120%;
+                    right: 0;
+                }
 
 /*
     ********** Grape Trellis slide **********
 */
 #GrapeTrellis {
-    background: -webkit-radial-gradient(farthest-side at 75% 50%, lightyellow 30%, lightgreen );
-    background: radial-gradient(farthest-side at 75% 60%, lightyellow 30%, lightgreen );
+    background: radial-gradient( lightyellow 30%, lightgreen );
 }
 
-    #GrapeTrellis h2 {
-        color: green;
-        text-align: center;
-        margin-top: 280px;
+    #GrapeTrellis p {
+        /*width: 50%;*/
     }
 
-    #GrapeTrellis p {
-        width: 500px;
-        text-align: center;
-        margin-left: 150px;
-        margin-top: 50px;
+
+    #GrapeTrellis div[class="col-md-6"]:first-child figure {
+        width: 30%;
+        margin: auto;
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
+
+        #GrapeTrellis div[class="col-md-6"]:first-child figure:hover {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
 
     #GrapeTrellis .fallingPecan {
         width: 20px;
@@ -590,8 +432,7 @@ div#home div[class="col-md-5"] p {
         position: absolute;
         top: -100px;
         right: 400px;
-        background-image: url('../Images/pecan_20.png');
-        -webkit-animation: pecanFall 2s ease-in 1s infinite;
+        background-image: url('../Images/pecan_20.png'); 
         animation: pecanFall 2s ease-in 1s infinite;
     }
 
@@ -602,8 +443,7 @@ div#home div[class="col-md-5"] p {
         height: 12px;
         position: absolute;
         top: -100px;
-        right: 400px;
-        -webkit-animation: pecanFall 2s ease-in 1s infinite;
+        right: 400px; 
         animation: pecanFall 2s ease-in 1s infinite;
     }
 
@@ -612,8 +452,7 @@ div#home div[class="col-md-5"] p {
         height: 12px;
         position: absolute;
         top: -100px;
-        right: 100px;
-        -webkit-animation: pecanFall 2s ease-in 2s infinite;
+        right: 100px; 
         animation: pecanFall 2s ease-in 2s infinite;
     }
 
@@ -622,8 +461,7 @@ div#home div[class="col-md-5"] p {
         height: 12px;
         position: absolute;
         top: -100px;
-        right: 300px;
-        -webkit-animation: pecanFall 2s ease-in 3s infinite;
+        right: 300px; 
         animation: pecanFall 2s ease-in 3s infinite;
     }
 
@@ -632,8 +470,7 @@ div#home div[class="col-md-5"] p {
         height: 12px;
         position: absolute;
         top: -100px;
-        right: 500px;
-        -webkit-animation: pecanFall 2s ease-in 4s infinite;
+        right: 500px; 
         animation: pecanFall 2s ease-in 4s infinite;
     }
 
@@ -642,8 +479,7 @@ div#home div[class="col-md-5"] p {
         height: 12px;
         position: absolute;
         top: -100px;
-        right: 600px;
-        -webkit-animation: pecanFall 2s ease-in 5s infinite;
+        right: 600px; 
         animation: pecanFall 2s ease-in 5s infinite;
     }
 
@@ -652,8 +488,7 @@ div#home div[class="col-md-5"] p {
         height: 12px;
         position: absolute;
         top: -100px;
-        right: 600px;
-        -webkit-animation: pecanFall 2s ease-in 6s infinite;
+        right: 600px; 
         animation: pecanFall 2s ease-in 6s infinite;
     }
 
@@ -676,157 +511,169 @@ div#home div[class="col-md-5"] p {
 */
 
 #HyacinthBean {
-    background: -webkit-radial-gradient( closest-side at 15% 55%, lightyellow 75%, lightgreen,purple);
-    background: radial-gradient( closest-side at 15% 55%, lightyellow 75%, lightgreen,purple);
+    background: radial-gradient( lightyellow, purple 10% );
 }
 
     #HyacinthBean h2 {
         color: white;
-        font-family: 'Comic Sans MS';
-        text-align: center;
     }
 
     #HyacinthBean p {
-        margin-left: 175px;
-        margin-top: 110px;
-        width: 180px;
+        color: white;
     }
+
+    #HyacinthBean figure {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
 /*
         ***** The Way In Slide ********
     */
-
-
-#TheWayIn p {
-    margin-top: 40px;
+#TheWayIn figure:hover {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 /*
     **** Sneak In Slide *******
 */
 
-#SneakIn h2 {
-    text-align: center;
-}
 
 #SneakIn figure {
+    width: 40%;
     transform: rotate(45deg);
-    margin-top: 80px;
-    margin-right: 35px;
+    padding: 2%;
+    margin: 3%;
+    float: left;
 }
 
-#SneakIn p {
-    margin-right: 40px;
-    margin-top: 35px;
-}
 /*
     ******* Good Warm Food Slide *******
 */
 
 #GoodWarmFood {
-    background: -webkit-radial-gradient(farthest-side at 25% 50%, lightyellow 37%, lightgreen);
-    background: radial-gradient(farthest-side at 25% 50%, lightyellow 37%, lightgreen);
+    background: -webkit-radial-gradient( lightyellow 37%, lightgreen);
+    background: radial-gradient( lightyellow 37%, lightgreen);
 }
 
-
-    #GoodWarmFood h2 {
-        color: green;
-        font-family: 'Comic Sans MS';
-        text-align: center;
+    #GoodWarmFood div[class="col-md-8"] figure:hover {
+        width: 100%;
+        margin: 0;
+        margin-top: -30%;
+        padding: 0;
     }
-
-    #GoodWarmFood p {
-        width: 90%;
-        margin: auto;
-        margin-top: 10px;
-    }
-
-        #GoodWarmFood p:first-of-type {
-            margin-top: 60px;
-        }
 
     #GoodWarmFood div[class="row"] > figure {
         position: absolute;
-        bottom: 10px;
-        left: 40px;
+        bottom: 1%;
+        left: 1%;
         width: 181px;
-        opacity: 0;
-        -webkit-animation: appearing 5s ease-in-out 0s 1 reverse;
+        opacity: 0; 
         animation: appearing 5s ease-in-out 0s 1 reverse;
     }
 
 #ZutsFoodComment {
     border: 20px solid grey;
-    width: 280px;
-    padding: 10px;
-    font-family: 'Comic Sans MS';
-    font-size: smaller;
-    -webkit-transform: rotate(-20deg);
+    width: 20%;
+    padding: 1%; 
     transform: rotate(-20deg);
     background-color: palegoldenrod;
     position: absolute;
-    left: 40px;
-    bottom: 140px;
-    margin-left: 220px;
-    z-index: 100;
+    right: 10%;
+    top: 60%;
 }
 
 /*
         ***** Good Hiding Slide *******
     */
-#GoodHiding h2 {
-    text-align: center;
+#GoodHiding {
+    background: -webkit-radial-gradient( lightyellow 37%, lightgreen);
+    background: radial-gradient( lightyellow 37%, lightgreen);
 }
 
-#GoodHiding p {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-}
+
+    #GoodHiding figure:hover {
+        width: 100%;
+        margin: 0;
+        margin-top: -30%;
+        padding: 0;
+    }
 
 /*
     ******* I Spy Slide *******
 */
 
-#ISpy div[class="col-md-6"]:first-child {
-    height: 800px;
-    background: -moz-radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen, lightyellow 10%,green);
-    background: -webkit-radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen, lightyellow 10%,green);
-    background: radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen, lightyellow 10%,green);
+#ISpy div[class="col-md-6"]:first-child figure {
+    width: 30%;
+    margin: auto;
+    margin-top: 1%;
 }
 
-    #ISpy div[class="col-md-6"]:first-child figure {
-        width: 400px;
-        margin: auto;
-        margin-top: 120px;
+    #ISpy div[class="col-md-6"]:first-child figure:hover {
+        width: 100%;
+        z-index: 10;
     }
 
-#ISpy div[class="col-md-6"]:last-child figure {
-    width: 181px;
-    height: 200px;
-    position: absolute;
-    right: 120px;
-    bottom: 120px;
-    overflow: hidden;
-    -webkit-animation: squirrelTitle 5s ease-in-out 0s 1;
-    animation: squirrelTitle 5s ease-in-out 0s 1;
-} 
- 
-#ISpy div[class="col-md-6"]:last-child figure:last-child img {
-    width: 150px;
-    position: absolute;
-    left: 350px;
-    bottom: 100px;
-    overflow: hidden;
+#ISpy div[class="col-md-6"]:last-child {
+    height: 100%;
 }
+
+    #ISpy div[class="col-md-6"]:last-child figure:first-of-type {
+        width: 14%;
+        position: absolute;
+        right: 5%;
+        top: -50%;
+        overflow: hidden; 
+        animation: ISpySquirrel 8s ease-in-out 0s 1;
+        opacity: 0;
+    }
+
+    #ISpy div[class="col-md-6"]:last-child figure:last-of-type img {
+        width: 15%;
+        position: absolute;
+        left: 5%;
+        top: -50%;
+        overflow: hidden;
+        opacity: 0;
+        animation: ISpyTelescope 8s 0s linear 1;
+    }
 
 #ISpy h2 {
     text-align: center;
 }
 
-#ISpy p {
-    width: 300px;
-    margin: auto;
-    margin-top: 50px;
+
+@keyframes ISpySquirrel {
+    0%, 100% {
+        opacity: 1;
+    }
 }
+
+@keyframes ISpyTelescope {
+    0% {
+        opacity: 0;
+    }
+
+    49% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 /*
 ***** CameraCamper Slide *****  
 */
@@ -834,137 +681,81 @@ div#home div[class="col-md-5"] p {
 #CameraCamper p {
     font-style: italic;
     font-size: large;
-    margin-top: 50px;
-    text-align: center;
+}
+
+#CameraCamper figure:hover {
+    width: 100%;
+    margin: 0;
+    margin-top: -30%;
+    padding: 0;
 }
 
 /*
     ***** MoreForTheMenu Slide *****
 */
-
-#MoreForTheMenu div[class="col-md-6"]:first-child {
-    background: -webkit-linear-gradient(left,lightyellow 75%,green );
-    background: linear-gradient(left,lightyellow 75%,green );
-    height: 800px;
-}
-
-#MoreForTheMenu div[class="col-md-6"]:last-child {
-    background: -webkit-linear-gradient(left,lightyellow 75%,green );
-    background: linear-gradient(left,lightyellow 75%,green );
-}
-
-
-#MoreForTheMenu h2 {
-    margin-left: 50px;
-    text-align: left;
-}
-
 #MoreForTheMenu figure {
-    width: 620px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 1%;
+    width: 30%;
 }
 
-
-#MoreForTheMenu p {
-    width: 90%;
-    margin: auto;
-    margin-top: 10px;
-}
-
-    #MoreForTheMenu p:first-of-type {
-        margin-top: 90px;
+    #MoreForTheMenu figure:hover {
+        width: 100%;
     }
+
+#MoreForTheMenu p:last-child {
+    border: 20px solid grey;
+    width: 50%;
+    padding: 1%; 
+    transform: rotate(-10deg);
+    background-color: palegoldenrod;
+    margin-top: 5%;
+}
+
 /*
         ***** MYNewestGarden Slide *****
     */
 
-#MYNewestGarden div[class="col-md-6"]:first-child {
-    height: 800px;
-    background: -webkit-radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen, lightyellow 10%,green);
-    background: radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen,lightyellow 10%,green);
-}
-
-#MYNewestGarden div[class="col-md-6"]:last-child {
-    height: 800px;
-    background: -webkit-radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen,purple,lightyellow 10%,green);
-    background: radial-gradient( closest-side at 50% 50%, lightyellow 75%, lightgreen,purple,lightyellow 10%,green);
-}
-
-#MYNewestGarden h2 {
-    font-family: 'Comic Sans MS';
-    text-align: center;
-    margin-top: 120px;
-    color: green;
-}
-
-#MYNewestGarden figure {
-    width: 500px;
-    margin-top: 200px;
-    margin-left: 125px;
-}
-
-#MYNewestGarden p {
-    width: 400px;
-    margin: auto;
-    margin-top: 20px;
+#MYNewestGarden figure:hover {
+    width: 100%;
 }
 /*
     ***** LookOutForCroquetBalls *****
 */
 
-#LookOutForCroquetBalls h2 {
-    font-family: 'Comic Sans MS';
-    text-align: center;
-}
-
-#LookOutForCroquetBalls p {
-    margin: auto;
-    width: 600px;
-    margin-top: 20px;
-}
-
-#LookOutForCroquetBalls figure {
-    width: 100%;
-    z-index: 100;
-}
-
-.croquetBall {
+.croquetBallBlue {
     height: 100px;
     width: 100px;
     background-color: white;
     border-radius: 50px;
     position: absolute;
-    top: 550px;
+    top: 105%;
     z-index: 0;
-    opacity: 0;
-    -webkit-animation: croquet 2s ease-in-out 1s infinite;
+    opacity: 0; 
     animation: croquet 2s ease-in-out 1s infinite;
 }
 
-.croquetBall1 {
+.croquetBallGreen {
     height: 100px;
     width: 100px;
     background-color: white;
     border-radius: 50px;
     position: absolute;
-    top: 550px;
+    top: 100%;
     z-index: 0;
-    opacity: 0;
-    -webkit-animation: croquet 3s ease-in-out 2s infinite reverse;
+    opacity: 0; 
     animation: croquet 3s ease-in-out 2s infinite reverse;
 }
 
-.croquetBall2 {
+.croquetBallRed {
     height: 100px;
     width: 100px;
     background-color: white;
     border-radius: 50px;
     position: absolute;
-    top: 450px;
+    top: 110%;
     z-index: 0;
-    opacity: 0;
-    -webkit-animation: croquet 4s ease-in-out 2s infinite;
+    opacity: 0; 
     animation: croquet 4s ease-in-out 2s infinite;
 }
 
@@ -995,8 +786,7 @@ div#home div[class="col-md-5"] p {
     0% {
         left: -200px;
         padding-left: 0;
-        margin-left: 0;
-        -webkit-transform: rotate(0deg);
+        margin-left: 0; 
         transform: rotate(0deg);
         opacity: 0;
     }
@@ -1017,39 +807,49 @@ div#home div[class="col-md-5"] p {
     }
 
     100% {
-        /*transform: rotate(2deg);*/
         left: 1600px;
         opacity: 0;
         padding-right: 0;
         margin-right: 0;
     }
 }
+
+#LookOutForCroquetBalls figure:hover {
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+    margin-top: -35%;
+    padding: 0%;
+}
+
 /*
     ***** IntoTheBoxwoods Slide *****
 */
 
-#IntoTheBoxwoods {
+#IntoTheBoxwoods > div > div[class="col-md-8"] figure:hover {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Bijou  */
+#IntoTheBoxwoods div[class="col-md-4"] div[class="col-md-8"] figure {
+    margin-left: 0;
+    margin-bottom: 1%;
 }
 
-    #IntoTheBoxwoods h2 {
-        text-align: center;
-        color: green;
-    }
-
-    #IntoTheBoxwoods p {
-        margin: auto;
-        width: 400px;
-        margin-top: 20px;
-    }
-
-    #IntoTheBoxwoods div[class="col-md-8"] figure img {
+    #IntoTheBoxwoods div[class="col-md-4"] div[class="col-md-8"] figure img {
         opacity: 0;
         animation: BoxwoodBijou 5s ease-in-out 3s infinite;
-        width: 300px;
     }
+/* Zuts */
+#IntoTheBoxwoods div[class="col-md-4"] div[class="col-md-4"] figure {
+    margin-right: 0;
+    margin-top: -21%;
+}
 
-    #IntoTheBoxwoods div[class="col-md-4"] figure img {
+    #IntoTheBoxwoods div[class="col-md-4"] div[class="col-md-4"] figure img {
         animation: BoxwoodBijou 5s ease-in-out 5s infinite;
+        width: 40%;
     }
 
 @keyframes BoxwoodBijou {
@@ -1065,34 +865,27 @@ div#home div[class="col-md-5"] p {
 
 
 /*
-    ***** Water Slide ***** I like the pun
+    ***** Water Slide ***** 
 */
 
 #Water {
-    background: -webkit-linear-gradient(lightblue,lightgreen 50%,darkblue);
-    background: linear-gradient(lightblue,lightgreen 50%,darkblue);
+    background: -webkit-linear-gradient(lightblue 50%,lightgreen,darkblue);
+    background: linear-gradient(lightblue 50%,lightgreen,darkblue);
 }
 
     #Water h2 {
-        text-align: center;
         color: blue;
     }
 
-    #Water figure {
-        width: 500px;
-        margin: 100px;
-        margin-top: 100px;
+    #Water figure:hover {
+        width:100%;
+        padding:0;
+        margin:0;
     }
 
-    #Water img {
-        margin: 10px;
-    }
-
-    #Water p {
-        margin: auto;
-        margin-top: 8px;
-        width: 700px;
-    }
+/*
+    ***** More Delicious Plants *****
+    */
 
 #MoreDeliciousPlants {
     background: -webkit-linear-gradient(lightblue,lightgreen, brown);
@@ -1100,36 +893,55 @@ div#home div[class="col-md-5"] p {
     text-align: center;
 }
 
-    #MoreDeliciousPlants p {
-        margin: auto;
-        margin-bottom: 10px;
-        width: 500px;
-    }
-
-    #MoreDeliciousPlants div[class="col-md-5"] figure {
-        width: 181px;
-    }
-
-    #MoreDeliciousPlants div[class="col-md-7"] figure:first-of-type:hover {
+    #MoreDeliciousPlants p:last-of-type {
         display: none;
     }
 
-    #MoreDeliciousPlants figure:last-of-type {
-        display: block;
+    /* Zuts*/
+    #MoreDeliciousPlants div[class="col-md-4"] figure {
+        display: none;
     }
 
+    #MoreDeliciousPlants div[class="col-md-8"] figure:first-of-type {
+        position: absolute;
+        top: 0;
+        left: 2%;
+        width: 30%;
+    }
 
+        #MoreDeliciousPlants div[class="col-md-8"] figure:first-of-type:hover {
+            width: 100%;
+            z-index: 100;
+            margin: 0;
+            left: 0;
+        }
 
+    #MoreDeliciousPlants div[class="col-md-8"] figure:last-of-type {
+        position: absolute;
+        right: 5%;
+        top: 0%;
+        z-index: 1;
+        width: 30%;
+    }
 
+        #MoreDeliciousPlants div[class="col-md-8"] figure:last-of-type:hover {
+            z-index: 100;
+            width: 100%;
+            margin: 0;
+            right: 0;
+        }
+         
 /* 
     ***** LookAtMe Slide *****  
  */
+ 
 
-#LookAtMe h2 {
-    text-align: center;
+#LookAtMe figure {
+   width:40%;
 }
 
-#LookAtMe figure, #LookAtMe img {
-    margin: 0;
-    padding: 0;
+#LookAtMe figure:hover {
+    width:100%;
+    margin:0;
+    padding:0;
 }
