@@ -1,0 +1,76 @@
+﻿
+/* BEGIN diagnostic - comment out after development*/
+body {
+    background-color: orange;
+}
+/* END diagnostic*/
+
+/* Page global*/
+
+p {
+    width: 90%;
+    margin: auto;
+}
+
+    /*p:not(footer p):first-letter {
+        font-size: larger;
+        font-weight: 700;
+    } 
+
+    p:not(footer p):first-of-type::first-letter {
+        margin-top:-1%;
+        padding-top:0;
+        font-size: 200%;
+        font-weight: bold;
+        float: left;
+    }*/
+
+#home {
+    margin: 1%;
+    margin: auto;
+}
+
+    #home figure {
+        margin: 1%;
+        width: 40%;
+        float: right;
+    }
+
+        #home figure:hover {
+            margin: 0;
+            width: 100%;
+        }
+
+
+
+
+#Pictures .col-xs-6 {
+    background-color: white; /* mask text and pictures not being hovered on*/
+}
+
+    #Pictures .col-xs-6:first-of-type:hover {
+        width: 100%;
+    }
+
+    #Pictures .col-xs-6:last-of-type:hover {
+        margin-left: -50%;
+        width: 100%;
+    }
+ /*
+        ***** Index tab *****
+ */
+
+th {
+    text-align: center;
+}
+
+#btnRestore, td input {
+    width: 100%;
+}
+
+#Index article div{
+    height:500px; 
+    width:100%;
+    overflow-y:scroll;
+} 
+   
