@@ -7,10 +7,15 @@
     <meta name="keywords" content="Bolduc House Museum, field trips, arrangements, email, e-mail, information"
           />
     <meta name="description" content="Conveniences to email the Bolduc House Museum in Ste. Genevieve Missouri" />
-    <script src="Scripts/jquery-1.10.2.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="Content/BolducHouse.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='Scripts/jquery-1.10.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>$.fn.modal || document.write('<script src="Scripts/bootstrap.min.js">\x3C/script>')</script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/Site.css" rel="stylesheet" />
     <link href="Content/Email.css" rel="stylesheet" />
 </head>
@@ -50,9 +55,9 @@
             <li><a data-toggle="tab" href="#menu3">I Want To Volunteer...</a></li>
             <li><a data-toggle="tab" href="#menu4">I Want to Donate Something...</a></li>
             <li><a data-toggle="tab" href="#menu5">I Want To Donate a Cat</a></li>
-            <li><a data-toggle="tab" href="#menu6">I'm Thinking about Getting Married Here</a></li>
+            <!--<li><a data-toggle="tab" href="#menu6">I'm Thinking about Getting Married Here</a></li>
             <li><a data-toggle="tab" href="#menu7">I'm Thinking about Bringing a Group</a></li>
-            <li><a data-toggle="tab" href="#menu8">I Want to Sign my Child Up</a></li>
+            <li><a data-toggle="tab" href="#menu8">I Want to Sign my Child Up</a></li>-->
             <li><a data-toggle="tab" href="#menu9">Zuts' Birthday Club and Party Sign Up</a></li>
         </ul>
         <div class="tab-content">
@@ -80,7 +85,7 @@
                         </p>
                         <label>Dear Monsieur Pratte,</label>
                         <div>
-                            <textarea ID="tbSimpleComments" Rows="3" maxlength="300"class="w100" required="required"
+                            <textarea ID="tbSimpleComments" Rows="3" maxlength="300" class="w100" required="required"
                                       placeholder="This is limited to 300 characters - if you want to go beyond that, or add an attachment, please use your regular email provider.  That would probably be easier on you. :)"
                                       data-toggle="tooltip"
                                       title="Please enter SOMETHING!! - Zuts"></textarea>
@@ -156,7 +161,7 @@
                                         Cats
                                     </li>
                                 </ul>
-                                <p class="zufeed" style="display: none;">Mais non! You wish M. Zuts to STARVE??</p>
+                                <p class="zufeed nodisplay">Mais non! You wish M. Zuts to STARVE??</p>
                                 <p class="zufeed">Merci, mon ami!</p>
                                 <div>
                                     <button ID="btnTellMeSubmit" type="submit" name="submit" class="btn btn-primary">Send</button>
@@ -376,7 +381,7 @@
                     <p>Who? Who put this on my website? WHO! I will investigate PRONTO!!</p>
                 </article>
             </div>
-            <div id="menu6" class="tab-pane fade">
+            <!--<div id="menu6" class="tab-pane fade">
                 <article>
                     <h2>I'm Thinking about Getting Married Here</h2>
                     <p><em>This tab is under construction!</em></p>
@@ -393,7 +398,7 @@
                     <h2>I Want to Sign my Child Up</h2>
                     <p><em>This tab is under construction!</em></p>
                 </article>
-            </div>
+            </div>-->
             <div id="menu9" class="tab-pane fade">
                 <article>
                     <h2>Sign Up for a Birthday Card Or Party Here!</h2>
